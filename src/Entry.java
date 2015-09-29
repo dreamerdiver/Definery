@@ -8,17 +8,15 @@
 
 import java.util.Date;
 
-
 public class Entry {
     private String word;
     private String definition;
-    private String Submitter;
-    private Date submitDate;
-    private String pronunciation;
     private String partOfSpeech;
+    private String pronunciation;
+    private String submitter;
+    private String usageAndVariations;
+    private Date submitDate;
     private int voteCount;
-    //Usage Examples
-    //Variations
 
 
     public String getWord() {
@@ -36,10 +34,10 @@ public class Entry {
     }
 
     public String getSubmitter() {
-        return Submitter;
+        return submitter;
     }
     public void setSubmitter(String submitter) {
-        Submitter = submitter;
+        this.submitter = submitter;
     }
 
     public Date getSubmitDate() {
@@ -63,6 +61,13 @@ public class Entry {
         this.partOfSpeech = partOfSpeech;
     }
 
+    public String getUsageAndVariations() {
+        return usageAndVariations;
+    }
+    public void setUsageAndVariations(String usageAndVariations) {
+        this.usageAndVariations = usageAndVariations;
+    }
+
     public int getVoteCount() {
         return voteCount;
     }
@@ -70,7 +75,7 @@ public class Entry {
         this.voteCount = voteCount;
     }
 
-    public String createTestOutput(){
+    public String createTestEntryOutput(){
         return  "Word: " + getWord() +
                 "\nDefinition: " + getDefinition() +
                 "\nPart of Speech: " + getPartOfSpeech() +
