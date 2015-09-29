@@ -7,10 +7,14 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title>Entry Lists</title>
-</head>
-<body>
-
-</body>
+  <head>
+      <title>Entry Lists</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="submit.jsp">Submit a New Definition</a></li>
+      <li><a href="index.jsp">Home</a></li>
+      <li><a href="login.jsp">Log In</a></li>
+    </ul>
+  </body>
 </html>
