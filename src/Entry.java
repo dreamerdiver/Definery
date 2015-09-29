@@ -1,7 +1,10 @@
 /**
- * Created by Meesh on 9/21/15.
+ * Project: Definery
+ * Class: Entry
+ * Created by Meesh
+ * 9/21/15
  */
-package Definery.src;
+//package Definery.src;
 
 import java.util.Date;
 
@@ -17,13 +20,6 @@ public class Entry {
     //Usage Examples
     //Variations
 
-    public Entry(){
-    createNewEntry();
-    }
-
-    public void createNewEntry() {
-
-    }
 
     public String getWord() {
         return word;
@@ -72,5 +68,13 @@ public class Entry {
     }
     public void setVoteCount(int voteCount) {
         this.voteCount = voteCount;
+    }
+
+    public String createTestOutput(){
+        return  "Word: " + getWord() +
+                "\nDefinition: " + getDefinition() +
+                "\nPart of Speech: " + getPartOfSpeech() +
+                "\nVote Count: " + getVoteCount() +
+                "\n";
     }
 }

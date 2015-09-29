@@ -1,8 +1,14 @@
-//package Definery.src;
+/**
+ * Project: Definery
+ * Class: DefineryDriver
+ * Created by Meesh
+ * 9/28/15
+ */
 
 public class DefineryDriver {
 
     public static void main(String[] args) {
-        Entry entry = new Entry();
+        Definery definery1 = new Definery();
+        definery1.run();
     }
 }

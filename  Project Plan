@@ -57,9 +57,7 @@ In a world full of words which give us more ways to describe the things we
 already have names for, we out it to ourselves to start naming the subtleties
  in life for which we do not. Definery will make that happen.
 
-
-
-
+********************************************************************************
 
 'Definery' Dictionary Submittal Tool Project Plan
 ~~ More precisely, a vague idea of how i want to go about this~~~
@@ -109,57 +107,73 @@ already have names for, we out it to ourselves to start naming the subtleties
   **-Consider a Read-Only view for parties that are interested in what's
   coming up, but don't wish to sign up.
 
-**********
+********************************************************************************
 
--Java Page/Class Mockup
+Java Page/Class Mockup
+
+**All Users**
     -Home
-        -Login/Create Account.class
         -Submit.jsp
-        -Entry Lists.jsp
+            -'You must be logged in to submit a new Entry!'
+        -EntryLists.jsp
+            -Entry.jsp
+                -outputObjectReport.class
+                    -object.data
+            -outputEntryList.class
+            -sortResults.class
+        -Login.jsp
+            -submitUserCredentials.class
+                -if (exists=false) {
+                    -createNewUser.class
+                } else if (exists=true and match=false) {
+                    'A different account with this name exists or the
+                    password is incorrect'
+                } else if (exists=true and match=true) {
+                    -refreshPageWithAccess.class
+                    -loadUserProfile.class
+
+**Logged In Users**
+    -Home
+        -Submit.jsp
+            -createNewObject.class
+                -submitToDatabase.class
+        -EntryLists.jsp
+            -Entry.jsp
+                -outputObjectReport.class
+
+                    -if (voted=false) {
+                        -object.data
+                        -object.vote
+                    } else {
+                        -object.data
+                    }
+            -outputEntryList.class
+            -sortResults.class
+        -LogOut.jsp?
         -Account.jsp
-
-    -Submit
-        -SubmitEntry.jsp
-        -GetEntryInformation.class
-        -PostEntryInformation.class
-
-    -Entry Lists
-        -Top.jsp
-            -ListEntries.class(objects sorted by highest vote count)
-            -Voter.class
-        -New.jsp
-            -ListEntries.class(sorted by date)
-            -Voter.class
-        -Hot.jsp
-            -ListEntries.class(sorted by vote density in a given time frame?)
-            -Voter.class
-
-        *On second thought, this could just as easily be one page displaying
-        all results, with a dropdown menu with options to sort results by a
-        certain property, and choosing one refreshes the page and displays
-        the same information accordingly
-
-    -Entry Page
-        -Entry.jsp (displays Entry object)
-        -Voter.class
-      **-Modify.class
-
-    -Personal Account
-        -PersonalAccount.jsp
-        -GetAccountInformation.class
-        -ManageAccount.class
+            -outputUserReport.class
+                -user.data
+                -user.submittedEntries
+                    -Entry.jsp
 
 
-  **Entry Object**
-        -Word
-        -Submitter
-        -Date Submitted/Age
-        -Definition
-        -Pronunciation
-        -Part of Speech
-        -Usage Examples
-        -Variations
-        -Vote Count
+<<Entry Object/ Table>>
+    -word (PK)
+    -definition
+    -part_of_speech(pos)
+    -pronunciation
+    -usage_and_variations
+    -submitter (FK user)
+    -date_submitted/age
+    -vote_count
+
+<<User Object>>
+    -username (PK)
+    -password
+    -user_data
+        -account_submitted_date/age
+        -submitted_entries (FK entry)
+        -voted_entries (list of ids)
 
 ***************************************************************
 
