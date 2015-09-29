@@ -1,0 +1,187 @@
+Enterprise Java Fall '15
+Individual Development Project
+Mitch Gundrum
+9/21/15
+
+It almost goes without saying that the world were living in is facilitated by
+ by continuously more impressive technological methods of communication, and
+ that without such communication on a global scale, we would not be able to
+ share and develop ideas nearly as effectively. One important thing to note
+ about these evermore integrated systems is that at the core of it all, our
+ methods are quite useless without the words and ideas we share over them.
+ Even the concept of a brain-to-text interface, a future technology that
+ would change communication forever, the words we generate are the most
+ important aspect of the technology.
+
+ For me, the problem has not necessarily been a lack of words to choose from,
+  but rather a lack of the proper ones for the plethura of unique situations
+our lives provide us and challenge us with. Unlike java code, one could
+endlessly hone in on defining the essence of a concept by simply throwing
+more words at it - by using ideas we already have names for and comparing.
+However, much like java, there always exists a way to make the concept
+clearer but cutting out the fluff and giving it its own name; its own essence
+ and implementation; its own definition.
+
+And these are for the people who use them to decide upon.
+
+The holdup here is that people, for good reason, hesitate to use
+unestablished words to avoid the inevitable misunderstandings it can bring
+about. Perhaps you have indeed found the perfect word to describe and emulate
+ the special satisfying feeling associated with hitting every green light on a
+ street or sidewalk and thus being allowed to get to you destination without
+stopping. Alas, until others associate your word with such a feeling, you
+have nothing but jargon. The key to creating words is establishing
+relatability and generating use of the word. The surest sign of having
+achieved such a status is the inclusion of a word in a standard english
+dictionary.
+
+'Definery' is a crowd-powered dictionary word-submittal tool that allows
+users to submit a new dictionary entry for public review, modification,
+impression and, ultimately implementation. Unique verified users to the site
+submit and vote on entries which include a word and its definition, part of
+speech, usage, variations, and other aspects in order to communally promote
+excitement and personal involvement in lexicography and the development of
+the english language. Entries can be sorted by most recent, trending and most
+popular, the latter of which is basically the dynamic waiting list for words
+ about to enter the dictionary after reaching a certain vote threshhold
+ (this is based on a Ted talk I saw from a dictionary writer a while back,
+ who suggested that the usage is the most important aspect of determining
+ which words get put in, but that there might be some actual floating value
+ for sufficient usage - somewhere around 300,000 people. App entries at the
+ top of this list are ever approaching that number, and at a certain point,
+ or by some agreement with the dictionary community at large, the top words
+ are added to a real dictionary, and serve their purpose by defining more
+ properly a concept for general use).
+
+In a world full of words which give us more ways to describe the things we
+already have names for, we out it to ourselves to start naming the subtleties
+ in life for which we do not. Definery will make that happen.
+
+
+
+
+
+'Definery' Dictionary Submittal Tool Project Plan
+~~ More precisely, a vague idea of how i want to go about this~~~
+
+
+-User Interface
+    -Entry Submittal Mechanism
+        -Form w/ fields
+        -Add to Database
+    -Dynamic Voting Mechanism
+    -Sorted Results Pages
+        -Top
+        -New
+        -Hot
+
+-Storage
+    -Entries
+        -Object
+        -Descriptions
+        -Votecount
+        -Metadata
+    -User Accounts
+        -Submitted
+      **-Edited ---------> Yeah, so I'm realizing this might provide so
+            conceptual hindrances, namely if you allow editing, you cant be
+            sure about what you're voting for as it might change after the
+            fact, unless some other failsafe is implemented. Best I can think
+            is a 'WIP' stage for each entry, on their own list page, which
+            are in the editing mode and have not yet attained an appropriate
+            submittal state. Since I haven't hashed out the details of such
+            an intermediary step, I'd like to base the project on the idea
+            that anyone submitting words to a dictionary and patient enough
+            to wait for 300,000 or more votes to come in for it will take the
+             time to write out a proper entry to being with, and in this way,
+            good submissions will be upvoted for their merit, and shitposts
+            or poorly built entries will fall into the abyss.
+        -Login Info
+            -Username
+            -Password
+            -Connection to account page?
+
+-User Login
+    -3 Step Email Verified
+    -Login to session
+    -Personal Account Page
+
+  **-Consider a Read-Only view for parties that are interested in what's
+  coming up, but don't wish to sign up.
+
+**********
+
+-Java Page/Class Mockup
+    -Home
+        -Login/Create Account.class
+        -Submit.jsp
+        -Entry Lists.jsp
+        -Account.jsp
+
+    -Submit
+        -SubmitEntry.jsp
+        -GetEntryInformation.class
+        -PostEntryInformation.class
+
+    -Entry Lists
+        -Top.jsp
+            -ListEntries.class(objects sorted by highest vote count)
+            -Voter.class
+        -New.jsp
+            -ListEntries.class(sorted by date)
+            -Voter.class
+        -Hot.jsp
+            -ListEntries.class(sorted by vote density in a given time frame?)
+            -Voter.class
+
+        *On second thought, this could just as easily be one page displaying
+        all results, with a dropdown menu with options to sort results by a
+        certain property, and choosing one refreshes the page and displays
+        the same information accordingly
+
+    -Entry Page
+        -Entry.jsp (displays Entry object)
+        -Voter.class
+      **-Modify.class
+
+    -Personal Account
+        -PersonalAccount.jsp
+        -GetAccountInformation.class
+        -ManageAccount.class
+
+
+  **Entry Object**
+        -Word
+        -Submitter
+        -Date Submitted/Age
+        -Definition
+        -Pronunciation
+        -Part of Speech
+        -Usage Examples
+        -Variations
+        -Vote Count
+
+***************************************************************
+
+-Program runs
+-Populate array of all entry objects from database
+-Web pages are displayed to user
+--Home page displays only links to other pages
+---List Page displays all entry objects in database (dropdown sorts and
+refreshes list based on votecount, date)
+----Entry page is only available through List page by selecting a particular
+object. After selecting the object, its information is posted to its own page
+. Functionality here is the vote mechanism and links to return to Home/List
+
+---Submit page holds a form to create a new Entry object and submit it to the
+ database (Stay on page, print success/failure message). Submit is only
+ available if the user is logged in, otherwise only the List page is avialble
+  without vote functionality.
+
+
+
+Tentative Project Schedule:
+
+1. Set up user interface
+2. Set up entry object database/ submit to database
+3. Implement list sort options by property
