@@ -1,0 +1,53 @@
+Definery - Dictionary Entry Application
+Enterprise Java - Individual Project
+Weekly Journal
+
+
+Week 3: Project Conceptualization/ Frameworking
+
+  So this is a project that I;ve been looking to start for some time, and this
+course gave me the necessary kick in the pants if you will to throw some
+serious effort behind it. After hearing the TED talk regarding words getting
+into the dictionary and becoming 'real', I realized that there needed to be a
+dedicated application to facilitate this idea in order to convince the world
+at large that language is exactly what we make it, so lets MAKE it.
+
+  This week was spent planning out the project, including writing out a solid
+concept of what I want the application to do, along with a few ideas on how I
+wanted to achieve it. This quickly led to a more outlined, conceptual
+approach to the project, such as setting up a framework for the pages the
+site will require along with the major 'classes' or functionality modules
+which each will implement. The project should include two databases, one for
+users and one for entry objects, and I laid out the elements that I
+perceive each of these objects/ databases using. In short, I wanted to have
+a lego-manual for the project: it shows all the pieces that are needed,
+and how they will go together, leaving only the actual piecing together of
+the individual elements. And lots of code :)
+
+Week 4: Class and JSP Creation/ Framework Re-work
+
+  Of course upon actually trying to put these ideas into a physical digital
+entity, other issues/needs for the project became apparent. Through out the
+week I added classes to the project to get something to work from, hoping to
+go from there once a had a basic infrastructure. I drew lots of comparisons
+to projects from past java classes and in fact a good bit of code from them
+as well. As different facets of the project became apparent, and specific
+functionality of other aspects came to light, my original framework has
+become a running blueprint for the pages, classes and objects to be
+implemented into the project.
+
+  I was able to test out some basic aspects of the program by hardcoding a few
+'User' and 'Entry' objects and putting them into arrays, though these objects
+will be eventually be read from two database or stored in an xml file.
+Still, being able to see the output of each type, even in terminal, is
+refreshing amidst the frantics of this course so far. I'd like to be able to
+dedicate all of my time to this project, but there are many other things to
+learn at the same time! The plan for the next few days is to set up the
+user interface, that is the webpages that the user will access the
+application through. I have most of the JSPs created in their basic form,
+but next I'd to add the page and form elements that will serve to take in
+user input, and hopefully get a form to take information in and spit it
+back out to the page, without worrying about the database that will
+eventually be in between. I'm anxious and excited!
+
+Week 5:
