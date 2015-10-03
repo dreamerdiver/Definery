@@ -11,9 +11,12 @@
       <title>Submit Entry</title>
   </head>
   <body>
-    <ul>
-      <li><a href="index.jsp">Home</a></li>
-      <li><a href="lists.jsp">View Pending Definitions</a></li>
-    </ul>
+    <form>
+      <h1>Write your Entry in the form below</h1>
+      <input type="text" name="submission"><br />
+      <input type="text" name="username"><br />
+      <input type="submit"><br />
+      <a href="index.jsp">Home</a>
+    </form>
   </body>
 </html>

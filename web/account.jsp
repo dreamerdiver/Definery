@@ -12,10 +12,11 @@
   </head>
   <body>
     <ul>
+      <h1>this is the user account page. logged in as user</h1>
       <li><a href="index.jsp">Home</a></li>
       <li><a href="submit.jsp">Submit a New Definition</a></li>
-      <li><a href="lists.jsp">View Pending Definitions</a></li>
-      <!--<li><a href="logout.jsp">Log Out</a></li>-->
+      <li><a href="lists.jsp">View Lists</a></li>
+      <li><a href="logout.jsp">Log Out</a></li>
     </ul>
   </body>
 </html>

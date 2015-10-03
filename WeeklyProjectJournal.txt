@@ -5,7 +5,7 @@ Weekly Journal
 
 Week 3: Project Conceptualization/ Frameworking
 
-  So this is a project that I;ve been looking to start for some time, and this
+  So this is a project that I've been looking to start for some time, and this
 course gave me the necessary kick in the pants if you will to throw some
 serious effort behind it. After hearing the TED talk regarding words getting
 into the dictionary and becoming 'real', I realized that there needed to be a
@@ -23,6 +23,7 @@ perceive each of these objects/ databases using. In short, I wanted to have
 a lego-manual for the project: it shows all the pieces that are needed,
 and how they will go together, leaving only the actual piecing together of
 the individual elements. And lots of code :)
+
 
 Week 4: Class and JSP Creation/ Framework Re-work
 
@@ -49,5 +50,6 @@ but next I'd to add the page and form elements that will serve to take in
 user input, and hopefully get a form to take information in and spit it
 back out to the page, without worrying about the database that will
 eventually be in between. I'm anxious and excited!
+
 
 Week 5:

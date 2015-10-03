@@ -163,7 +163,7 @@ Java Page/Class Mockup
     -part_of_speech(pos)
     -pronunciation
     -usage_and_variations
-    -submitter (FK user)
+    -submitter (FK user/username)
     -date_submitted/age
     -vote_count
 
@@ -172,8 +172,8 @@ Java Page/Class Mockup
     -password
     -user_data
         -account_submitted_date/age
-        -submitted_entries (FK entry)
-        -voted_entries (list of ids)
+        -submitted_entries (FK entry/submitter)
+        -voted_entries (FK entry/word)
 
 ***************************************************************
 
@@ -189,7 +189,7 @@ object. After selecting the object, its information is posted to its own page
 
 ---Submit page holds a form to create a new Entry object and submit it to the
  database (Stay on page, print success/failure message). Submit is only
- available if the user is logged in, otherwise only the List page is avialble
+ available if the user is logged in, otherwise only the List page is available
   without vote functionality.
 
 

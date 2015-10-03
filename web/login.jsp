@@ -10,11 +10,14 @@
 <head>
     <title>Login/ Create Account</title>
 </head>
-<body>
-  <ul>
-    <li><a href="submit.jsp">Submit a New Definition</a></li>
-    <li><a href="lists.jsp">View Pending Definitions</a></li>
-    <li><a href="index.jsp">Home</a></li>
-  </ul>
-</body>
+  <body>
+
+      <form action="j_security_check" method="post">
+        <h1>Login or create an account</h1>
+        <input type="text" name="j_username"><br />
+        <input type="password" name="j_password"><br />
+        <input type="submit"><br />
+        <a href="index.jsp">Home</a>
+      </form>
+  </body>
 </html>

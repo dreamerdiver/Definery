@@ -14,23 +14,32 @@ import java.util.Date;
 public class Definery {
     private ArrayList<Entry> entries;
     public ArrayList<User> users;
+    public ArrayList<Entry> userEntries;
+
+    String word;
+    String definition;
+    String submitter;
 
     public void run() {
-        populateDefineryDatabase();
+        populateDefineryDatabase("word", "def", "user");
         populateUserDatabase();
         outputEntryReport();
         outputUserReport();
     }
 
-    public void populateDefineryDatabase() {
+    public void populateDefineryDatabase(String word, String definition,
+                                         String submitter) {
         entries = new ArrayList<>();
+        this.word = word;
+        this.definition = definition;
+        this.submitter = submitter;
 
         Entry entry = new Entry();
             entry.setWord("assetious");
             entry.setDefinition("valuable");
             entry.setPartOfSpeech("adjective");
             entry.setVoteCount(0);
-            entry.setSubmitter("dreamerdiver");
+            //entry.setSubmitter("dreamerdiver");
         Entry entry1 = new Entry();
             entry1.setWord("lumiphilic");
             entry1.setDefinition("having an attraction to light");
@@ -41,15 +50,20 @@ public class Definery {
             entry2.setDefinition("to make someone smile");
             entry2.setPartOfSpeech("verb");
             entry2.setSubmitter("dreamerdiver");
+        Entry entry3 = new Entry();
+            entry3.setWord(word);
+            entry3.setDefinition(definition);
+            entry3.setSubmitter(submitter);
 
             entries.add(entry);
             entries.add(entry1);
             entries.add(entry2);
+            entries.add(entry3);
     }
 
     public void populateUserDatabase() {
         users = new ArrayList<>();
-        ArrayList<Entry> userEntries = new ArrayList<>();
+        userEntries = new ArrayList<>();
         Entry entry;
 
         User user = new User();
@@ -63,7 +77,6 @@ public class Definery {
                     }
                 }
             user.setSubmittedEntries(userEntries);
-
             users.add(user);
     }
 
@@ -76,12 +89,14 @@ public class Definery {
         }
     }
 
-    public void outputUserReport() {
+    public ArrayList outputUserReport() {
         User user;
 
         for (Object user1 : users) {
             user = (User) user1;
             System.out.println(user.createTestUserOutput());
         }
+        System.out.println(userEntries);
+        return users;
     }
 }

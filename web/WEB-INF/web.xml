@@ -3,4 +3,66 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+
+    <servlet>
+        <servlet-name>TestServlet</servlet-name>
+        <servlet-class>ServletTest</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestServlet</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Admin</web-resource-name>
+            <url-pattern>/admin.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>admin</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Account</web-resource-name>
+            <url-pattern>/account.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>user</role-name>
+            <role-name>admin</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+   <!-- <security-constraint>
+    <web-resource-collection>
+        <web-resource-name>Lists</web-resource-name>
+        <url-pattern>/lists.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+        <role-name>defineryAdmin</role-name>
+        <role-name>defineryUser</role-name>
+        <role-name>defineryGuest</role-name>
+    </auth-constraint>
+    </security-constraint> -->
+
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Submit</web-resource-name>
+            <url-pattern>/submit.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>admin</role-name>
+            <role-name>user</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <form-login-config>
+            <form-login-page>/login.jsp</form-login-page>
+            <form-error-page>/failedLogin.jsp</form-error-page>
+        </form-login-config>
+    </login-config>
+
 </web-app>
