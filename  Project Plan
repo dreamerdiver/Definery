@@ -163,6 +163,7 @@ Java Page/Class Mockup
     -part_of_speech(pos)
     -pronunciation
     -usage_and_variations
+    -etymology/roots
     -submitter (FK user/username)
     -date_submitted/age
     -vote_count

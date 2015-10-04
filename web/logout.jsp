@@ -9,6 +9,7 @@
 <html>
     <head>
         <title>User '<%=request.getRemoteUser()%>' has been logged out.</title>
+        <link href="stylesheets/logout.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <h1>User '<%=request.getRemoteUser()%>' has been logged out.</h1>

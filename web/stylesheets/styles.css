@@ -1,0 +1,56 @@
+@font-face {
+    font-family: OratorStd;
+    src: url("fonts/OratorStd.otf") format("opentype");
+}
+@font-face {
+    font-family: Zapfino;
+    src: url("fonts/Zapfino.ttf") format("truetype");
+}
+
+
+body {
+    padding: 10px 10px;
+    margin: 0;
+    font-family: Tahoma, Geneva, sans-serif;
+    background-color: gold;
+    /*background-image: url("images/Desert.jpg");*/
+}
+
+#header {
+    display: block;
+    height: 25px;
+    width: 98%;
+    background-color: darkgoldenrod;
+    border: groove 4px goldenrod;
+    text-align: center;
+    margin: auto;
+    box-shadow: -4px 3px 4px white;
+    /*background-image: url(images/header_bg.png);*/
+}
+
+#content {
+    display: block;
+    width: 600px;
+    height: 100%;
+    background-color: darkgoldenrod;
+    border: groove 4px goldenrod;
+    padding: 10px;
+    text-align: center;
+    font-family: Zapfino, serif;
+    font-size: 22px;
+    color: antiquewhite;
+    margin: auto;
+    box-shadow: -4px 3px 4px white;
+}
+
+a {
+    text-align: center;
+    color: black;
+    font-family: OratorStd, serif;
+    font-size: 18px;
+    text-underline: none;
+    padding: 10px;
+    margin: auto;
+    z-index: 0;
+}
+

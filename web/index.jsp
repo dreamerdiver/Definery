@@ -7,15 +7,18 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>Home</title>
-  </head>
-  <body>
-    <ul>
-      <h1>~Definery~</h1>
-      <li><a href="submit.jsp">Submit a New Definition</a></li>
-      <li><a href="lists.jsp">View Lists</a></li>
-      <li><a href="login.jsp">Log In</a></li>
-    </ul>
-  </body>
+    <head>
+        <title>Home</title>
+        <link href="stylesheets/index.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="header">
+            <h1>~Definery~</h1>
+        </div>
+        <div id="content">
+            <a href="submit.jsp">Submit a New Definition</a>
+            <a href="lists.jsp">View Lists</a>
+            <a href="login.jsp">Log In</a>
+        </div>
+    </body>
 </html>
