@@ -7,7 +7,6 @@
     src: url("fonts/Zapfino.ttf") format("truetype");
 }
 
-
 body {
     padding: 100px 100px;
     margin: 0;
@@ -32,7 +31,6 @@ body {
     z-index: -1;
     /*background-image: url(images/header_bg.png);*/
 }
-
 
 #content {
     display: block;
@@ -60,5 +58,4 @@ a {
     padding: 10px;
     margin: auto;
     z-index: 0;
-
 }

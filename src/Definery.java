@@ -36,23 +36,23 @@ public class Definery {
 
         Entry entry = new Entry();
             entry.setWord("assetious");
-            entry.setDefinition("valuable");
+            entry.setPocketDefinition("valuable");
             entry.setPartOfSpeech("adjective");
             entry.setVoteCount(0);
             //entry.setSubmitter("dreamerdiver");
         Entry entry1 = new Entry();
             entry1.setWord("lumiphilic");
-            entry1.setDefinition("having an attraction to light");
+            entry1.setPocketDefinition("having an attraction to light");
             entry1.setPartOfSpeech("adjective");
             entry1.setSubmitter("dreamerdiver");
         Entry entry2 = new Entry();
             entry2.setWord("begrin");
-            entry2.setDefinition("to make someone smile");
+            entry2.setPocketDefinition("to make someone smile");
             entry2.setPartOfSpeech("verb");
             entry2.setSubmitter("dreamerdiver");
         Entry entry3 = new Entry();
             entry3.setWord(word);
-            entry3.setDefinition(definition);
+            entry3.setPocketDefinition(definition);
             entry3.setSubmitter(submitter);
 
             entries.add(entry);

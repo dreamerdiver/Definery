@@ -13,6 +13,15 @@
         <url-pattern>/test</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>AddEntry</servlet-name>
+        <servlet-class>AddEntry</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddEntry</servlet-name>
+        <url-pattern>/addEntry</url-pattern>
+    </servlet-mapping>
+
     <security-constraint>
         <web-resource-collection>
             <web-resource-name>Admin</web-resource-name>

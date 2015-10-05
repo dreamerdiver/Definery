@@ -2,11 +2,11 @@
     font-family: OratorStd;
     src: url("fonts/OratorStd.otf") format("opentype");
 }
+
 @font-face {
     font-family: Zapfino;
     src: url("fonts/Zapfino.ttf") format("truetype");
 }
-
 
 body {
     /*padding: 10px 10px;*/
@@ -48,6 +48,7 @@ h3 {
     font-family: Zapfino, sans-serif;
     color: antiquewhite;
     font-size: 18px;
+    text-align: center;
 }
 
 a {

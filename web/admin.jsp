@@ -13,13 +13,13 @@
     </head>
     <body>
         <div id="header">
-            <h1>stats and secret things</h1>
             <a href="index.jsp">Home</a>
             <a href="submit.jsp">Submit a New Definition</a>
             <a href="lists.jsp">View Lists</a>
             <a href="#">Submitted</a>
             <a href="#">Voted</a>
             <a href="logout.jsp">Log Out</a>
+            <h1>stats and secret things</h1>
         </div>
         <div id="content">
             <h1>stats and secret things</h1>
