@@ -5,14 +5,14 @@ Weekly Journal
 
 Week 3: Project Conceptualization/ Frameworking
 
-  So this is a project that I've been looking to start for some time, and this
+    So this is a project that I've been looking to start for some time, and this
 course gave me the necessary kick in the pants if you will to throw some
 serious effort behind it. After hearing the TED talk regarding words getting
 into the dictionary and becoming 'real', I realized that there needed to be a
 dedicated application to facilitate this idea in order to convince the world
 at large that language is exactly what we make it, so lets MAKE it.
 
-  This week was spent planning out the project, including writing out a solid
+    This week was spent planning out the project, including writing out a solid
 concept of what I want the application to do, along with a few ideas on how I
 wanted to achieve it. This quickly led to a more outlined, conceptual
 approach to the project, such as setting up a framework for the pages the
@@ -27,7 +27,7 @@ the individual elements. And lots of code :)
 
 Week 4: Class and JSP Creation/ Framework Re-work
 
-  Of course upon actually trying to put these ideas into a physical digital
+    Of course upon actually trying to put these ideas into a physical digital
 entity, other issues/needs for the project became apparent. Through out the
 week I added classes to the project to get something to work from, hoping to
 go from there once a had a basic infrastructure. I drew lots of comparisons
@@ -37,7 +37,7 @@ functionality of other aspects came to light, my original framework has
 become a running blueprint for the pages, classes and objects to be
 implemented into the project.
 
-  I was able to test out some basic aspects of the program by hardcoding a few
+    I was able to test out some basic aspects of the program by hardcoding a few
 'User' and 'Entry' objects and putting them into arrays, though these objects
 will be eventually be read from two database or stored in an xml file.
 Still, being able to see the output of each type, even in terminal, is
@@ -52,4 +52,43 @@ back out to the page, without worrying about the database that will
 eventually be in between. I'm anxious and excited!
 
 
-Week 5:
+Week 5: User Logon/ Data Objects/ Stylesheets and Navigation/ JDBC Setup
+
+The biggest success this past week was definitely the login functionality,
+even if it is only using hard-coded users at this point. The ability to limit
+access to certain pages based on the web.xml file and the tomcat config
+files gives this fledgling application a much more professional feel, and
+I'm really excited to be able to connect a database to this to read in/
+allow registered users to the site, as well as allowing new users to join
+this database using some of the functionality from the employee project from
+advanced java. Currently, the JDBC implementation is still in the works and
+I'm having difficulty working out which pieces need to go where/ accessing
+mysql, but once this piece is implemented, not only will it make up a large
+portion of the app on it's own, but the how-to will lead into the adding/
+posting of entry objects to the database as well.
+
+Creating these entry objects now is done through the submit.jsp and a form
+servlet which should output the item directly to this page, though eventually
+it will simply get added to the database, all of which is displayed on lists.jsp.
+
+Major changes to the app also include the addition of stylesheets and
+formatting for each page, including the login and login failed pages which
+give insight into who's logged in and how to resolve it. All links route
+appropriately apart from the 'Voted' and 'Submitted' links on account.jsp, as
+ these both pull in either entry objects or the ids thereof for each user,
+ all of which rely on the databases.
+
+Major initiative for the future are to add comments and testing classes to all
+substantial methods and to sort out this JDBC nonsense. I'm not sure where
+the confusion lies, but logging into mysql is pulling teeth, which prevents
+me even from building out the databases in spite of the fact that the code to
+implement them hasn't been added yet. Once both the user and entry databases
+are functional, tests will be done to ensure authentication is possible and
+that users/ entries can be added. At this point, logic will be needed to
+grab all relevant account information from the database for a particular
+user's account.jsp, as well as to sort and display lists based on certain
+attributes. To simplify:
+        1. Connect to mysql
+        2. Connect JDBC to classes
+        3. Test additions/ authentication
+        4. Display database object information
