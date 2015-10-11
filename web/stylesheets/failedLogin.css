@@ -9,8 +9,8 @@
 
 
 body {
-    padding: 100px 100px;
-    margin: 10px;
+    padding: 10px 10px;
+    margin: 0;
     font-family: Tahoma, Geneva, sans-serif;
     background-color: gold;
     /*background-image: url("images/Desert.jpg");*/
@@ -19,13 +19,9 @@ body {
 #header {
     display: block;
     height: 32px;
-    width: 80%;
+    width: 98%;
     background-color: darkgoldenrod;
     border: groove 4px goldenrod;
-    padding: 10px;
-    font-family: Zapfino, serif;
-    font-size: 18px;
-    color: antiquewhite;
     text-align: center;
     margin: auto;
     box-shadow: -4px 3px 4px white;
@@ -35,13 +31,13 @@ body {
 #content {
     display: block;
     width: 600px;
-    height: 25%;
+    height: 100%;
     background-color: darkgoldenrod;
     border: groove 4px goldenrod;
     padding: 10px;
     text-align: center;
     font-family: Zapfino, serif;
-    font-size: 22px;
+    font-size: 18px;
     color: antiquewhite;
     margin: auto;
     box-shadow: -4px 3px 4px white;

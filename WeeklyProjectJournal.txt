@@ -92,3 +92,6 @@ attributes. To simplify:
         2. Connect JDBC to classes
         3. Test additions/ authentication
         4. Display database object information
+
+
+Week 6:

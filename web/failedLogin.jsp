@@ -12,11 +12,10 @@
         <link href="stylesheets/failedLogin.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div id="header">
-            <h2>"All Whammies. Sorry bout that."</h2>
-            <p>'Login Failed'</p>
-        </div>
+        <div id="header"></div>
         <div id="content">
+            <h2>"All Whammies. Sorry bout that."</h2>
+            <p>'Login Failed - Password was incorrect, or the username already exists'</p>
             <a href="login.jsp">Try Again</a>
         </div>
     </body>

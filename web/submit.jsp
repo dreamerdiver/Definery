@@ -7,10 +7,13 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
+
 <html>
     <head>
         <title>Submit Entry</title>
         <link href="stylesheets/submit.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="reportEntryAttempt.js"></script>
+
     </head>
     <body>
         <div id="header">
@@ -21,9 +24,7 @@
         </div>
         <div id="content">
             <h3>Write your Entry in the form below</h3>
-            <form id="form" name="employeeAdd"
-                  action="${pageContext.request.contextPath}/addEntry"
-                  method="post">
+            <form id="form" name="addEntry" action="submit.jsp#" autocomplete="off">
                 <label for="word">Word: </label>
                     <input type="text" name="word" id="word" maxlength="30"><br />
                 <label for="pos">Part of Speech: </label>
@@ -44,9 +45,12 @@
                 <h3>
                     ${submissionMessage}
                 </h3><br />
-                <input type="submit"><br />
+                <input type="submit" id="submitEntry" value="Submit"><br />
             </form>
+            <div id="outputDiv"></div>
         </div>
-
     </body>
+    <script>
+        init();
+    </script>
 </html>
