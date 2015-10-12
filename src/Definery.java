@@ -5,11 +5,9 @@
  * 9/28/15
  */
 
-import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion;
 
-import java.util.ArrayList;
-import java.util.Objects;
-import java.util.Date;
+import src.lists.Entry;
+import java.util.*;
 
 public class Definery {
     private ArrayList<Entry> entries;

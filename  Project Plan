@@ -39,15 +39,15 @@ dictionary.
 users to submit a new dictionary entry for public review, modification,
 impression and, ultimately implementation. Unique verified users to the site
 submit and vote on entries which include a word and its definition, part of
-speech, usage, variations, and other aspects in order to communally promote
+speech, exampleUsage, variations, and other aspects in order to communally promote
 excitement and personal involvement in lexicography and the development of
 the english language. Entries can be sorted by most recent, trending and most
 popular, the latter of which is basically the dynamic waiting list for words
  about to enter the dictionary after reaching a certain vote threshhold
  (this is based on a Ted talk I saw from a dictionary writer a while back,
- who suggested that the usage is the most important aspect of determining
+ who suggested that the exampleUsage is the most important aspect of determining
  which words get put in, but that there might be some actual floating value
- for sufficient usage - somewhere around 300,000 people. App entries at the
+ for sufficient exampleUsage - somewhere around 300,000 people. App entries at the
  top of this list are ever approaching that number, and at a certain point,
  or by some agreement with the dictionary community at large, the top words
  are added to a real dictionary, and serve their purpose by defining more
@@ -114,7 +114,7 @@ Java Page/Class Mockup
 **All Users**
     -Home
         -Submit.jsp
-            -'You must be logged in to submit a new Entry!'
+            -Login.jsp
         -EntryLists.jsp
             -Entry.jsp
                 -outputObjectReport.class
@@ -149,7 +149,7 @@ Java Page/Class Mockup
                     }
             -outputEntryList.class
             -sortResults.class
-        -LogOut.jsp?
+        -Logout.jsp
         -Account.jsp
             -outputUserReport.class
                 -user.data
@@ -163,7 +163,7 @@ Java Page/Class Mockup
     -part_of_speech(pos)
     -pronunciation
     -usage_and_variations
-    -etymology/roots
+    -etymologyRoots/roots
     -submitter (FK user/username)
     -date_submitted/age
     -vote_count
@@ -199,4 +199,4 @@ Tentative Project Schedule:
 
 1. Set up user interface
 2. Set up entry object database/ submit to database
-3. Implement list sort options by property
+3. Implement list sortByer options by property

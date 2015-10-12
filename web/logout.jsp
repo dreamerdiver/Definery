@@ -12,8 +12,12 @@
         <link href="stylesheets/logout.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <h1>User '<%=request.getRemoteUser()%>' has been logged out.</h1>
-        <% session.invalidate(); %><br/><br/>
-        <a href="index.jsp">Return to Home</a>
+        <div id="header">
+            <% session.invalidate(); %>
+        </div>
+        <div id="content">
+            <h2>User '<%=request.getRemoteUser()%>' has been logged out.</h2>
+            <a href="index.jsp">Return to Home</a>
+        </div>
     </body>
 </html>

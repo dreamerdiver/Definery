@@ -3,19 +3,20 @@
 <%--
   Created by IntelliJ IDEA.
   User: Meesh
-  Date: 9/28/15
-  Time: 7:50 PM
+  Date: 10/12/15
+  Time: 2:46 AM
   To change this template use File | Settings | File Templates.
 --%>
+
 <%--
-    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <html>
     <head>
-         <title>Lists</title>
-         <link href="stylesheets/lists.css" rel="stylesheet" type="text/css"/>
+        <title>Entry ''</title>
+        <link href="stylesheets/lists.css" rel="stylesheet" type="text/css"/>
     </head>
         <div id="header">
             <a href="index.jsp">Home</a>
@@ -27,42 +28,34 @@
             <a href="persona.jsp">Hi, <%=request.getRemoteUser()%></a>
         <%}%>
         </div>
-        <div id="sortByDropdown">
-            <form id="form" action="${pageContext.request.contextPath}/displayLists">
-                <label for="sortByOptions">Sort By: </label>
-                <select id="sortByOptions">
-                    <option name="sortParam" value="newest">Newest</option>
-                    <option name="sortParam" value="oldest">Oldest</option>
-                    <option name="sortParam" value="voteCount">Most Votes</option>
-                    <option name="sortParam" value="alphabetical">Alphabetical</option>
-                </select>
-                <input type="submit" id="sortBy" value="Go">
-            </form>
-        </div>
         <div id="content">
+            <h1>these are the lists. login to submit</h1>
             <c:choose>
                 <c:when test="${entries.size() > 0}">
-                    <p>Found Entries: </p>
+                    <p>Found Employees: </p>
                     <table border="1px solid black">
                         <c:forEach var="entry" items="${entries}">
                             <tr>
                                 <td>${entry.word}</td>
-                                <td colspan="2">${entry.pocketDefinition}</td>
-                            </tr>
-                            <tr>
-                                <td>${entry.voteCount}</td>
+                                <td>${entry.partOfSpeech}</td>
+                                <td>${entry.pronunciation}</td>
+                                <td>${entry.pocketDefinition}</td>
+                                <td>${entry.completeDefinition}</td>
+                                <td>${entry.exampleUsage}</td>
+                                <td>${entry.variations}</td>
+                                <td>${entry.etymologyRoots}</td>
                                 <td>${entry.submitter}</td>
                                 <td>${entry.submittedDate}</td>
+                                <td>${entry.voteCount}</td>
                             </tr>
                         </c:forEach>
                     </table>
                 </c:when>
                 <c:otherwise>
-                    <p>No Entries Found</p>
+                    <p>No Employees Found</p>
                 </c:otherwise>
             </c:choose>
         </div>
     </body>
 </html>
-
 

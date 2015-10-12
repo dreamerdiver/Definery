@@ -27,14 +27,14 @@ function reportEntryAttempt(){
     //entry.push(word, pos, pronunciation, pocketDefinition, completeDefinition, usage, variations, etymology);
     //var entryValue = entry.valueOf();
 
-    var sampleEntry = word + "<br />" +
-                      pos + "<br />" +
-                      pronunciation + "<br />" +
-                      pocketDefinition + "<br />" +
-                      completeDefinition + "<br />" +
-                      usage + "<br />" +
-                      variations + "<br />" +
-                      etymology + "<br />";
+    var sampleEntry = "Word: " + word + "<br />" +
+                      "Part of Speech: " + pos + "<br />" +
+                      "Pronunciation: " + pronunciation + "<br />" +
+                      "Pocket Definition: " + pocketDefinition + "<br />" +
+                      "Complete Definition: " + completeDefinition + "<br />" +
+                      "Usage: " + usage + "<br />" +
+                      "Variations: " + variations + "<br />" +
+                      "Etymology/ Roots: " + etymology + "<br />";
 
     testOutput.innerHTML = sampleEntry;
 

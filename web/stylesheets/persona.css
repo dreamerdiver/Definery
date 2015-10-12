@@ -2,11 +2,11 @@
     font-family: OratorStd;
     src: url("fonts/OratorStd.otf") format("opentype");
 }
-
 @font-face {
     font-family: Zapfino;
     src: url("fonts/Zapfino.ttf") format("truetype");
 }
+
 
 body {
     padding: 10px 10px;
@@ -52,10 +52,5 @@ a {
     padding: 10px;
     margin: auto;
     z-index: 0;
-}
-
-#sortByDropdown {
-    display: block;
-    text-align: right;
 }
 

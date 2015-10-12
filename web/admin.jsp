@@ -8,21 +8,22 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
     <head>
-        <title>Admin Page</title>
+        <title>Admin</title>
         <link href="stylesheets/admin.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div id="header">
             <a href="index.jsp">Home</a>
             <a href="submit.jsp">Submit a New Definition</a>
-            <a href="lists.jsp">View Lists</a>
-            <a href="#">Submitted</a>
-            <a href="#">Voted</a>
+            <a href="lists.jsp">Lists</a>
+            <a href="#">Submissions</a>
+            <a href="#">Votes</a>
             <a href="logout.jsp">Log Out</a>
             <h1>stats and secret things</h1>
         </div>
         <div id="content">
             <h1>stats and secret things</h1>
+            <h3>logged in as '<%=request.getRemoteUser()%>'</h3>
         </div>
     </body>
 </html>

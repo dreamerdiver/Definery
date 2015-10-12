@@ -4,15 +4,57 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
 
+<!--
+    *
+    *Servlet Declarations
+    *
+-->
     <servlet>
-        <servlet-name>AddEntry</servlet-name>
-        <servlet-class>AddEntry</servlet-class>
+        <servlet-name>ApplicationStartup</servlet-name>
+        <servlet-class>servlets.ApplicationStartup</servlet-class>
+        <load-on-startup>1</load-on-startup>
     </servlet>
+    <servlet>
+        <servlet-name>DisplayLists</servlet-name>
+        <servlet-class>servlets.DisplayLists</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet>
+        <servlet-name>DisplayEntry</servlet-name>
+        <servlet-class>servlets.DisplayEntry</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SubmitEntry</servlet-name>
+        <servlet-class>servlets.SubmitEntry</servlet-class>
+    </servlet>
+
+<!--
+    *
+    *Servlet Mappings
+    *
+-->
     <servlet-mapping>
-        <servlet-name>AddEntry</servlet-name>
-        <url-pattern>/addEntry</url-pattern>
+        <servlet-name>ApplicationStartup</servlet-name>
+        <url-pattern>/appStart</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DisplayLists</servlet-name>
+        <url-pattern>/displayLists</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DisplayEntry</servlet-name>
+        <url-pattern>/displayEntry</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SubmitEntry</servlet-name>
+        <url-pattern>/submitEntry</url-pattern>
     </servlet-mapping>
 
+<!--
+    *
+    *Security Constraints
+    *
+-->
     <security-constraint>
         <web-resource-collection>
             <web-resource-name>Admin</web-resource-name>
@@ -34,18 +76,6 @@
         </auth-constraint>
     </security-constraint>
 
-   <!-- <security-constraint>
-    <web-resource-collection>
-        <web-resource-name>Lists</web-resource-name>
-        <url-pattern>/lists.jsp</url-pattern>
-    </web-resource-collection>
-    <auth-constraint>
-        <role-name>defineryAdmin</role-name>
-        <role-name>defineryUser</role-name>
-        <role-name>defineryGuest</role-name>
-    </auth-constraint>
-    </security-constraint> -->
-
     <security-constraint>
         <web-resource-collection>
             <web-resource-name>Submit</web-resource-name>
@@ -57,6 +87,24 @@
         </auth-constraint>
     </security-constraint>
 
+    <!-- <security-constraint>
+  <web-resource-collection>
+      <web-resource-name>Lists</web-resource-name>
+      <url-pattern>/lists.jsp</url-pattern>
+  </web-resource-collection>
+  <auth-constraint>
+      <role-name>defineryAdmin</role-name>
+      <role-name>defineryUser</role-name>
+      <role-name>defineryGuest</role-name>
+  </auth-constraint>
+  </security-constraint> -->
+
+
+    <!--
+        *
+        *Login Configs
+        *
+    -->
     <login-config>
         <auth-method>FORM</auth-method>
         <form-login-config>

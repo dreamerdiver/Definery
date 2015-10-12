@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
     <head>
-        <title>Failed Login</title>
+        <title>Login Failed</title>
         <link href="stylesheets/failedLogin.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>

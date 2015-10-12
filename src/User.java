@@ -5,10 +5,8 @@
  * 9/29/15
  */
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Date;
-import java.util.Objects;
+import src.lists.*;
+import java.util.*;
 
 public class User {
     private String username;

@@ -46,9 +46,16 @@ body {
 
 h3 {
     font-family: Zapfino, sans-serif;
-    color: antiquewhite;
+    color: black;
     font-size: 18px;
     text-align: center;
+}
+
+p {
+    font-family: OratorStd, sans-serif;
+    color: antiquewhite;
+    font-size: 18px;
+    text-align: left;
 }
 
 a {

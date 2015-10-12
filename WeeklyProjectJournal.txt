@@ -79,14 +79,14 @@ appropriately apart from the 'Voted' and 'Submitted' links on account.jsp, as
  all of which rely on the databases.
 
 Major initiative for the future are to add comments and testing classes to all
-substantial methods and to sort out this JDBC nonsense. I'm not sure where
+substantial methods and to sortByer out this JDBC nonsense. I'm not sure where
 the confusion lies, but logging into mysql is pulling teeth, which prevents
 me even from building out the databases in spite of the fact that the code to
 implement them hasn't been added yet. Once both the user and entry databases
 are functional, tests will be done to ensure authentication is possible and
 that users/ entries can be added. At this point, logic will be needed to
 grab all relevant account information from the database for a particular
-user's account.jsp, as well as to sort and display lists based on certain
+user's account.jsp, as well as to sortByer and display lists based on certain
 attributes. To simplify:
         1. Connect to mysql
         2. Connect JDBC to classes

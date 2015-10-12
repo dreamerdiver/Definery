@@ -14,7 +14,7 @@
     <body>
         <div id="header">
             <a href="index.jsp">Home</a>
-            <a href="lists.jsp">View Lists as Guest</a>
+            <a href="lists.jsp">View Lists as guest</a>
         </div>
         <div id="content">
             <h3>Login or create an account</h3>
@@ -23,7 +23,7 @@
                     <input type="text" name="j_username" id="j_username"><br />
                 <label for="j_password">Password: </label>
                     <input type="password" name="j_password" id="j_password"><br />
-                <input type="submit"><br />
+                <input type="submit" value="Submit Login"><br />
             </form>
         </div>
   </body>
