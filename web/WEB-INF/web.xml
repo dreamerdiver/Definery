@@ -71,8 +71,8 @@
             <url-pattern>/account.jsp</url-pattern>
         </web-resource-collection>
         <auth-constraint>
-            <role-name>user</role-name>
             <role-name>admin</role-name>
+            <role-name>user</role-name>
         </auth-constraint>
     </security-constraint>
 
@@ -112,5 +112,4 @@
             <form-error-page>/failedLogin.jsp</form-error-page>
         </form-login-config>
     </login-config>
-
 </web-app>
