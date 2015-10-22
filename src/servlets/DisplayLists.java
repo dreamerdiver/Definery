@@ -1,7 +1,7 @@
 package servlets;
 
-import src.lists.*;
 import java.util.*;
+import src.lists.*;
 import java.io.IOException;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -25,19 +25,21 @@ public class DisplayLists extends HttpServlet {
         HttpSession session = request.getSession();
         ServletContext context = getServletContext();
         String sortParam = request.getParameter("sortParam");
+        System.out.println(sortParam);
         Lists lists = (Lists)context.getAttribute("list");
 
-        /*
         Enumeration options = request.getParameterNames();
             while (options.hasMoreElements()) {
                 Object object = options.nextElement();
                 String value = request.getParameter((String)object);
             }
-        */
 
         SortByer sortByer = new SortByer();
         sortByer.setSortType(sortParam);
-            switch (sortParam) {
+        System.out.println("sortbyer.gettype: " + sortByer.getSortType());
+        System.out.println("sortparam: " + sortParam);
+
+            switch (sortByer.getSortType()) {
                 case "newest" :
                     lists.sortListsByNewest(sortByer);
                     break;

@@ -38,7 +38,7 @@ public class Lists {
             classNotFound.printStackTrace();
             return null;
         } catch (SQLException sqlException) {
-            System.err.println("Error in connection.ecting to database " + sqlException);
+            System.err.println("Error in connecting to database " + sqlException);
             sqlException.printStackTrace();
             return null;
         } catch (Exception exception) {

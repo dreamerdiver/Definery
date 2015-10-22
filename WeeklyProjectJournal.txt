@@ -78,7 +78,7 @@ appropriately apart from the 'Voted' and 'Submitted' links on account.jsp, as
  these both pull in either entry objects or the ids thereof for each user,
  all of which rely on the databases.
 
-Major initiative for the future are to add comments and testing classes to all
+Major initiatives for the future are to add comments and testing classes to all
 substantial methods and to sortByer out this JDBC nonsense. I'm not sure where
 the confusion lies, but logging into mysql is pulling teeth, which prevents
 me even from building out the databases in spite of the fact that the code to

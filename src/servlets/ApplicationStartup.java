@@ -28,7 +28,7 @@ public class ApplicationStartup extends HttpServlet {
                 System.out.println("Problem: " + e);
                 e.printStackTrace();
             }
-            context.setAttribute("defineryProperties", properties);
+            context.setAttribute("definery.properties", properties);
         Lists lists = new Lists(properties);
             context.setAttribute("list", lists);
         Entry entry = new Entry(properties);

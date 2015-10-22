@@ -20,7 +20,7 @@
             <a href="index.jsp">Home</a>
             <a href="submit.jsp">Submit a New Definition</a>
         <%if (request.getRemoteUser() == null) {%>
-            <a href="login.jsp">Log In</a>
+            <a href="validLogin.jsp">Log In</a>
         <%} else {%>
             <a href="logout.jsp">Log Out</a>
             <a href="persona.jsp">Hi, <%=request.getRemoteUser()%></a>
@@ -45,8 +45,8 @@
                     <table border="1px solid black">
                         <c:forEach var="entry" items="${entries}">
                             <tr>
-                                <td>${entry.word}</td>
-                                <td colspan="2">${entry.pocketDefinition}</td>
+                                <td colspan="2">${entry.word}</td>
+                                <td>${entry.pocketDefinition}</td>
                             </tr>
                             <tr>
                                 <td>${entry.voteCount}</td>

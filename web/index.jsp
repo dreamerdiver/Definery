@@ -21,7 +21,7 @@
             <a href="submit.jsp">Submit a New Definition</a>
             <a href="lists.jsp">Lists</a>
         <%if (request.getRemoteUser() == null) {%>
-            <a href="login.jsp">Log In</a>
+            <a href="validLogin.jsp">Log In</a>
         <%} else {%>
             <a href="persona.jsp">Persona</a>
             <a href="logout.jsp">Log Out</a>

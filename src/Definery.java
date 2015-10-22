@@ -83,7 +83,7 @@ public class Definery {
 
         for (Object entry1 : entries) {
             entry = (Entry) entry1;
-            System.out.println(entry.createTestEntryOutput());
+            //System.out.println(entry.createTestEntryOutput());
         }
     }
 
@@ -92,9 +92,9 @@ public class Definery {
 
         for (Object user1 : users) {
             user = (User) user1;
-            System.out.println(user.createTestUserOutput());
+            //System.out.println(user.createTestUserOutput());
         }
-        System.out.println(userEntries);
+        //System.out.println(userEntries);
         return users;
     }
 }
