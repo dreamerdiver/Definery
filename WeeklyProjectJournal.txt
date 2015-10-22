@@ -95,3 +95,54 @@ attributes. To simplify:
 
 
 Week 6:
+
+Semester is really chugging along. Alongside the rest of the class projects,
+extracurriculars, and other life happenings, keeping this journal up is easily
+missed, but it is helpful, and so I'll try to backtrack and check back in:
+
+This weeks advances are most notably implementation of multiple new jsps and
+working out functionalities that do not include the entry lists or user
+databases, as I have not managed to work out that connection yet. Jsps set up
+to display submissions, log out, individual entry details page and over lists
+page. Failed/successful logins route successfully. Dynamic html links based on
+whether the user is a guest or logged in. Added properties file to reference for
+database connection and other constants. Added javascript that shows the passing
+of information from the submission form by posting it to the page on submit.
+This is only a model as eventually all submissions will just be passed to the
+database, all of which is displayed on lists.jsp. Created a unique local mysql
+user that has access to all tables, so I have access to that now, though i
+haven't yet finagled managing the database from the app side.
+
+1. Connect JDBC to classes
+2. Add tests/ authentication
+3. Display database entries on lists.jsp
+
+
+Week 7:
+
+Further detail-oriented styling and cleanup of code already laid down, as well
+as references to the employee-add code from Advanced java, and modeling some
+code functionality after those pages, namely employeeAdd (SubmitEntry), and
+display pages. Added a jsp and stylesheet for a login splash page to circumvent
+a login routing issue that came up as a result of the j_security login page
+linking to itself from the home page. Added methods and connections per the
+advanced java employee program to the lists class, namely adding a sort option
+will run different queries on the database based on which option is chosen and
+return that sorted list to the page for display. I still haven't managed to
+determine where the disconnect lies with connecting to my database, which again,
+will open up many more doors as far as the actual display and formatting of the
+database information within the application, but this can only be addressed once
+the connection is made. Barring this, I created an initialInserts.sql document
+to house all of the default entries into the database (words I created), as test
+data, and was able to add all these to te database successfully as well. That
+is, I now have a template to use for adding future submissions to the database,
+I have a database which does contain information that could be used for testing
+out display on the application itself, but my application is not connected to
+said database quite yet. This is again the most pressing goal for the coming
+weeks:
+
+1. JDBC Connection
+2. Testing
+
+
+Week 8:
