@@ -27,9 +27,9 @@ public class DisplayLists extends HttpServlet {
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        //response.setContentType("text/html");
-        //PrintWriter out = response.getWriter();
-        //out.println("Welcome '" + request.getRemoteUser() + "'");
+        response.setContentType("text/html");
+        PrintWriter out = response.getWriter();
+        out.println("Welcome '" + request.getRemoteUser() + "'");
 
         HttpSession session = request.getSession();
         ServletContext context = getServletContext();

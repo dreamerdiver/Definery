@@ -28,10 +28,15 @@ public class Lists {
         Connection connection;
 
         try {
+
+            Class.forName("com.mysql.jdbc.Driver");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/definery", "meesh", "DreamandDive406");
+
+            /*
             Class.forName(properties.getProperty("mysql.driver"));
             connection = DriverManager.getConnection(properties.getProperty("url"),
                     properties.getProperty("mysql.username"),
-                    properties.getProperty("mysql.password"));
+                    properties.getProperty("mysql.password"));*/
 
         } catch (ClassNotFoundException classNotFound) {
             System.err.println("Cannot find database driver ");
