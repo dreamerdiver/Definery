@@ -3,67 +3,63 @@ Individual Development Project
 Mitch Gundrum
 9/21/15
 
-It almost goes without saying that the world were living in is facilitated by
- by continuously more impressive technological methods of communication, and
- that without such communication on a global scale, we would not be able to
- share and develop ideas nearly as effectively. One important thing to note
- about these evermore integrated systems is that at the core of it all, our
- methods are quite useless without the words and ideas we share over them.
- Even the concept of a brain-to-text interface, a future technology that
- would change communication forever, the words we generate are the most
- important aspect of the technology.
+ It almost goes without saying that the world were living in is facilitated by
+continuously more impressive technological methods of communication, and that
+without such communication on a global scale, we would not be able to share and
+develop ideas nearly as effectively. One important thing to note about these
+evermore integrated systems is that at the core of it all, our methods are quite
+useless without the words and ideas we share over them. Even the concept of a
+brain-to-text interface, a future technology that would change communication
+forever, the words we generate are the most important aspect of the technology.
 
  For me, the problem has not necessarily been a lack of words to choose from,
-  but rather a lack of the proper ones for the plethura of unique situations
-our lives provide us and challenge us with. Unlike java code, one could
-endlessly hone in on defining the essence of a concept by simply throwing
-more words at it - by using ideas we already have names for and comparing.
-However, much like java, there always exists a way to make the concept
-clearer but cutting out the fluff and giving it its own name; its own essence
- and implementation; its own definition.
+but rather a lack of the proper ones for the plethora of unique situations our
+lives provide us and challenge us with. Unlike java code, one could endlessly
+hone in on defining the essence of a concept by simply throwing more words at it
+- by using ideas we already have names for and comparing. However, much like
+java, there always exists a way to make the concept clearer but cutting out the
+fluff and giving it its own name; its own essence and implementation; its own
+definition.
 
 And these are for the people who use them to decide upon.
 
-The holdup here is that people, for good reason, hesitate to use
-unestablished words to avoid the inevitable misunderstandings it can bring
-about. Perhaps you have indeed found the perfect word to describe and emulate
- the special satisfying feeling associated with hitting every green light on a
- street or sidewalk and thus being allowed to get to you destination without
-stopping. Alas, until others associate your word with such a feeling, you
-have nothing but jargon. The key to creating words is establishing
-relatability and generating use of the word. The surest sign of having
-achieved such a status is the inclusion of a word in a standard english
-dictionary.
+The holdup here is that people, for good reason, hesitate to use unestablished
+words to avoid the inevitable misunderstandings it can bring about. Perhaps you
+have indeed found the perfect word to describe and emulate the special
+satisfying feeling associated with hitting every green light on a street or
+sidewalk and thus being allowed to get to you destination without stopping.
+Alas, until others associate your word with such a feeling, you have nothing but
+jargon. The key to creating words is establishing relatability and generating
+use of the word. The surest sign of having achieved such a status is the
+inclusion of a word in a standard english dictionary.
 
-'Definery' is a crowd-powered dictionary word-submittal tool that allows
-users to submit a new dictionary entry for public review, modification,
-impression and, ultimately implementation. Unique verified users to the site
-submit and vote on entries which include a word and its definition, part of
-speech, exampleUsage, variations, and other aspects in order to communally promote
-excitement and personal involvement in lexicography and the development of
-the english language. Entries can be sorted by most recent, trending and most
-popular, the latter of which is basically the dynamic waiting list for words
- about to enter the dictionary after reaching a certain vote threshhold
- (this is based on a Ted talk I saw from a dictionary writer a while back,
- who suggested that the exampleUsage is the most important aspect of determining
- which words get put in, but that there might be some actual floating value
- for sufficient exampleUsage - somewhere around 300,000 people. App entries at the
- top of this list are ever approaching that number, and at a certain point,
- or by some agreement with the dictionary community at large, the top words
- are added to a real dictionary, and serve their purpose by defining more
- properly a concept for general use).
+'Definery' is a crowd-powered dictionary word-submittal tool that allows users
+to submit a new dictionary entry for public review, modification, impression and
+ultimately implementation. Unique verified users to the site submit and vote on
+entries which include a word and its definition, part of speech, exampleUsage,
+variations, and other aspects in order to communally promote excitement and
+personal involvement in lexicography and the development of the english
+language. Entries can be sorted by most recent, trending and most popular, the
+latter of which is basically the dynamic waiting list for words about to enter
+the dictionary after reaching a certain vote threshhold (this is based on a TED
+talk I saw from a dictionary writer a while back, who suggested that the usage
+is the most important aspect of determining which words get put in, but that
+there might be some actual floating value for sufficient exampleUsage -
+somewhere around 300,000 people. App entries at the top of this list are ever
+approaching that number, and at a certain point, or by some agreement with the
+dictionary community at large, the top words are added to a real dictionary, and
+serve their purpose by defining more properly a concept for general use).
 
 In a world full of words which give us more ways to describe the things we
-already have names for, we out it to ourselves to start naming the subtleties
- in life for which we do not. Definery will make that happen.
+already have names for, we out it to ourselves to start naming the subtleties in
+life for which we do not. Definery will make that happen.
 
 ********************************************************************************
 
 'Definery' Dictionary Submittal Tool Project Plan
 ~~ More precisely, a vague idea of how i want to go about this~~~
 
-
--User Interface
+-src.project.User Interface
     -Entry Submittal Mechanism
         -Form w/ fields
         -Add to Database
@@ -79,7 +75,7 @@ already have names for, we out it to ourselves to start naming the subtleties
         -Descriptions
         -Votecount
         -Metadata
-    -User Accounts
+    -src.project.User Accounts
         -Submitted
       **-Edited ---------> Yeah, so I'm realizing this might provide so
             conceptual hindrances, namely if you allow editing, you cant be
@@ -99,7 +95,7 @@ already have names for, we out it to ourselves to start naming the subtleties
             -Password
             -Connection to account page?
 
--User Login
+-src.project.User Login
     -3 Step Email Verified
     -Login to session
     -Personal Account Page
@@ -168,7 +164,7 @@ Java Page/Class Mockup
     -date_submitted/age
     -vote_count
 
-<<User Object>>
+<<src.project.User Object>>
     -username (PK)
     -password
     -user_data
@@ -192,8 +188,6 @@ object. After selecting the object, its information is posted to its own page
  database (Stay on page, print success/failure message). Submit is only
  available if the user is logged in, otherwise only the List page is available
   without vote functionality.
-
-
 
 Tentative Project Schedule:
 

@@ -127,7 +127,7 @@ public class Lists {
         try {
             statement = connection.createStatement();
 
-            String IDQueryString ="select * from entries GROUP BY submittedDate DESC";
+            String IDQueryString ="select * from entries GROUP BY submitted_date DESC";
                 System.out.println("IDQueryString: " + IDQueryString);
             resultSet = statement.executeQuery(IDQueryString);
                 System.out.println(resultSet);

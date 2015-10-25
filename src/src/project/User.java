@@ -1,6 +1,6 @@
-/**
+package src.project; /**
  * Project: Definery
- * Class: User
+ * Class: src.project.User
  * Created by Meesh
  * 9/29/15
  */

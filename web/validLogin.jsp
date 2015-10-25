@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Meesh
+  src.project.User: Meesh
   Date: 10/14/15
   Time: 9:37 PM
   To change this template use File | Settings | File Templates.
@@ -12,10 +12,9 @@
     <link href="stylesheets/validLogin.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <div id="header">
-        <h1>Thank You, and Welcome to Definery</h1>
-    </div>
+    <div id="header"></div>
     <div id="content">
+        <h2>Thank You, and Welcome to Definery</h2>
         <a href="lists.jsp">Lists</a>
         <a href="persona.jsp">Persona</a>
         <a href="logout.jsp">Log Out</a>

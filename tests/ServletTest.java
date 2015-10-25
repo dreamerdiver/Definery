@@ -5,6 +5,7 @@
  * 10/3/15
  */
 
+
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -13,7 +14,6 @@ import java.io.PrintWriter;
 import java.util.Enumeration;
 
 public class ServletTest extends HttpServlet {
-
     private static final long serialVersionUID = 1L;
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {

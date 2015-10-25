@@ -1,14 +1,13 @@
-package servlets;
+package src.servlets;
 
-import src.lists.*;
-import java.util.Date;
-import java.io.IOException;
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpSession;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import java.io.*;
+
+import src.lists.Entry;
+import src.lists.Lists;
+
+import java.util.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
 
 /**
  * Project: Definery
@@ -42,8 +41,8 @@ public class SubmitEntry extends HttpServlet {
         entry.setExampleUsage(usage);
         entry.setVariations(variations);
         entry.setEtymologyRoots(etymology);
-        entry.setSubmitter(request.getRemoteUser());
-        entry.setSubmittedDate(new java.util.Date());
+        entry.setSubmitter(submitter);
+        entry.setSubmittedDate(submittedDate);
 
         System.out.println(entry);
 

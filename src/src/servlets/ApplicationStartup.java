@@ -1,4 +1,4 @@
-package servlets;
+package src.servlets;
 
 import src.lists.*;
 import java.io.*;

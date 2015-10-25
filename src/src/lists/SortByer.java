@@ -29,8 +29,8 @@ public class SortByer {
     public List<Entry> getSortedResults() {
         return sortedResults;
     }
-    public void setResultsArray(List<Entry> arrayResults) {
-        this.sortedResults = arrayResults;
+    public void setSortedResults(List<Entry> sortedResults) {
+        this.sortedResults = sortedResults;
     }
 
     public boolean getThisEntry() {

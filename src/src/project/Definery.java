@@ -1,3 +1,5 @@
+package src.project;
+
 /**
  * Project: Definery
  * Class: Definery
@@ -11,7 +13,7 @@ import java.util.*;
 
 public class Definery {
     private ArrayList<Entry> entries;
-    public ArrayList<User> users;
+    public ArrayList<src.project.User> users;
     public ArrayList<Entry> userEntries;
 
     String word;
@@ -67,7 +69,7 @@ public class Definery {
         User user = new User();
             user.setUsername("dreamerdiver");
             user.setPassword("password");
-            //user.setAccountDate();
+            user.setAccountDate(new Date());
                 for (Object entry0 : entries) {
                     entry = (Entry) entry0;
                     if (Objects.equals(entry.getSubmitter(), user.getUsername())){
@@ -83,7 +85,7 @@ public class Definery {
 
         for (Object entry1 : entries) {
             entry = (Entry) entry1;
-            //System.out.println(entry.createTestEntryOutput());
+            System.out.println(entry.createTestEntryOutput());
         }
     }
 
@@ -92,9 +94,9 @@ public class Definery {
 
         for (Object user1 : users) {
             user = (User) user1;
-            //System.out.println(user.createTestUserOutput());
+            System.out.println(user.createTestUserOutput());
         }
-        //System.out.println(userEntries);
+        System.out.println(userEntries);
         return users;
     }
 }

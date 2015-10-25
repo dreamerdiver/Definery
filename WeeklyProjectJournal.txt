@@ -38,7 +38,7 @@ become a running blueprint for the pages, classes and objects to be
 implemented into the project.
 
     I was able to test out some basic aspects of the program by hardcoding a few
-'User' and 'Entry' objects and putting them into arrays, though these objects
+'src.project.User' and 'Entry' objects and putting them into arrays, though these objects
 will be eventually be read from two database or stored in an xml file.
 Still, being able to see the output of each type, even in terminal, is
 refreshing amidst the frantics of this course so far. I'd like to be able to
@@ -52,7 +52,7 @@ back out to the page, without worrying about the database that will
 eventually be in between. I'm anxious and excited!
 
 
-Week 5: User Logon/ Data Objects/ Stylesheets and Navigation/ JDBC Setup
+Week 5: src.project.User Logon/ Data Objects/ Stylesheets and Navigation/ JDBC Setup
 
 The biggest success this past week was definitely the login functionality,
 even if it is only using hard-coded users at this point. The ability to limit

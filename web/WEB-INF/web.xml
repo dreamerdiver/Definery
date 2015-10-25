@@ -11,20 +11,19 @@
 -->
     <servlet>
         <servlet-name>ApplicationStartup</servlet-name>
-        <servlet-class>servlets.ApplicationStartup</servlet-class>
-        <load-on-startup>1</load-on-startup>
+        <servlet-class>src.servlets.ApplicationStartup</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>DisplayLists</servlet-name>
-        <servlet-class>servlets.DisplayLists</servlet-class>
+        <servlet-class>src.servlets.DisplayLists</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>DisplayEntry</servlet-name>
-        <servlet-class>servlets.DisplayEntry</servlet-class>
+        <servlet-class>src.servlets.DisplayEntry</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>SubmitEntry</servlet-name>
-        <servlet-class>servlets.SubmitEntry</servlet-class>
+        <servlet-class>src.servlets.SubmitEntry</servlet-class>
     </servlet>
 
 <!--

@@ -1,3 +1,5 @@
+package src.project;
+
 /**
  * Project: Definery
  * Class: DefineryTests
@@ -9,10 +11,8 @@ import junit.framework.TestCase;
 import org.junit.*;
 import org.junit.rules.TemporaryFolder;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.PrintWriter;
+import src.project.*;
+import java.io.*;
 
 
 public class DefineryTests extends TestCase{

@@ -1,15 +1,11 @@
-package servlets;
+package src.servlets;
 
+import java.io.*;
 import java.util.*;
 import src.lists.*;
-import java.io.IOException;
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpSession;
-import javax.servlet.RequestDispatcher;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.*;
+import javax.servlet.http.*;
+
 
 /**
  * Project: Definery
@@ -19,9 +15,22 @@ import javax.servlet.http.HttpServletResponse;
  */
 
 public class DisplayLists extends HttpServlet {
+
     Properties properties;
 
+    public DisplayLists() {
+
+    }
+
+    public DisplayLists(Properties properties) {
+        this.properties = properties;
+    }
+
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //response.setContentType("text/html");
+        //PrintWriter out = response.getWriter();
+        //out.println("Welcome '" + request.getRemoteUser() + "'");
+
         HttpSession session = request.getSession();
         ServletContext context = getServletContext();
         String sortParam = request.getParameter("sortParam");
@@ -35,10 +44,13 @@ public class DisplayLists extends HttpServlet {
             }
 
         SortByer sortByer = new SortByer();
-        sortByer.setSortType(sortParam);
-        System.out.println("sortbyer.gettype: " + sortByer.getSortType());
-        System.out.println("sortparam: " + sortParam);
-
+            if (sortParam == null) {
+                sortByer.setSortType("newest");
+            } else {
+                sortByer.setSortType(sortParam);
+                System.out.println("sortbyer.gettype: " + sortByer.getSortType());
+                System.out.println("sortparam: " + sortParam);
+            }
             switch (sortByer.getSortType()) {
                 case "newest" :
                     lists.sortListsByNewest(sortByer);
