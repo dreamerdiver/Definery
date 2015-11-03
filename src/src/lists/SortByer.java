@@ -44,10 +44,9 @@ public class SortByer {
     }
 
     public String returnSortReport() {
-
         return "Sort Type: " + getSortType() +
-                            "<br />Results Returned: " + getSortedResults().size() +
-                            "<br />" + new Date();
+                "<br />Results Returned: " + getSortedResults().size() +
+                "<br />" + new Date();
     }
 }
 

@@ -27,7 +27,7 @@
         <%}%>
         </div>
         <div id="sortByDropdown">
-            <form id="form" action="${pageContext.request.contextPath}/displayLists">
+            <form id="form" action="<c:url value="/displayLists"/>">
                 <label for="sortByOptions">Sort By: </label>
                 <select id="sortByOptions">
                     <option name="sortParam" value="newest">Newest</option>
@@ -40,18 +40,19 @@
         </div>
         <div id="content">
             <c:choose>
-                <c:when test="${entries.size() > 0}">
+                <c:when test="${entries.size() != null}">
                     <p>Found Entries: </p>
                     <table border="1px solid black">
+                        <p>Lists size: ${entries.size()}</p>
                         <c:forEach var="entry" items="${entries}">
                             <tr>
-                                <td colspan="2">${entry.word}</td>
-                                <td>${entry.pocketDefinition}</td>
+                                <td colspan="2">Word: ${entry.word}</td>
+                                <td>Def: ${entry.pocketDefinition}</td>
                             </tr>
                             <tr>
-                                <td>${entry.voteCount}</td>
-                                <td>${entry.submitter}</td>
-                                <td>${entry.submittedDate}</td>
+                                <td>vote: ${entry.voteCount}</td>
+                                <td>submitter: ${entry.submitter}</td>
+                                <td>date: ${entry.submittedDate}</td>
                             </tr>
                         </c:forEach>
                     </table>
@@ -60,6 +61,7 @@
                     <p>No Entries Found</p>
                 </c:otherwise>
             </c:choose>
+            <c:set var="sortParam" value="Hi mom!" scope="session" />
         </div>
     </body>
 </html>

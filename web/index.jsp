@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   src.project.User: Meesh
@@ -19,7 +20,7 @@
         </div>
         <div id="content">
             <a href="submit.jsp">Submit a New Definition</a>
-            <a href="lists.jsp">Lists</a>
+            <a href="<c:url value="/displayLists"/>">Lists</a>
         <%if (request.getRemoteUser() == null) {%>
             <a href="validLogin.jsp">Log In</a>
         <%} else {%>

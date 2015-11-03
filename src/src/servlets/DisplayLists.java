@@ -5,7 +5,7 @@ import java.util.*;
 import src.lists.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
-
+//import javax.servlet.annotation.WebServlet;
 
 /**
  * Project: Definery
@@ -15,8 +15,9 @@ import javax.servlet.http.*;
  */
 
 public class DisplayLists extends HttpServlet {
-
     Properties properties;
+    SortByer sortByer;
+    Lists lists;
 
     public DisplayLists() {
 
@@ -26,32 +27,28 @@ public class DisplayLists extends HttpServlet {
         this.properties = properties;
     }
 
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.setContentType("text/html");
-        PrintWriter out = response.getWriter();
-        out.println("Welcome '" + request.getRemoteUser() + "'");
+    /**
+     *  Handles HTTP GET requests.
+     *
+     *@param  request                   the HttpServletRequest object
+     *@param  response                   the HttpServletResponse object
+     *@exception  ServletException  if there is a Servlet failure
+     *@exception  IOException       if there is an IO failure
+     */
+    public void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        lists = new Lists();
+        sortByer = new SortByer();
 
         HttpSession session = request.getSession();
-        ServletContext context = getServletContext();
-        String sortParam = request.getParameter("sortParam");
-        System.out.println(sortParam);
-        Lists lists = (Lists)context.getAttribute("list");
-
-        Enumeration options = request.getParameterNames();
-            while (options.hasMoreElements()) {
-                Object object = options.nextElement();
-                String value = request.getParameter((String)object);
-            }
-
-        SortByer sortByer = new SortByer();
+        String sortParam = (String)session.getAttribute("sortParam");
             if (sortParam == null) {
                 sortByer.setSortType("newest");
             } else {
                 sortByer.setSortType(sortParam);
-                System.out.println("sortbyer.gettype: " + sortByer.getSortType());
-                System.out.println("sortparam: " + sortParam);
             }
-            switch (sortByer.getSortType()) {
+
+        switch (sortByer.getSortType()) {
                 case "newest" :
                     lists.sortListsByNewest(sortByer);
                     break;
