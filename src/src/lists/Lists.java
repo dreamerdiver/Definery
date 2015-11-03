@@ -13,7 +13,7 @@ import java.util.Date;
 
 public class Lists {
     private Properties properties;
-    private List<Entry> entries = new ArrayList<>();
+    private ArrayList<Entry> entries = new ArrayList<>();
 
     public Lists() {
     }
@@ -171,7 +171,7 @@ public class Lists {
                     sortByer.addFoundEntry(entry);
                 }
             }
-            entries = sortByer.getSortedResults();
+            //sortByer.setSortedResults(entries);
                 for (Entry entry : entries) {
                     System.out.println(entry.toString());
                 }
@@ -250,7 +250,7 @@ public class Lists {
                     sortByer.addFoundEntry(entry);
                 }
             }
-            entries = sortByer.getSortedResults();
+            //sortByer.setSortedResults(entries);
             for (Entry entry : entries) {
                 System.out.println(entry.toString());
             }
@@ -329,7 +329,7 @@ public class Lists {
                     sortByer.addFoundEntry(entry);
                 }
             }
-            entries = sortByer.getSortedResults();
+            //sortByer.setSortedResults(entries);
             for (Entry entry : entries) {
                 System.out.println(entry.toString());
             }
@@ -408,7 +408,7 @@ public class Lists {
                     sortByer.addFoundEntry(entry);
                 }
             }
-            entries = sortByer.getSortedResults();
+            //sortByer.setSortedResults(entries);
             for (Entry entry : entries) {
                 System.out.println(entry.toString());
             }

@@ -11,7 +11,7 @@ import java.util.*;
 
 public class SortByer {
     private String sortType = "";
-    private List<Entry> sortedResults;
+    private ArrayList<Entry> sortedResults;
     private boolean foundEmployee;
 
     public SortByer() {
@@ -25,11 +25,10 @@ public class SortByer {
         this.sortType = sortType;
     }
 
-
-    public List<Entry> getSortedResults() {
+    public ArrayList<Entry> getSortedResults() {
         return sortedResults;
     }
-    public void setSortedResults(List<Entry> sortedResults) {
+    public void setSortedResults(ArrayList<Entry> sortedResults) {
         this.sortedResults = sortedResults;
     }
 

@@ -64,7 +64,7 @@ public class DisplayLists extends HttpServlet {
             }
             session.setAttribute("searchInstance", sortByer);
 
-        List<Entry> entries = sortByer.getSortedResults();
+        ArrayList entries = sortByer.getSortedResults();
             session.setAttribute("entries", entries);
 
         String url = "/lists.jsp";

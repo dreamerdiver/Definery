@@ -50,6 +50,18 @@
 
 <!--
     *
+    *Security Roles
+    *
+-->
+    <security-role>
+        <role-name>admin</role-name>
+    </security-role>
+    <security-role>
+        <role-name>user</role-name>
+    </security-role>
+
+<!--
+    *
     *Security Constraints
     *
 -->
@@ -96,17 +108,19 @@
         </auth-constraint>
     </security-constraint>
 
-    <!-- <security-constraint>
-  <web-resource-collection>
-      <web-resource-name>Lists</web-resource-name>
-      <url-pattern>/lists.jsp</url-pattern>
-  </web-resource-collection>
-  <auth-constraint>
-      <role-name>defineryAdmin</role-name>
-      <role-name>defineryUser</role-name>
-      <role-name>defineryGuest</role-name>
-  </auth-constraint>
-  </security-constraint> -->
+    <!--
+    <security-constraint>
+        <web-resource-collection>
+          <web-resource-name>Lists</web-resource-name>
+          <url-pattern>/lists.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+          <role-name>admin</role-name>
+          <role-name>user</role-name>
+          <role-name>guest</role-name>
+        </auth-constraint>
+    </security-constraint>
+    -->
 
 
 <!--
