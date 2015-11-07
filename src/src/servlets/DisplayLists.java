@@ -1,10 +1,17 @@
 package src.servlets;
 
-import java.io.*;
-import java.util.*;
-import src.lists.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
+import src.lists.Lists;
+import src.lists.SortByer;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Properties;
 //import javax.servlet.annotation.WebServlet;
 
 /**
@@ -16,8 +23,6 @@ import javax.servlet.http.*;
 
 public class DisplayLists extends HttpServlet {
     Properties properties;
-    SortByer sortByer;
-    Lists lists;
 
     public DisplayLists() {
 
@@ -37,32 +42,30 @@ public class DisplayLists extends HttpServlet {
      */
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        lists = new Lists();
-        sortByer = new SortByer();
-
+        SortByer sortByer = new SortByer();
+        Lists lists = new Lists();
         HttpSession session = request.getSession();
-        String sortParam = (String)session.getAttribute("sortParam");
+            session.setAttribute("sortByer", sortByer);
+        String sortParam = request.getParameter("sortByOptions");
             if (sortParam == null) {
-                sortByer.setSortType("newest");
+                sortByer.setSortType("alphabetical");
             } else {
                 sortByer.setSortType(sortParam);
             }
-
-        switch (sortByer.getSortType()) {
-                case "newest" :
-                    lists.sortListsByNewest(sortByer);
-                    break;
-                case "oldest" :
-                    lists.sortListsByOldest(sortByer);
-                    break;
-                case "voteCount" :
-                    lists.sortListsByVoteCount(sortByer);
-                    break;
-                case "alphabetical" :
-                    lists.sortListsByAlphabetical(sortByer);
-                    break;
-            }
-            session.setAttribute("searchInstance", sortByer);
+            switch (sortByer.getSortType()) {
+                    case "newest" :
+                        lists.sortListsByNewest(sortByer);
+                        break;
+                    case "oldest" :
+                        lists.sortListsByOldest(sortByer);
+                        break;
+                    case "voteCount" :
+                        lists.sortListsByVoteCount(sortByer);
+                        break;
+                    case "alphabetical" :
+                        lists.sortListsByAlphabetical(sortByer);
+                        break;
+                }
 
         ArrayList entries = sortByer.getSortedResults();
             session.setAttribute("entries", entries);

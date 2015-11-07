@@ -14,9 +14,9 @@
     <body>
         <div id="header">
             <a href="index.jsp">Home</a>
-            <a href="lists.jsp">View Lists as guest</a>
+            <a href="lists.jsp">Lists</a>
         </div>
-        <div id="content">
+        <div id="mainContent">
             <h3>Login or create an account</h3>
             <form action="j_security_check" method="post">
                 <label for="j_username">Username: </label>

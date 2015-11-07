@@ -12,7 +12,7 @@ body {
     padding: 10px 10px;
     margin: 0;
     font-family: Tahoma, Geneva, sans-serif;
-    background-color: gold;
+    background-color: powderblue;
     /*background-image: url("images/Desert.jpg");*/
 }
 
@@ -28,17 +28,16 @@ body {
     /*background-image: url(images/header_bg.png);*/
 }
 
-#content {
+#mainContent {
     display: block;
     width: 600px;
-    height: 100%;
-    background-color: darkgoldenrod;
+    background-color: #c4e1ff;
     border: groove 4px goldenrod;
     padding: 10px;
     text-align: center;
     font-family: Zapfino, serif;
     font-size: 22px;
-    color: antiquewhite;
+    color: #28242a;
     margin: auto;
     box-shadow: -4px 3px 4px white;
 }
@@ -59,3 +58,15 @@ a {
     text-align: right;
 }
 
+#tableContent {
+    display: inline-block;
+    align-content: center;
+}
+#entryTable {
+    display: block;
+    align-content: center;
+    margin: 8px;
+    padding: 3px;
+
+
+}

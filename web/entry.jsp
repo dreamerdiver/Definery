@@ -18,7 +18,8 @@
     </head>
         <div id="header">
             <a href="index.jsp">Home</a>
-            <a href="submit.jsp">Submit a New Definition</a>
+            <a href="<c:url value="/displayLists"/>">Lists</a>
+            <a href="submit.jsp">Submit a New Entry</a>
         <%if (request.getRemoteUser() == null) {%>
             <a href="validLogin.jsp">Log In</a>
         <%} else {%>
@@ -26,31 +27,33 @@
             <a href="persona.jsp">Hi, <%=request.getRemoteUser()%></a>
         <%}%>
         </div>
-        <div id="content">
-            <h1>these are the lists. login to submit</h1>
+        <div id="mainContent">
             <c:choose>
-                <c:when test="${entries.size() > 0}">
-                    <p>Found Employees: </p>
-                    <table border="1px solid black">
-                        <c:forEach var="entry" items="${entries}">
+                <c:when test="${entry.word}">
+                    <c:forEach var="entry" items="${entries}">
+                        <table border="1px solid black">
                             <tr>
                                 <td>${entry.word}</td>
                                 <td>${entry.partOfSpeech}</td>
                                 <td>${entry.pronunciation}</td>
                                 <td>${entry.pocketDefinition}</td>
+                            </tr>
+                            <tr>
                                 <td>${entry.completeDefinition}</td>
                                 <td>${entry.exampleUsage}</td>
                                 <td>${entry.variations}</td>
+                            </tr>
+                            <tr>
                                 <td>${entry.etymologyRoots}</td>
                                 <td>${entry.submitter}</td>
                                 <td>${entry.submittedDate}</td>
                                 <td>${entry.voteCount}</td>
                             </tr>
-                        </c:forEach>
-                    </table>
+                        </table>
+                    </c:forEach>
                 </c:when>
                 <c:otherwise>
-                    <p>No Employees Found</p>
+                    <p>No Data Found</p>
                 </c:otherwise>
             </c:choose>
         </div>

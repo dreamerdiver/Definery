@@ -1,8 +1,8 @@
 package src.lists;
 
 import java.sql.*;
-import java.util.*;
 import java.util.Date;
+import java.util.Properties;
 
 /**
  * Project: Definery
@@ -10,11 +10,8 @@ import java.util.Date;
  * Created by Meesh
  * 10/4/15
  */
-
 public class Lists {
     private Properties properties;
-    private ArrayList<Entry> entries = new ArrayList<>();
-
     public Lists() {
     }
     public Lists(Properties properties) {
@@ -26,17 +23,16 @@ public class Lists {
      */
     protected Connection makeConnection() {
         Connection connection;
-
         try {
-
             Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/definery", "meesh", "DreamandDive406");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3307/definery", "meesh", "DreamandDive406");
 
             /*
             Class.forName(properties.getProperty("mysql.driver"));
             connection = DriverManager.getConnection(properties.getProperty("url"),
                     properties.getProperty("mysql.username"),
-                    properties.getProperty("mysql.password"));*/
+                    properties.getProperty("mysql.password"));
+            */
 
         } catch (ClassNotFoundException classNotFound) {
             System.err.println("Cannot find database driver ");
@@ -54,22 +50,20 @@ public class Lists {
         return connection;
     }
 
-    public void addEntry() {
+    public void addEntry(Entry entry) {
         Statement statement = null;
         ResultSet resultSet = null;
         Connection connection = makeConnection();
-
         try {
-            statement = connection.createStatement();
-            System.out.println(statement);
+            String addQueryString = "insert into entries (word, part_of_speech, pronunciation, pocket_definition, complete_definition, example_usage, variations, etymology_roots, submitter, submitted_date, vote_count)" +
+                                    "values ("+entry.getWord()+", "+entry.getPartOfSpeech()+", "+entry.getPronunciation()+", "+entry.getPocketDefinition()+", "+entry.getCompleteDefinition()+", "+entry.getExampleUsage()+", "+entry.getVariations()+", "+entry.getEtymologyRoots()+", "+entry.getSubmitter()+", null, 1);";
 
-            String addQueryString = "insert into entries values (word, pos, pronunciation, pocketDefinition, completeDefinition, example_usage, variations, etymology, submitter, submittedDate, 0)";
-            System.out.println("addQueryString: " + addQueryString);
+            statement = connection.prepareStatement(addQueryString);
             statement.executeUpdate(addQueryString);
 
-            String rtrvQueryString = "select * from entries";
-            System.out.println("rtrvQueryString: " + rtrvQueryString);
-            resultSet = statement.executeQuery(rtrvQueryString);
+            String addConfirmation = "select * from entries where word="+entry.getWord()+"";
+            resultSet = statement.executeQuery(addConfirmation);
+            System.out.println("Added new Entry: " + addConfirmation);
 
             while (resultSet.next()) {
                 String word = resultSet.getString("word");
@@ -85,16 +79,16 @@ public class Lists {
                 int voteCount = resultSet.getInt("vote_count");
 
                 System.out.println("Instance: " + word
-                        + "<br /> " + pos
-                        + "<br /> " + pronunciation
-                        + "<br /> " + pocketDefinition
-                        + "<br /> " + completeDefinition
-                        + "<br /> " + example_usage
-                        + "<br /> " + variations
-                        + "<br /> " + etymology
-                        + "<br /> " + submitter
-                        + "<br /> " + submittedDate
-                        + "<br /> " + voteCount);
+                        + ", " + pos
+                        + ", " + pronunciation
+                        + ", " + pocketDefinition
+                        + ", " + completeDefinition
+                        + ", " + example_usage
+                        + ", " + variations
+                        + ", " + etymology
+                        + ", " + submitter
+                        + ", " + submittedDate
+                        + ", " + voteCount);
             }
         } catch (SQLException sqlException) {
             System.err.println("Error in connecting to database" + sqlException);
@@ -128,53 +122,32 @@ public class Lists {
         ResultSet resultSet = null;
         Connection connection = makeConnection();
         System.out.println("Sorted By: " + sortByer.getSortType());
-
         try {
             statement = connection.createStatement();
-
-            String IDQueryString ="select * from entries GROUP BY submitted_date DESC";
-                System.out.println("IDQueryString: " + IDQueryString);
+            String IDQueryString ="select * from entries ORDER BY submitted_date DESC";
             resultSet = statement.executeQuery(IDQueryString);
-                System.out.println(resultSet);
-
             if (!resultSet.next()) {
                 sortByer.setThisEntry(false);
             } else {
                 sortByer.setThisEntry(true);
                 resultSet.previous();
                 while (resultSet.next()) {
-                    String word = resultSet.getString("word");
-                    String pos = resultSet.getString("part_of_speech");
-                    String pronunciation = resultSet.getString("pronunciation");
-                    String pocketDefinition = resultSet.getString("pocket_definition");
-                    String completeDefinition = resultSet.getString("complete_definition");
-                    String exampleUsage = resultSet.getString("example_usage");
-                    String variations = resultSet.getString("variations");
-                    String etymologyRoots = resultSet.getString("etymology_roots");
-                    String submitter = resultSet.getString("submitter");
-                    Date submittedDate = resultSet.getDate("submitted_date");
-                    int voteCount = resultSet.getInt("vote_count");
-
                     Entry entry = new Entry();
-                    entry.setWord(word);
-                    entry.setPartOfSpeech(pos);
-                    entry.setPronunciation(pronunciation);
-                    entry.setPocketDefinition(pocketDefinition);
-                    entry.setCompleteDefinition(completeDefinition);
-                    entry.setExampleUsage(exampleUsage);
-                    entry.setVariations(variations);
-                    entry.setEtymologyRoots(etymologyRoots);
-                    entry.setSubmitter(submitter);
-                    entry.setSubmittedDate(submittedDate);
-                    entry.setVoteCount(voteCount);
+                    entry.setWord(resultSet.getString("word"));
+                    entry.setPartOfSpeech(resultSet.getString("part_of_speech"));
+                    entry.setPronunciation(resultSet.getString("pronunciation"));
+                    entry.setPocketDefinition(resultSet.getString("pocket_definition"));
+                    entry.setCompleteDefinition(resultSet.getString("complete_definition"));
+                    entry.setExampleUsage(resultSet.getString("example_usage"));
+                    entry.setVariations(resultSet.getString("variations"));
+                    entry.setEtymologyRoots(resultSet.getString("etymology_roots"));
+                    entry.setSubmitter(resultSet.getString("submitter"));
+                    entry.setSubmittedDate(resultSet.getDate("submitted_date"));
+                    entry.setVoteCount(resultSet.getInt("vote_count"));
 
                     sortByer.addFoundEntry(entry);
                 }
             }
-            //sortByer.setSortedResults(entries);
-                for (Entry entry : entries) {
-                    System.out.println(entry.toString());
-                }
         } catch (SQLException sqlException) {
             System.err.println("Error in connecting to database" + sqlException);
             sqlException.printStackTrace();
@@ -207,52 +180,31 @@ public class Lists {
         ResultSet resultSet = null;
         Connection connection = makeConnection();
         System.out.println("Sorted By: " + sortByer.getSortType());
-
         try {
             statement = connection.createStatement();
-
-            String IDQueryString ="select * from entries GROUP BY submitted_date ASC";
-            System.out.println("IDQueryString: " + IDQueryString);
+            String IDQueryString ="select * from entries ORDER BY submitted_date ASC";
             resultSet = statement.executeQuery(IDQueryString);
-            System.out.println(resultSet);
-
             if (!resultSet.next()) {
                 sortByer.setThisEntry(false);
             } else {
                 sortByer.setThisEntry(true);
                 resultSet.previous();
                 while (resultSet.next()) {
-                    String word = resultSet.getString("word");
-                    String pos = resultSet.getString("part_of_speech");
-                    String pronunciation = resultSet.getString("pronunciation");
-                    String pocketDefinition = resultSet.getString("pocket_definition");
-                    String completeDefinition = resultSet.getString("complete_definition");
-                    String exampleUsage = resultSet.getString("example_usage");
-                    String variations = resultSet.getString("variations");
-                    String etymologyRoots = resultSet.getString("etymology_roots");
-                    String submitter = resultSet.getString("submitter");
-                    Date submittedDate = resultSet.getDate("submitted_date");
-                    int voteCount = resultSet.getInt("vote_count");
-
                     Entry entry = new Entry();
-                    entry.setWord(word);
-                    entry.setPartOfSpeech(pos);
-                    entry.setPronunciation(pronunciation);
-                    entry.setPocketDefinition(pocketDefinition);
-                    entry.setCompleteDefinition(completeDefinition);
-                    entry.setExampleUsage(exampleUsage);
-                    entry.setVariations(variations);
-                    entry.setEtymologyRoots(etymologyRoots);
-                    entry.setSubmitter(submitter);
-                    entry.setSubmittedDate(submittedDate);
-                    entry.setVoteCount(voteCount);
+                    entry.setWord(resultSet.getString("word"));
+                    entry.setPartOfSpeech(resultSet.getString("part_of_speech"));
+                    entry.setPronunciation(resultSet.getString("pronunciation"));
+                    entry.setPocketDefinition(resultSet.getString("pocket_definition"));
+                    entry.setCompleteDefinition(resultSet.getString("complete_definition"));
+                    entry.setExampleUsage(resultSet.getString("example_usage"));
+                    entry.setVariations(resultSet.getString("variations"));
+                    entry.setEtymologyRoots(resultSet.getString("etymology_roots"));
+                    entry.setSubmitter(resultSet.getString("submitter"));
+                    entry.setSubmittedDate(resultSet.getDate("submitted_date"));
+                    entry.setVoteCount(resultSet.getInt("vote_count"));
 
                     sortByer.addFoundEntry(entry);
                 }
-            }
-            //sortByer.setSortedResults(entries);
-            for (Entry entry : entries) {
-                System.out.println(entry.toString());
             }
         } catch (SQLException sqlException) {
             System.err.println("Error in connecting to database" + sqlException);
@@ -286,52 +238,31 @@ public class Lists {
         ResultSet resultSet = null;
         Connection connection = makeConnection();
         System.out.println("Sorted By: " + sortByer.getSortType());
-
         try {
             statement = connection.createStatement();
-
-            String IDQueryString ="select * from entries GROUP BY vote_count DESC";
-            System.out.println("IDQueryString: " + IDQueryString);
+            String IDQueryString ="select * from entries ORDER BY vote_count DESC";
             resultSet = statement.executeQuery(IDQueryString);
-            System.out.println(resultSet);
-
             if (!resultSet.next()) {
                 sortByer.setThisEntry(false);
             } else {
                 sortByer.setThisEntry(true);
                 resultSet.previous();
                 while (resultSet.next()) {
-                    String word = resultSet.getString("word");
-                    String pos = resultSet.getString("part_of_speech");
-                    String pronunciation = resultSet.getString("pronunciation");
-                    String pocketDefinition = resultSet.getString("pocket_definition");
-                    String completeDefinition = resultSet.getString("complete_definition");
-                    String exampleUsage = resultSet.getString("example_usage");
-                    String variations = resultSet.getString("variations");
-                    String etymologyRoots = resultSet.getString("etymology_roots");
-                    String submitter = resultSet.getString("submitter");
-                    Date submittedDate = resultSet.getDate("submitted_date");
-                    int voteCount = resultSet.getInt("vote_count");
-
                     Entry entry = new Entry();
-                    entry.setWord(word);
-                    entry.setPartOfSpeech(pos);
-                    entry.setPronunciation(pronunciation);
-                    entry.setPocketDefinition(pocketDefinition);
-                    entry.setCompleteDefinition(completeDefinition);
-                    entry.setExampleUsage(exampleUsage);
-                    entry.setVariations(variations);
-                    entry.setEtymologyRoots(etymologyRoots);
-                    entry.setSubmitter(submitter);
-                    entry.setSubmittedDate(submittedDate);
-                    entry.setVoteCount(voteCount);
+                    entry.setWord(resultSet.getString("word"));
+                    entry.setPartOfSpeech(resultSet.getString("part_of_speech"));
+                    entry.setPronunciation(resultSet.getString("pronunciation"));
+                    entry.setPocketDefinition(resultSet.getString("pocket_definition"));
+                    entry.setCompleteDefinition(resultSet.getString("complete_definition"));
+                    entry.setExampleUsage(resultSet.getString("example_usage"));
+                    entry.setVariations(resultSet.getString("variations"));
+                    entry.setEtymologyRoots(resultSet.getString("etymology_roots"));
+                    entry.setSubmitter(resultSet.getString("submitter"));
+                    entry.setSubmittedDate(resultSet.getDate("submitted_date"));
+                    entry.setVoteCount(resultSet.getInt("vote_count"));
 
                     sortByer.addFoundEntry(entry);
                 }
-            }
-            //sortByer.setSortedResults(entries);
-            for (Entry entry : entries) {
-                System.out.println(entry.toString());
             }
         } catch (SQLException sqlException) {
             System.err.println("Error in connecting to database" + sqlException);
@@ -365,14 +296,10 @@ public class Lists {
         ResultSet resultSet = null;
         Connection connection = makeConnection();
         System.out.println("Sorted By: " + sortByer.getSortType());
-
         try {
             statement = connection.createStatement();
-
             String IDQueryString ="select * from entries ORDER BY word";
-            System.out.println("IDQueryString: " + IDQueryString);
             resultSet = statement.executeQuery(IDQueryString);
-            System.out.println(resultSet);
 
             if (!resultSet.next()) {
                 sortByer.setThisEntry(false);
@@ -380,37 +307,21 @@ public class Lists {
                 sortByer.setThisEntry(true);
                 resultSet.previous();
                 while (resultSet.next()) {
-                    String word = resultSet.getString("word");
-                    String pos = resultSet.getString("part_of_speech");
-                    String pronunciation = resultSet.getString("pronunciation");
-                    String pocketDefinition = resultSet.getString("pocket_definition");
-                    String completeDefinition = resultSet.getString("complete_definition");
-                    String exampleUsage = resultSet.getString("example_usage");
-                    String variations = resultSet.getString("variations");
-                    String etymologyRoots = resultSet.getString("etymology_roots");
-                    String submitter = resultSet.getString("submitter");
-                    Date submittedDate = resultSet.getDate("submitted_date");
-                    int voteCount = resultSet.getInt("vote_count");
-
                     Entry entry = new Entry();
-                    entry.setWord(word);
-                    entry.setPartOfSpeech(pos);
-                    entry.setPronunciation(pronunciation);
-                    entry.setPocketDefinition(pocketDefinition);
-                    entry.setCompleteDefinition(completeDefinition);
-                    entry.setExampleUsage(exampleUsage);
-                    entry.setVariations(variations);
-                    entry.setEtymologyRoots(etymologyRoots);
-                    entry.setSubmitter(submitter);
-                    entry.setSubmittedDate(submittedDate);
-                    entry.setVoteCount(voteCount);
+                    entry.setWord(resultSet.getString("word"));
+                    entry.setPartOfSpeech(resultSet.getString("part_of_speech"));
+                    entry.setPronunciation(resultSet.getString("pronunciation"));
+                    entry.setPocketDefinition(resultSet.getString("pocket_definition"));
+                    entry.setCompleteDefinition(resultSet.getString("complete_definition"));
+                    entry.setExampleUsage(resultSet.getString("example_usage"));
+                    entry.setVariations(resultSet.getString("variations"));
+                    entry.setEtymologyRoots(resultSet.getString("etymology_roots"));
+                    entry.setSubmitter(resultSet.getString("submitter"));
+                    entry.setSubmittedDate(resultSet.getDate("submitted_date"));
+                    entry.setVoteCount(resultSet.getInt("vote_count"));
 
                     sortByer.addFoundEntry(entry);
                 }
-            }
-            //sortByer.setSortedResults(entries);
-            for (Entry entry : entries) {
-                System.out.println(entry.toString());
             }
         } catch (SQLException sqlException) {
             System.err.println("Error in connecting to database" + sqlException);

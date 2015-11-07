@@ -15,7 +15,7 @@
         <div id="header">
             <% session.invalidate(); %>
         </div>
-        <div id="content">
+        <div id="mainContent">
             <h3>User '<%=request.getRemoteUser()%>' has been logged out.</h3>
             <a href="index.jsp">Return to Home</a>
         </div>

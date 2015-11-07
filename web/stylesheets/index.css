@@ -11,42 +11,46 @@ body {
     padding: 100px 100px;
     margin: 0;
     font-family: Tahoma, Geneva, sans-serif;
-    background-color: gold;
-    /*background-image: url("images/Desert.jpg");*/
+    background-color: powderblue;
+        /*background-image: url("images/Desert.jpg");*/
 }
 
 #header {
     display: block;
-    height: 210px;
-    width: 600px;
-    background-color: darkgoldenrod;
+    align-content: center;
+    height: 180px;
+    width: 50%;
+    background-color: #c4e1ff;
     border: groove 4px goldenrod;
     text-align: center;
     font-family: Zapfino, serif;
     font-size: 34px;
-    padding: 10px;
-    color: antiquewhite;
+    padding: -40px;
+    color: black;
     margin: auto;
     box-shadow: -4px 3px 4px white;
-    z-index: -1;
+    z-index: 1;
     /*background-image: url(images/header_bg.png);*/
 }
 
-#content {
+#mainContent {
     display: block;
     width: 75%;
     height: 22px;
-    background-color: darkgoldenrod;
+    background-color: #c4e1ff;
     border: groove 4px goldenrod;
     padding: 10px;
     text-align: center;
     margin: auto;
     box-shadow: -4px 3px 4px white;
-    z-index:-1;
+    z-index:2;
 }
 
 h1 {
-    z-index: 2;
+    display: flex;
+    padding: 10px;
+    color: black;
+    margin: auto;
 }
 
 a {
@@ -57,5 +61,5 @@ a {
     text-underline: none;
     padding: 10px;
     margin: auto;
-    z-index: 0;
+    z-index: 3;
 }

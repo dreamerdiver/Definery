@@ -13,7 +13,7 @@
 </head>
 <body>
     <div id="header"></div>
-    <div id="content">
+    <div id="mainContent">
         <h2>Thank You, and Welcome to Definery</h2>
         <a href="lists.jsp">Lists</a>
         <a href="persona.jsp">Persona</a>

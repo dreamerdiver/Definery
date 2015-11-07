@@ -1,10 +1,13 @@
 package src.servlets;
 
-import src.lists.*;
-import java.io.*;
-import java.util.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
+import src.lists.Entry;
+import src.lists.Lists;
+import src.lists.SortByer;
+
+import javax.servlet.ServletContext;
+import javax.servlet.http.HttpServlet;
+import java.io.IOException;
+import java.util.Properties;
 
 /**
  * Project:
@@ -29,9 +32,11 @@ public class ApplicationStartup extends HttpServlet {
                 e.printStackTrace();
             }
             context.setAttribute("definery.properties", properties);
-        Lists lists = new Lists(properties);
-            context.setAttribute("list", lists);
+        Lists lists = new Lists();
+            context.setAttribute("lists", lists);
         Entry entry = new Entry(properties);
             context.setAttribute("entry", entry);
+        SortByer sortByer = new SortByer();
+            context.setAttribute("sortByer", sortByer);
     }
 }
