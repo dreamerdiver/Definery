@@ -1,6 +1,9 @@
 package src.lists;
 
-import java.util.*;
+import org.apache.log4j.Logger;
+
+import java.util.ArrayList;
+import java.util.Date;
 
 /**
  * Project: Definery
@@ -13,9 +16,11 @@ public class SortByer {
     private String sortType = "";
     private ArrayList<Entry> sortedResults;
     private boolean foundEmployee;
+    private final Logger logger = Logger.getLogger(this.getClass());
 
     public SortByer() {
         sortedResults = new ArrayList<>();
+        logger.info("SortByer: Created 'SortByer' instance");
     }
 
     public String getSortType() {

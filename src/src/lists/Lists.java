@@ -1,39 +1,35 @@
 package src.lists;
 
-import java.sql.*;
-import java.util.Date;
-import java.util.Properties;
-
 /**
  * Project: Definery
  * Class: Lists Object
  * Created by Meesh
  * 10/4/15
  */
+
+import org.apache.log4j.Logger;
+
+import java.sql.*;
+import java.util.Date;
+
 public class Lists {
-    private Properties properties;
+    private final Logger logger = Logger.getLogger(this.getClass());
+
     public Lists() {
-    }
-    public Lists(Properties properties) {
-        this.properties = properties;
+        logger.info("Lists: Created 'Lists' instance");
     }
 
-    /**
-     * @return Connection to mysql Database
-     */
     protected Connection makeConnection() {
         Connection connection;
         try {
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3307/definery", "meesh", "DreamandDive406");
-
             /*
             Class.forName(properties.getProperty("mysql.driver"));
             connection = DriverManager.getConnection(properties.getProperty("url"),
                     properties.getProperty("mysql.username"),
                     properties.getProperty("mysql.password"));
             */
-
         } catch (ClassNotFoundException classNotFound) {
             System.err.println("Cannot find database driver ");
             classNotFound.printStackTrace();
@@ -60,11 +56,11 @@ public class Lists {
 
             statement = connection.prepareStatement(addQueryString);
             statement.executeUpdate(addQueryString);
+            logger.info("Lists: lists.addEntry: statement.executeUpdate(addQueryString) completed successfully");
 
             String addConfirmation = "select * from entries where word="+entry.getWord()+"";
             resultSet = statement.executeQuery(addConfirmation);
-            System.out.println("Added new Entry: " + addConfirmation);
-
+            logger.info("Lists: lists.addEntry: statement.executeQuery(addConfirmation) {" + addConfirmation + "} completed successfully");
             while (resultSet.next()) {
                 String word = resultSet.getString("word");
                 String pos = resultSet.getString("part_of_speech");
@@ -106,6 +102,7 @@ public class Lists {
                 }
                 if (connection != null) {
                     connection.close();
+                    logger.info("Lists: lists.addEntry: connection.close() completed successfully");
                 }
             } catch (SQLException sqlException) {
                 System.err.println("Error in connecting to database " + sqlException);
@@ -121,11 +118,12 @@ public class Lists {
         Statement statement = null;
         ResultSet resultSet = null;
         Connection connection = makeConnection();
-        System.out.println("Sorted By: " + sortByer.getSortType());
+        logger.info("Lists: lists.sortListsByNewest: Sorted By: " + sortByer.getSortType());
         try {
             statement = connection.createStatement();
             String IDQueryString ="select * from entries ORDER BY submitted_date DESC";
             resultSet = statement.executeQuery(IDQueryString);
+            logger.info("Lists: lists.sortListsByNewest: statement.executeQuery(IDQueryString) completed successfully");
             if (!resultSet.next()) {
                 sortByer.setThisEntry(false);
             } else {
@@ -147,6 +145,7 @@ public class Lists {
 
                     sortByer.addFoundEntry(entry);
                 }
+                logger.info("Lists: lists.sortListsByNewest: resultSet.next() completed successfully");
             }
         } catch (SQLException sqlException) {
             System.err.println("Error in connecting to database" + sqlException);
@@ -164,6 +163,7 @@ public class Lists {
                 }
                 if (connection != null) {
                     connection.close();
+                    logger.info("Lists: lists.sortListsByNewest: connection.close() completed successfully");
                 }
             } catch (SQLException sqlException) {
                 System.err.println("Error in connecting to database " + sqlException);
@@ -179,11 +179,12 @@ public class Lists {
         Statement statement = null;
         ResultSet resultSet = null;
         Connection connection = makeConnection();
-        System.out.println("Sorted By: " + sortByer.getSortType());
+        logger.info("Lists: lists.sortListsByOldest: Sorted By: " + sortByer.getSortType());
         try {
             statement = connection.createStatement();
             String IDQueryString ="select * from entries ORDER BY submitted_date ASC";
             resultSet = statement.executeQuery(IDQueryString);
+            logger.info("Lists: lists.sortListsByOldest: statement.executeQuery(IDQueryString) completed successfully");
             if (!resultSet.next()) {
                 sortByer.setThisEntry(false);
             } else {
@@ -205,6 +206,7 @@ public class Lists {
 
                     sortByer.addFoundEntry(entry);
                 }
+                logger.info("Lists: lists.sortListsByOldest: resultSet.next() completed successfully");
             }
         } catch (SQLException sqlException) {
             System.err.println("Error in connecting to database" + sqlException);
@@ -222,6 +224,7 @@ public class Lists {
                 }
                 if (connection != null) {
                     connection.close();
+                    logger.info("Lists: lists.sortListsByOldest: connection.close() completed successfully");
                 }
             } catch (SQLException sqlException) {
                 System.err.println("Error in connecting to database " + sqlException);
@@ -237,11 +240,12 @@ public class Lists {
         Statement statement = null;
         ResultSet resultSet = null;
         Connection connection = makeConnection();
-        System.out.println("Sorted By: " + sortByer.getSortType());
+        logger.info("Lists: lists.sortListsByVoteCount: Sorted By: " + sortByer.getSortType());
         try {
             statement = connection.createStatement();
             String IDQueryString ="select * from entries ORDER BY vote_count DESC";
             resultSet = statement.executeQuery(IDQueryString);
+            logger.info("Lists: lists.sortListsByVoteCount: statement.executeQuery(IDQueryString) completed successfully");
             if (!resultSet.next()) {
                 sortByer.setThisEntry(false);
             } else {
@@ -263,6 +267,7 @@ public class Lists {
 
                     sortByer.addFoundEntry(entry);
                 }
+                logger.info("Lists: lists.sortListsByVoteCount: resultSet.next() completed successfully");
             }
         } catch (SQLException sqlException) {
             System.err.println("Error in connecting to database" + sqlException);
@@ -280,6 +285,7 @@ public class Lists {
                 }
                 if (connection != null) {
                     connection.close();
+                    logger.info("Lists: lists.sortListsByVoteCount: connection.close() completed successfully");
                 }
             } catch (SQLException sqlException) {
                 System.err.println("Error in connecting to database " + sqlException);
@@ -295,12 +301,12 @@ public class Lists {
         Statement statement = null;
         ResultSet resultSet = null;
         Connection connection = makeConnection();
-        System.out.println("Sorted By: " + sortByer.getSortType());
+        logger.info("Lists: lists.sortListsByAlphabetical: Sorted By: " + sortByer.getSortType());
         try {
             statement = connection.createStatement();
             String IDQueryString ="select * from entries ORDER BY word";
             resultSet = statement.executeQuery(IDQueryString);
-
+            logger.info("Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully");
             if (!resultSet.next()) {
                 sortByer.setThisEntry(false);
             } else {
@@ -322,6 +328,7 @@ public class Lists {
 
                     sortByer.addFoundEntry(entry);
                 }
+                logger.info("Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully");
             }
         } catch (SQLException sqlException) {
             System.err.println("Error in connecting to database" + sqlException);
@@ -339,6 +346,7 @@ public class Lists {
                 }
                 if (connection != null) {
                     connection.close();
+                    logger.info("Lists: lists.sortListsByAlphabetical: connection.close() completed successfully");
                 }
             } catch (SQLException sqlException) {
                 System.err.println("Error in connecting to database " + sqlException);

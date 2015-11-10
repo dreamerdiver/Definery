@@ -7,8 +7,9 @@ package src.lists;
  * 9/21/15
  */
 
+import org.apache.log4j.Logger;
+
 import java.util.Date;
-import java.util.Properties;
 
 public class Entry {
     private String word;
@@ -22,11 +23,10 @@ public class Entry {
     private String submitter;
     private Date submittedDate;
     private int voteCount;
+    private final Logger logger = Logger.getLogger(this.getClass());
 
     public Entry() {
-    }
-
-    public Entry(Properties properties) {
+        logger.info("Entry: Created 'Entry' instance");
     }
 
     public String getWord() {
