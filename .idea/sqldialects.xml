@@ -3,5 +3,6 @@
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/resources/initialInserts.sql" dialect="Derby" />
     <file url="file://$PROJECT_DIR$/src/src/lists/Lists.java" dialect="MySQL" />
+    <file url="file://$USER_HOME$/Downloads/apache-tomcat-8.0.26/conf/server.xml" dialect="MySQL" />
   </component>
 </project>

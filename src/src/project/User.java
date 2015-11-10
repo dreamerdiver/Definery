@@ -1,12 +1,17 @@
-package src.project; /**
+package src.project;
+
+/**
  * Project: Definery
  * Class: src.project.User
  * Created by Meesh
  * 9/29/15
  */
 
-import src.lists.*;
-import java.util.*;
+import src.lists.Entry;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 public class User {
     private String username;
@@ -53,17 +58,14 @@ public class User {
     public String createTestUserOutput(){
         Entry entry;
         String userSubmissionList = "";
-
         for (Object entry0 : submittedEntries) {
             entry = (Entry) entry0;
             userSubmissionList += entry;
         }
-
         return  "Username: " + getUsername() +
                 "\nPassword: " + getPassword() +
                 "\nAccount Date: " + getAccountDate() +
                 "\nSubmitted Entries: " + userSubmissionList +
-                "\nVoted Entries: " + getVotedEntries() +
-                "\n";
+                "\nVoted Entries: " + getVotedEntries() + "\n";
     }
 }
