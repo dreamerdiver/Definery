@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   src.project.User: Meesh
@@ -14,11 +15,11 @@
     <body>
         <div id="header">
             <a href="index.jsp">Home</a>
-            <a href="lists.jsp">Lists</a>
+            <a href="<c:url value="/displayLists"/>">Lists</a>
         </div>
         <div id="mainContent">
             <h3>Login or create an account</h3>
-            <form action="j_security_check" method="post">
+            <form action="j_security_check" method="post" >
                 <label for="j_username">Username: </label>
                     <input type="text" name="j_username" id="j_username"><br />
                 <label for="j_password">Password: </label>

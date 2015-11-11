@@ -146,3 +146,58 @@ weeks:
 
 
 Week 8:
+
+This week saw a lull in productivity on this product for 2 main reasons, being
+that 1) I spent more time preparing my 2nd extracurricular activity presentation
+which will be due and the start of week 11 and 2) the JDBC connection which will
+post output to my page and give me more work to do is continuing to elude me,
+much to my displeasure, to say the least. After scouring stackOverflow and other
+nooks of the internet for issues relating to the 'Connection Refused' error that
+has come to be little more than a snarky little reminder of how much time I've
+lost by not having this connection in place, I feel as though I've quite
+literally exhausted myself and every file configuration that could have anything
+to do with this connection, to no avail still. Barring this, there is little
+that I can really progress on besides from minor formatting, as this database
+connection is the basis for all the output I'll need to format and add logic to,
+as well as the login mechanism for the user database. Until this is resolved,
+I've found it a better use of my time to take a break from staring at xml files
+and carry on with the secondary project.
+
+Minor Changes to the program include changes to Tomcat's server.xml, content.xml
+and web.xml, changes to my own web.xml, adjustments to Realm setup and other
+servlet configurations, minor stylesheet formatting, and additions/deletions/
+enhancements to the database directly, just so that we're ready when the time
+comes...
+
+1. JDBC Connection
+2. Logging/Testing
+
+
+Week 9:
+
+As was hinted at in the commit which contain the change, and as will be only
+hinted at here in an attempt to keep from losing myself to either rage or
+relief, the culprit keeping me from a connection was uncovered this week. Met by
+both laughter and tears, the error was in a single character of the port of the
+attempted connection, +1 from what it had been all along. Once the change was
+implemented, it was but few syntax errors later that I had output of my full
+database being displayed in my app. Oh happy day.
+
+This change in the situation sparked a fervency to make up for the last 3 weeks
+worth of lost development time, for now that the connection had been made and I
+have output, I can set to tweaking and logging the connection process itself,
+updating data calls to their respective servlets, formatting the called data on
+display, implementing the data into other pages, and this connection will lead
+right into the login functionality and modifying it so that users are pulled
+from the database rather than tomcat-users.xml. After this week, login works,
+lists are displayed in full on pageload, list results can be sorted by type in
+the dropdown menu, entries can be submitted to the database and are displayed in
+turn on lists.jsp, and major changes were made to stylesheets after finally
+seeing what the pages looked like with output :P
+
+1. JDBC Login connection
+2. Logging/Testing
+3. Vote Mechanism
+
+
+Week 10:
