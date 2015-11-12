@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  src.project.User: Meesh
+  src.login.User.User: Meesh
   Date: 9/29/15
   Time: 3:11 AM
   To change this template use File | Settings | File Templates.

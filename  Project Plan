@@ -59,7 +59,7 @@ life for which we do not. Definery will make that happen.
 'Definery' Dictionary Submittal Tool Project Plan
 ~~ More precisely, a vague idea of how i want to go about this~~~
 
--src.project.User Interface
+-src.login.User.User Interface
     -Entry Submittal Mechanism
         -Form w/ fields
         -Add to Database
@@ -75,7 +75,7 @@ life for which we do not. Definery will make that happen.
         -Descriptions
         -Votecount
         -Metadata
-    -src.project.User Accounts
+    -src.login.User.User Accounts
         -Submitted
       **-Edited ---------> Yeah, so I'm realizing this might provide so
             conceptual hindrances, namely if you allow editing, you cant be
@@ -95,7 +95,7 @@ life for which we do not. Definery will make that happen.
             -Password
             -Connection to account page?
 
--src.project.User Login
+-src.login.User.User Login
     -3 Step Email Verified
     -Login to session
     -Personal Account Page
@@ -164,7 +164,7 @@ Java Page/Class Mockup
     -date_submitted/age
     -vote_count
 
-<<src.project.User Object>>
+<<src.login.User.User Object>>
     -username (PK)
     -password
     -user_data

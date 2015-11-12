@@ -9,11 +9,11 @@ package src.project;
 
 
 import src.lists.Entry;
-import java.util.*;
+
+import java.util.ArrayList;
 
 public class Definery {
     private ArrayList<Entry> entries;
-    public ArrayList<src.project.User> users;
     public ArrayList<Entry> userEntries;
 
     String word;
@@ -22,9 +22,9 @@ public class Definery {
 
     public void run() {
         populateDefineryDatabase("word", "def", "user");
-        populateUserDatabase();
+        //populateUserDatabase();
         outputEntryReport();
-        outputUserReport();
+        //outputUserReport();
     }
 
     public void populateDefineryDatabase(String word, String definition,
@@ -60,13 +60,13 @@ public class Definery {
             entries.add(entry2);
             entries.add(entry3);
     }
-
+/*
     public void populateUserDatabase() {
         users = new ArrayList<>();
         userEntries = new ArrayList<>();
         Entry entry;
 
-        User user = new User();
+        src.login.User.User user = new src.login.User.User();
             user.setUsername("dreamerdiver");
             user.setPassword("password");
             user.setAccountDate(new Date());
@@ -79,7 +79,7 @@ public class Definery {
             user.setSubmittedEntries(userEntries);
             users.add(user);
     }
-
+*/
     public void outputEntryReport() {
         Entry entry;
 
@@ -88,15 +88,16 @@ public class Definery {
             System.out.println(entry.createTestEntryOutput());
         }
     }
-
+/*
     public ArrayList outputUserReport() {
-        User user;
+        src.login.User.User user;
 
         for (Object user1 : users) {
-            user = (User) user1;
+            user = (User.User) user1;
             System.out.println(user.createTestUserOutput());
         }
         System.out.println(userEntries);
         return users;
     }
+    */
 }

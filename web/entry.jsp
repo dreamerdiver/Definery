@@ -2,7 +2,7 @@
 
 <%--
   Created by IntelliJ IDEA.
-  src.project.User: Meesh
+  src.login.User.User: Meesh
   Date: 10/12/15
   Time: 2:46 AM
   To change this template use File | Settings | File Templates.
