@@ -10,7 +10,7 @@
 <html>
     <head>
         <title>'<%=request.getRemoteUser()%>' Persona</title>
-        <link href="stylesheets/persona.css" rel="stylesheet" type="text/css"/>
+        <link href="stylesheets/css/persona.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div id="header">

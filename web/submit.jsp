@@ -12,8 +12,8 @@
 <html>
     <head>
         <title>Submit Entry</title>
-        <link href="stylesheets/submit.css" rel="stylesheet" type="text/css"/>
-        <script type="text/javascript" src="scripts/reportEntryAttempt.js"></script>
+        <link href="stylesheets/css/submit.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="../../scripts/reportEntryAttempt.js"></script>
     </head>
     <body>
         <div id="header">

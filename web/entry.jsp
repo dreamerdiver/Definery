@@ -14,7 +14,7 @@
 <html>
     <head>
         <title>Entry ''</title>
-        <link href="stylesheets/lists.css" rel="stylesheet" type="text/css"/>
+        <link href="stylesheets/css/lists.css" rel="stylesheet" type="text/css"/>
     </head>
         <div id="header">
             <a href="index.jsp">Home</a>

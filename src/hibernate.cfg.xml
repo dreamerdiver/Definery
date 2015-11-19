@@ -16,8 +16,9 @@
         <property name="connection.password">
             DreamandDive406
         </property>
-        <mapping resource="User.hbm.xml" />
-        <mapping class="src.login.User" />
+        <mapping resource="User.hbm.xml"/>
+        <mapping class="src.login.User"/>
+        <mapping class="src.login.UserData"/>
+        <mapping class="src.login.UserRole"/>
     </session-factory>
-
 </hibernate-configuration>

@@ -9,7 +9,7 @@
 <html>
     <head>
         <title>Login Failed</title>
-        <link href="stylesheets/failedLogin.css" rel="stylesheet" type="text/css"/>
+        <link href="stylesheets/css/failedLogin.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div id="header"></div>

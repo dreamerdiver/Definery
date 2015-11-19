@@ -1,11 +1,10 @@
 @font-face {
     font-family: OratorStd;
-    src: url("fonts/OratorStd.otf") format("opentype");
+    src: url("../fonts/OratorStd.otf") format("opentype");
 }
-
 @font-face {
     font-family: Zapfino;
-    src: url("fonts/Zapfino.ttf") format("truetype");
+    src: url("../fonts/Zapfino.ttf") format("truetype");
 }
 
 body {
@@ -13,7 +12,7 @@ body {
     margin: 0;
     font-family: Tahoma, Geneva, sans-serif;
     background-color: powderblue;
-    /*background-image: url("images/Desert.jpg");*/
+        /*background-image: url("images/Desert.jpg");*/
 }
 
 #header {
@@ -31,13 +30,14 @@ body {
 #mainContent {
     display: block;
     width: 600px;
+    height: 100%;
     background-color: #c4e1ff;
     border: groove 4px goldenrod;
     padding: 10px;
     text-align: center;
     font-family: Zapfino, serif;
     font-size: 22px;
-    color: #28242a;
+    color: antiquewhite;
     margin: auto;
     box-shadow: -4px 3px 4px white;
 }
@@ -53,20 +53,3 @@ a {
     z-index: 0;
 }
 
-#sortByDropdown {
-    display: block;
-    text-align: right;
-}
-
-#tableContent {
-    display: inline-block;
-    align-content: center;
-}
-#entryTable {
-    display: block;
-    align-content: center;
-    margin: 8px;
-    padding: 3px;
-
-
-}

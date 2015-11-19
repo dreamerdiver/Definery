@@ -1,15 +1,14 @@
 @font-face {
     font-family: OratorStd;
-    src: url("fonts/OratorStd.otf") format("opentype");
+    src: url("../fonts/OratorStd.otf") format("opentype");
 }
 @font-face {
     font-family: Zapfino;
-    src: url("fonts/Zapfino.ttf") format("truetype");
+    src: url("../fonts/Zapfino.ttf") format("truetype");
 }
 
-
 body {
-    padding: 10px 10px;
+    /*padding: 10px 10px;*/
     margin: 0;
     font-family: Tahoma, Geneva, sans-serif;
     background-color: powderblue;
@@ -18,11 +17,12 @@ body {
 
 #header {
     display: block;
-    height: 25px;
+    height: 22px;
     width: 98%;
     background-color: darkgoldenrod;
     border: groove 4px goldenrod;
     text-align: center;
+    padding: 10px;
     margin: auto;
     box-shadow: -4px 3px 4px white;
     /*background-image: url(images/header_bg.png);*/
@@ -35,12 +35,26 @@ body {
     background-color: #c4e1ff;
     border: groove 4px goldenrod;
     padding: 10px;
-    text-align: center;
-    font-family: Zapfino, serif;
-    font-size: 22px;
-    color: antiquewhite;
+    text-align: left;
+    font-family: OratorStd, serif;
+    font-size: 18px;
+    color: black;
     margin: auto;
     box-shadow: -4px 3px 4px white;
+}
+
+h3 {
+    font-family: Zapfino, sans-serif;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
+
+p {
+    font-family: OratorStd, sans-serif;
+    color: black;
+    font-size: 18px;
+    text-align: left;
 }
 
 a {

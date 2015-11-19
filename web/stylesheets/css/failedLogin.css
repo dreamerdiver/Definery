@@ -1,14 +1,15 @@
 @font-face {
     font-family: OratorStd;
-    src: url("fonts/OratorStd.otf") format("opentype");
+    src: url("../fonts/OratorStd.otf") format("opentype");
 }
 @font-face {
     font-family: Zapfino;
-    src: url("fonts/Zapfino.ttf") format("truetype");
+    src: url("../fonts/Zapfino.ttf") format("truetype");
 }
 
+
 body {
-    padding: 100px 100px;
+    padding: 10px 10px;
     margin: 0;
     font-family: Tahoma, Geneva, sans-serif;
     background-color: powderblue;
@@ -17,49 +18,39 @@ body {
 
 #header {
     display: block;
-    align-content: center;
-    height: 180px;
-    width: 50%;
-    background-color: #c4e1ff;
+    height: 32px;
+    width: 98%;
+    background-color: darkgoldenrod;
     border: groove 4px goldenrod;
     text-align: center;
-    font-family: Zapfino, serif;
-    font-size: 34px;
-    padding: -40px;
-    color: black;
     margin: auto;
     box-shadow: -4px 3px 4px white;
-    z-index: 1;
     /*background-image: url(images/header_bg.png);*/
 }
 
 #mainContent {
     display: block;
-    width: 75%;
-    height: 22px;
+    width: 600px;
+    height: 100%;
     background-color: #c4e1ff;
     border: groove 4px goldenrod;
     padding: 10px;
     text-align: center;
+    font-family: Zapfino, serif;
+    font-size: 18px;
+    color: antiquewhite;
     margin: auto;
     box-shadow: -4px 3px 4px white;
-    z-index:2;
-}
-
-h1 {
-    display: flex;
-    padding: 10px;
-    color: black;
-    margin: auto;
 }
 
 a {
     text-align: center;
     color: black;
     font-family: OratorStd, serif;
-    font-size: 16px;
+    font-size: 18px;
     text-underline: none;
     padding: 10px;
     margin: auto;
-    z-index: 3;
+    z-index: 0;
 }
+

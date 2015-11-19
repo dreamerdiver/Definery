@@ -1,0 +1,1377 @@
+DisplayLists: dispatcher.forward() completed successfully
+DisplayLists: dispatcher.forward() completed successfully
+DisplayLists: sortParam was set to: alphabetical
+DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+DisplayLists: dispatcher.forward() completed successfully
+DisplayLists: sortParam was set to: alphabetical
+DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+DisplayLists: dispatcher.forward() completed successfully
+DisplayLists: sortParam was set to: alphabetical
+DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+DisplayLists: dispatcher.forward() completed successfully
+DisplayLists: sortParam was set to: alphabetical
+lists.sortListsByAlphabetical: Sorted By: alphabetical
+lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+lists.sortListsByAlphabetical: connection.close() completed successfully
+DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+DisplayLists: dispatcher.forward() completed successfully
+DisplayLists: sortParam was set to: alphabetical
+Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+DisplayLists: dispatcher.forward() completed successfully
+DisplayLists: sortParam was set to: alphabetical
+Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+DisplayLists: dispatcher.forward() completed successfully
+SortByer: Created 'SortByer' instance
+Lists: Created 'Lists' instance
+DisplayLists: sortParam was set to: alphabetical
+Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+Entry: Created 'Entry' instance
+Entry: Created 'Entry' instance
+Entry: Created 'Entry' instance
+Entry: Created 'Entry' instance
+Entry: Created 'Entry' instance
+Entry: Created 'Entry' instance
+Entry: Created 'Entry' instance
+Entry: Created 'Entry' instance
+Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-09 21:51:36,409 0    SortByer: Created 'SortByer' instance
+2015-11-09 21:51:36,435 26   Lists: Created 'Lists' instance
+2015-11-09 21:51:36,436 27   DisplayLists: sortParam was set to: alphabetical
+2015-11-09 21:51:36,544 135  Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-09 21:51:36,545 136  Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-09 21:51:36,546 137  Entry: Created 'Entry' instance
+2015-11-09 21:51:36,547 138  Entry: Created 'Entry' instance
+2015-11-09 21:51:36,547 138  Entry: Created 'Entry' instance
+2015-11-09 21:51:36,547 138  Entry: Created 'Entry' instance
+2015-11-09 21:51:36,547 138  Entry: Created 'Entry' instance
+2015-11-09 21:51:36,547 138  Entry: Created 'Entry' instance
+2015-11-09 21:51:36,547 138  Entry: Created 'Entry' instance
+2015-11-09 21:51:36,547 138  Entry: Created 'Entry' instance
+2015-11-09 21:51:36,547 138  Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-09 21:51:36,548 139  Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-09 21:51:36,548 139  DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-09 21:51:36,729 320  DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-09 21:58:55,106 0    [http-nio-8080-exec-163] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-09 21:58:55,124 18   [http-nio-8080-exec-163] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-09 21:58:55,124 18   [http-nio-8080-exec-163] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-09 21:58:55,145 39   [http-nio-8080-exec-163] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-09 21:58:55,145 39   [http-nio-8080-exec-163] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-09 21:58:55,146 40   [http-nio-8080-exec-163] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 21:58:55,147 41   [http-nio-8080-exec-163] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 21:58:55,147 41   [http-nio-8080-exec-163] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 21:58:55,147 41   [http-nio-8080-exec-163] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 21:58:55,147 41   [http-nio-8080-exec-163] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 21:58:55,147 41   [http-nio-8080-exec-163] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 21:58:55,147 41   [http-nio-8080-exec-163] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 21:58:55,147 41   [http-nio-8080-exec-163] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 21:58:55,147 41   [http-nio-8080-exec-163] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-09 21:58:55,148 42   [http-nio-8080-exec-163] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-09 21:58:55,148 42   [http-nio-8080-exec-163] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-09 21:58:55,250 144  [http-nio-8080-exec-163] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-09 21:59:26,735 0    [http-nio-8080-exec-168] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-09 21:59:26,740 5    [http-nio-8080-exec-168] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-09 21:59:26,741 6    [http-nio-8080-exec-168] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-09 21:59:26,748 13   [http-nio-8080-exec-168] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-09 21:59:26,749 14   [http-nio-8080-exec-168] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-09 21:59:26,750 15   [http-nio-8080-exec-168] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 21:59:26,751 16   [http-nio-8080-exec-168] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 21:59:26,751 16   [http-nio-8080-exec-168] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 21:59:26,751 16   [http-nio-8080-exec-168] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 21:59:26,751 16   [http-nio-8080-exec-168] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 21:59:26,751 16   [http-nio-8080-exec-168] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 21:59:26,751 16   [http-nio-8080-exec-168] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 21:59:26,751 16   [http-nio-8080-exec-168] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 21:59:26,752 17   [http-nio-8080-exec-168] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-09 21:59:26,752 17   [http-nio-8080-exec-168] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-09 21:59:26,752 17   [http-nio-8080-exec-168] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-09 21:59:26,928 193  [http-nio-8080-exec-168] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-09 22:00:15,147 0    [http-nio-8080-exec-167] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-09 22:00:15,151 4    [http-nio-8080-exec-167] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-09 22:00:15,151 4    [http-nio-8080-exec-167] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-09 22:00:15,155 8    [http-nio-8080-exec-167] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-09 22:00:15,156 9    [http-nio-8080-exec-167] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-09 22:00:15,157 10   [http-nio-8080-exec-167] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 22:00:15,157 10   [http-nio-8080-exec-167] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 22:00:15,157 10   [http-nio-8080-exec-167] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 22:00:15,157 10   [http-nio-8080-exec-167] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 22:00:15,157 10   [http-nio-8080-exec-167] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 22:00:15,157 10   [http-nio-8080-exec-167] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 22:00:15,157 10   [http-nio-8080-exec-167] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 22:00:15,157 10   [http-nio-8080-exec-167] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 22:00:15,157 10   [http-nio-8080-exec-167] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-09 22:00:15,158 11   [http-nio-8080-exec-167] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-09 22:00:15,158 11   [http-nio-8080-exec-167] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-09 22:00:15,323 176  [http-nio-8080-exec-167] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-09 23:55:04,598 1    [http-nio-8080-exec-182] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-09 23:55:04,651 54   [http-nio-8080-exec-182] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-09 23:55:04,653 56   [http-nio-8080-exec-182] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-09 23:55:04,658 61   [http-nio-8080-exec-182] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-09 23:55:04,659 62   [http-nio-8080-exec-182] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-09 23:55:04,660 63   [http-nio-8080-exec-182] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 23:55:04,660 63   [http-nio-8080-exec-182] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 23:55:04,660 63   [http-nio-8080-exec-182] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 23:55:04,660 63   [http-nio-8080-exec-182] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 23:55:04,660 63   [http-nio-8080-exec-182] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 23:55:04,660 63   [http-nio-8080-exec-182] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 23:55:04,660 63   [http-nio-8080-exec-182] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 23:55:04,660 63   [http-nio-8080-exec-182] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-09 23:55:04,660 63   [http-nio-8080-exec-182] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-09 23:55:04,661 64   [http-nio-8080-exec-182] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-09 23:55:04,661 64   [http-nio-8080-exec-182] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-09 23:55:04,795 198  [http-nio-8080-exec-182] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 00:01:59,753 0    [http-nio-8080-exec-184] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 00:01:59,756 3    [http-nio-8080-exec-184] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 00:01:59,756 3    [http-nio-8080-exec-184] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 00:01:59,803 50   [http-nio-8080-exec-184] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 00:01:59,804 51   [http-nio-8080-exec-184] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 00:01:59,805 52   [http-nio-8080-exec-184] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:01:59,806 53   [http-nio-8080-exec-184] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:01:59,806 53   [http-nio-8080-exec-184] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:01:59,806 53   [http-nio-8080-exec-184] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:01:59,806 53   [http-nio-8080-exec-184] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:01:59,806 53   [http-nio-8080-exec-184] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:01:59,806 53   [http-nio-8080-exec-184] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:01:59,806 53   [http-nio-8080-exec-184] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:01:59,806 53   [http-nio-8080-exec-184] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 00:01:59,807 54   [http-nio-8080-exec-184] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 00:01:59,807 54   [http-nio-8080-exec-184] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 00:01:59,906 153  [http-nio-8080-exec-184] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 00:03:00,364 0    [http-nio-8080-exec-195] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 00:03:00,368 4    [http-nio-8080-exec-195] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 00:03:00,368 4    [http-nio-8080-exec-195] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 00:03:00,373 9    [http-nio-8080-exec-195] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 00:03:00,374 10   [http-nio-8080-exec-195] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 00:03:00,375 11   [http-nio-8080-exec-195] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:03:00,375 11   [http-nio-8080-exec-195] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:03:00,375 11   [http-nio-8080-exec-195] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:03:00,375 11   [http-nio-8080-exec-195] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:03:00,376 12   [http-nio-8080-exec-195] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:03:00,376 12   [http-nio-8080-exec-195] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:03:00,376 12   [http-nio-8080-exec-195] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:03:00,376 12   [http-nio-8080-exec-195] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:03:00,376 12   [http-nio-8080-exec-195] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 00:03:00,376 12   [http-nio-8080-exec-195] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 00:03:00,376 12   [http-nio-8080-exec-195] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 00:03:00,488 124  [http-nio-8080-exec-195] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 00:03:40,957 0    [http-nio-8080-exec-201] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 00:03:40,960 3    [http-nio-8080-exec-201] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 00:03:40,961 4    [http-nio-8080-exec-201] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 00:03:40,965 8    [http-nio-8080-exec-201] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 00:03:40,970 13   [http-nio-8080-exec-201] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 00:03:40,971 14   [http-nio-8080-exec-201] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:03:40,972 15   [http-nio-8080-exec-201] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:03:40,972 15   [http-nio-8080-exec-201] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:03:40,972 15   [http-nio-8080-exec-201] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:03:40,972 15   [http-nio-8080-exec-201] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:03:40,972 15   [http-nio-8080-exec-201] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:03:40,972 15   [http-nio-8080-exec-201] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:03:40,972 15   [http-nio-8080-exec-201] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:03:40,972 15   [http-nio-8080-exec-201] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 00:03:40,973 16   [http-nio-8080-exec-201] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 00:03:40,973 16   [http-nio-8080-exec-201] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 00:03:41,317 360  [http-nio-8080-exec-201] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 00:04:12,371 0    [http-nio-8080-exec-203] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 00:04:12,375 4    [http-nio-8080-exec-203] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 00:04:12,376 5    [http-nio-8080-exec-203] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 00:04:12,381 10   [http-nio-8080-exec-203] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 00:04:12,382 11   [http-nio-8080-exec-203] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 00:04:12,382 11   [http-nio-8080-exec-203] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:04:12,383 12   [http-nio-8080-exec-203] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:04:12,383 12   [http-nio-8080-exec-203] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:04:12,383 12   [http-nio-8080-exec-203] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:04:12,383 12   [http-nio-8080-exec-203] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:04:12,383 12   [http-nio-8080-exec-203] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:04:12,383 12   [http-nio-8080-exec-203] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:04:12,383 12   [http-nio-8080-exec-203] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:04:12,383 12   [http-nio-8080-exec-203] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 00:04:12,384 13   [http-nio-8080-exec-203] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 00:04:12,384 13   [http-nio-8080-exec-203] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 00:04:12,525 154  [http-nio-8080-exec-203] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 00:04:44,344 31973 [http-nio-8080-exec-197] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 00:04:44,345 31974 [http-nio-8080-exec-197] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 00:04:44,345 31974 [http-nio-8080-exec-197] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: voteCount
+2015-11-10 00:04:44,350 31979 [http-nio-8080-exec-197] INFO  src.lists.Lists  - Lists: lists.sortListsByVoteCount: Sorted By: voteCount
+2015-11-10 00:04:44,351 31980 [http-nio-8080-exec-197] INFO  src.lists.Lists  - Lists: lists.sortListsByVoteCount: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 00:04:44,351 31980 [http-nio-8080-exec-197] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:04:44,351 31980 [http-nio-8080-exec-197] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:04:44,351 31980 [http-nio-8080-exec-197] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:04:44,351 31980 [http-nio-8080-exec-197] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:04:44,352 31981 [http-nio-8080-exec-197] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:04:44,352 31981 [http-nio-8080-exec-197] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:04:44,352 31981 [http-nio-8080-exec-197] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:04:44,352 31981 [http-nio-8080-exec-197] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:04:44,352 31981 [http-nio-8080-exec-197] INFO  src.lists.Lists  - Lists: lists.sortListsByVoteCount: resultSet.next() completed successfully
+2015-11-10 00:04:44,352 31981 [http-nio-8080-exec-197] INFO  src.lists.Lists  - Lists: lists.sortListsByVoteCount: connection.close() completed successfully
+2015-11-10 00:04:44,352 31981 [http-nio-8080-exec-197] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 00:04:44,357 31986 [http-nio-8080-exec-197] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 00:12:22,881 0    [http-nio-8080-exec-213] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 00:12:22,939 58   [http-nio-8080-exec-213] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 00:12:22,940 59   [http-nio-8080-exec-213] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 00:12:22,944 63   [http-nio-8080-exec-213] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 00:12:22,945 64   [http-nio-8080-exec-213] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 00:12:22,946 65   [http-nio-8080-exec-213] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:12:22,949 68   [http-nio-8080-exec-213] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:12:22,950 69   [http-nio-8080-exec-213] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:12:22,950 69   [http-nio-8080-exec-213] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:12:22,950 69   [http-nio-8080-exec-213] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:12:22,950 69   [http-nio-8080-exec-213] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:12:22,950 69   [http-nio-8080-exec-213] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:12:22,950 69   [http-nio-8080-exec-213] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:12:22,950 69   [http-nio-8080-exec-213] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 00:12:22,950 69   [http-nio-8080-exec-213] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 00:12:22,951 70   [http-nio-8080-exec-213] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 00:12:23,069 188  [http-nio-8080-exec-213] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 00:19:48,450 0    [http-nio-8080-exec-237] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 00:19:48,454 4    [http-nio-8080-exec-237] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 00:19:48,454 4    [http-nio-8080-exec-237] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 00:19:48,725 275  [http-nio-8080-exec-237] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 00:19:48,728 278  [http-nio-8080-exec-237] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 00:19:48,729 279  [http-nio-8080-exec-237] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:19:48,729 279  [http-nio-8080-exec-237] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:19:48,729 279  [http-nio-8080-exec-237] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:19:48,729 279  [http-nio-8080-exec-237] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:19:48,730 280  [http-nio-8080-exec-237] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:19:48,730 280  [http-nio-8080-exec-237] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:19:48,730 280  [http-nio-8080-exec-237] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:19:48,730 280  [http-nio-8080-exec-237] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:19:48,730 280  [http-nio-8080-exec-237] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 00:19:48,731 281  [http-nio-8080-exec-237] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 00:19:48,731 281  [http-nio-8080-exec-237] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 00:19:48,821 371  [http-nio-8080-exec-237] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 00:23:14,763 0    [http-nio-8080-exec-244] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 00:23:14,768 5    [http-nio-8080-exec-244] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 00:23:14,769 6    [http-nio-8080-exec-244] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 00:23:15,123 360  [http-nio-8080-exec-244] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 00:23:15,126 363  [http-nio-8080-exec-244] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 00:23:15,127 364  [http-nio-8080-exec-244] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:15,127 364  [http-nio-8080-exec-244] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:15,127 364  [http-nio-8080-exec-244] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:15,127 364  [http-nio-8080-exec-244] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:15,128 365  [http-nio-8080-exec-244] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:15,128 365  [http-nio-8080-exec-244] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:15,128 365  [http-nio-8080-exec-244] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:15,128 365  [http-nio-8080-exec-244] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:15,128 365  [http-nio-8080-exec-244] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 00:23:15,129 366  [http-nio-8080-exec-244] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 00:23:15,130 367  [http-nio-8080-exec-244] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 00:23:15,246 483  [http-nio-8080-exec-244] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 00:23:19,824 5061 [http-nio-8080-exec-240] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 00:23:19,827 5064 [http-nio-8080-exec-240] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 00:23:19,827 5064 [http-nio-8080-exec-240] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 00:23:19,836 5073 [http-nio-8080-exec-240] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 00:23:19,837 5074 [http-nio-8080-exec-240] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 00:23:19,837 5074 [http-nio-8080-exec-240] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:19,837 5074 [http-nio-8080-exec-240] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:19,837 5074 [http-nio-8080-exec-240] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:19,838 5075 [http-nio-8080-exec-240] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:19,838 5075 [http-nio-8080-exec-240] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:19,838 5075 [http-nio-8080-exec-240] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:19,838 5075 [http-nio-8080-exec-240] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:19,838 5075 [http-nio-8080-exec-240] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:19,838 5075 [http-nio-8080-exec-240] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 00:23:19,839 5076 [http-nio-8080-exec-240] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 00:23:19,839 5076 [http-nio-8080-exec-240] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 00:23:19,843 5080 [http-nio-8080-exec-240] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 00:23:24,769 10006 [http-nio-8080-exec-245] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 00:23:24,770 10007 [http-nio-8080-exec-245] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 00:23:24,770 10007 [http-nio-8080-exec-245] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: voteCount
+2015-11-10 00:23:24,776 10013 [http-nio-8080-exec-245] INFO  src.lists.Lists  - Lists: lists.sortListsByVoteCount: Sorted By: voteCount
+2015-11-10 00:23:24,777 10014 [http-nio-8080-exec-245] INFO  src.lists.Lists  - Lists: lists.sortListsByVoteCount: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 00:23:24,777 10014 [http-nio-8080-exec-245] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:24,777 10014 [http-nio-8080-exec-245] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:24,777 10014 [http-nio-8080-exec-245] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:24,777 10014 [http-nio-8080-exec-245] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:24,777 10014 [http-nio-8080-exec-245] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:24,778 10015 [http-nio-8080-exec-245] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:24,778 10015 [http-nio-8080-exec-245] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:24,778 10015 [http-nio-8080-exec-245] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:24,778 10015 [http-nio-8080-exec-245] INFO  src.lists.Lists  - Lists: lists.sortListsByVoteCount: resultSet.next() completed successfully
+2015-11-10 00:23:24,778 10015 [http-nio-8080-exec-245] INFO  src.lists.Lists  - Lists: lists.sortListsByVoteCount: connection.close() completed successfully
+2015-11-10 00:23:24,778 10015 [http-nio-8080-exec-245] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 00:23:24,780 10017 [http-nio-8080-exec-245] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 00:23:58,556 0    [http-nio-8080-exec-248] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 00:23:58,559 3    [http-nio-8080-exec-248] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 00:23:58,560 4    [http-nio-8080-exec-248] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: voteCount
+2015-11-10 00:23:58,851 295  [http-nio-8080-exec-248] INFO  src.lists.Lists  - Lists: lists.sortListsByVoteCount: Sorted By: voteCount
+2015-11-10 00:23:58,854 298  [http-nio-8080-exec-248] INFO  src.lists.Lists  - Lists: lists.sortListsByVoteCount: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 00:23:58,856 300  [http-nio-8080-exec-248] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:58,856 300  [http-nio-8080-exec-248] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:58,856 300  [http-nio-8080-exec-248] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:58,856 300  [http-nio-8080-exec-248] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:58,856 300  [http-nio-8080-exec-248] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:58,857 301  [http-nio-8080-exec-248] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:58,857 301  [http-nio-8080-exec-248] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:58,857 301  [http-nio-8080-exec-248] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:23:58,857 301  [http-nio-8080-exec-248] INFO  src.lists.Lists  - Lists: lists.sortListsByVoteCount: resultSet.next() completed successfully
+2015-11-10 00:23:58,858 302  [http-nio-8080-exec-248] INFO  src.lists.Lists  - Lists: lists.sortListsByVoteCount: connection.close() completed successfully
+2015-11-10 00:23:58,858 302  [http-nio-8080-exec-248] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 00:23:58,977 421  [http-nio-8080-exec-248] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 00:24:03,899 5343 [http-nio-8080-exec-246] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 00:24:03,901 5345 [http-nio-8080-exec-246] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 00:24:03,901 5345 [http-nio-8080-exec-246] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 00:24:03,907 5351 [http-nio-8080-exec-246] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 00:24:03,909 5353 [http-nio-8080-exec-246] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 00:24:03,909 5353 [http-nio-8080-exec-246] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:24:03,909 5353 [http-nio-8080-exec-246] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:24:03,910 5354 [http-nio-8080-exec-246] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:24:03,910 5354 [http-nio-8080-exec-246] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:24:03,910 5354 [http-nio-8080-exec-246] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:24:03,910 5354 [http-nio-8080-exec-246] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:24:03,910 5354 [http-nio-8080-exec-246] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:24:03,910 5354 [http-nio-8080-exec-246] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:24:03,910 5354 [http-nio-8080-exec-246] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 00:24:03,911 5355 [http-nio-8080-exec-246] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 00:24:03,911 5355 [http-nio-8080-exec-246] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 00:24:03,918 5362 [http-nio-8080-exec-246] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 00:24:10,280 11724 [http-nio-8080-exec-251] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 00:24:10,280 11724 [http-nio-8080-exec-251] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 00:24:10,281 11725 [http-nio-8080-exec-251] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 00:24:10,287 11731 [http-nio-8080-exec-251] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 00:24:10,288 11732 [http-nio-8080-exec-251] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 00:24:10,288 11732 [http-nio-8080-exec-251] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:24:10,288 11732 [http-nio-8080-exec-251] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:24:10,288 11732 [http-nio-8080-exec-251] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:24:10,288 11732 [http-nio-8080-exec-251] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:24:10,289 11733 [http-nio-8080-exec-251] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:24:10,289 11733 [http-nio-8080-exec-251] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:24:10,289 11733 [http-nio-8080-exec-251] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:24:10,289 11733 [http-nio-8080-exec-251] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:24:10,289 11733 [http-nio-8080-exec-251] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 00:24:10,289 11733 [http-nio-8080-exec-251] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 00:24:10,289 11733 [http-nio-8080-exec-251] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 00:24:10,292 11736 [http-nio-8080-exec-251] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 00:28:24,212 0    [http-nio-8080-exec-263] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 00:28:24,215 3    [http-nio-8080-exec-263] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 00:28:24,215 3    [http-nio-8080-exec-263] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 00:28:24,475 263  [http-nio-8080-exec-263] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 00:28:24,477 265  [http-nio-8080-exec-263] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 00:28:24,478 266  [http-nio-8080-exec-263] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:28:24,479 267  [http-nio-8080-exec-263] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:28:24,479 267  [http-nio-8080-exec-263] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:28:24,479 267  [http-nio-8080-exec-263] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:28:24,479 267  [http-nio-8080-exec-263] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:28:24,479 267  [http-nio-8080-exec-263] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:28:24,480 268  [http-nio-8080-exec-263] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:28:24,480 268  [http-nio-8080-exec-263] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 00:28:24,480 268  [http-nio-8080-exec-263] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 00:28:24,481 269  [http-nio-8080-exec-263] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 00:28:24,482 270  [http-nio-8080-exec-263] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 00:28:24,563 351  [http-nio-8080-exec-263] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 19:24:07,884 68143672 [http-nio-8080-exec-272] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 19:24:07,898 68143686 [http-nio-8080-exec-272] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 19:24:07,898 68143686 [http-nio-8080-exec-272] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 19:24:07,953 68143741 [http-nio-8080-exec-272] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 19:24:07,954 68143742 [http-nio-8080-exec-272] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 19:24:07,954 68143742 [http-nio-8080-exec-272] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:24:07,955 68143743 [http-nio-8080-exec-272] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:24:07,955 68143743 [http-nio-8080-exec-272] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:24:07,955 68143743 [http-nio-8080-exec-272] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:24:07,955 68143743 [http-nio-8080-exec-272] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:24:07,955 68143743 [http-nio-8080-exec-272] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:24:07,955 68143743 [http-nio-8080-exec-272] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:24:07,956 68143744 [http-nio-8080-exec-272] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:24:07,956 68143744 [http-nio-8080-exec-272] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 19:24:07,956 68143744 [http-nio-8080-exec-272] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 19:24:07,956 68143744 [http-nio-8080-exec-272] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 19:24:07,960 68143748 [http-nio-8080-exec-272] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 19:24:11,917 68147705 [http-nio-8080-exec-265] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 19:24:11,917 68147705 [http-nio-8080-exec-265] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 19:24:11,917 68147705 [http-nio-8080-exec-265] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 19:24:11,926 68147714 [http-nio-8080-exec-265] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 19:24:11,927 68147715 [http-nio-8080-exec-265] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 19:24:11,927 68147715 [http-nio-8080-exec-265] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:24:11,927 68147715 [http-nio-8080-exec-265] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:24:11,927 68147715 [http-nio-8080-exec-265] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:24:11,927 68147715 [http-nio-8080-exec-265] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:24:11,928 68147716 [http-nio-8080-exec-265] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:24:11,928 68147716 [http-nio-8080-exec-265] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:24:11,928 68147716 [http-nio-8080-exec-265] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:24:11,928 68147716 [http-nio-8080-exec-265] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:24:11,928 68147716 [http-nio-8080-exec-265] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 19:24:11,929 68147717 [http-nio-8080-exec-265] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 19:24:11,929 68147717 [http-nio-8080-exec-265] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 19:24:11,930 68147718 [http-nio-8080-exec-265] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 19:24:23,827 68159615 [http-nio-8080-exec-270] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 19:24:23,827 68159615 [http-nio-8080-exec-270] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 19:24:23,828 68159616 [http-nio-8080-exec-270] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 19:24:23,833 68159621 [http-nio-8080-exec-270] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 19:24:23,834 68159622 [http-nio-8080-exec-270] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 19:24:23,834 68159622 [http-nio-8080-exec-270] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:24:23,835 68159623 [http-nio-8080-exec-270] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:24:23,835 68159623 [http-nio-8080-exec-270] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:24:23,835 68159623 [http-nio-8080-exec-270] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:24:23,835 68159623 [http-nio-8080-exec-270] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:24:23,835 68159623 [http-nio-8080-exec-270] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:24:23,835 68159623 [http-nio-8080-exec-270] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:24:23,836 68159624 [http-nio-8080-exec-270] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:24:23,837 68159625 [http-nio-8080-exec-270] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 19:24:23,837 68159625 [http-nio-8080-exec-270] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 19:24:23,837 68159625 [http-nio-8080-exec-270] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 19:24:23,853 68159641 [http-nio-8080-exec-270] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 19:39:57,371 69093159 [http-nio-8080-exec-272] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 19:39:57,371 69093159 [http-nio-8080-exec-272] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 19:39:57,371 69093159 [http-nio-8080-exec-272] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 19:39:57,376 69093164 [http-nio-8080-exec-272] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 19:39:57,377 69093165 [http-nio-8080-exec-272] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 19:39:57,377 69093165 [http-nio-8080-exec-272] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:39:57,377 69093165 [http-nio-8080-exec-272] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:39:57,377 69093165 [http-nio-8080-exec-272] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:39:57,377 69093165 [http-nio-8080-exec-272] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:39:57,377 69093165 [http-nio-8080-exec-272] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:39:57,378 69093166 [http-nio-8080-exec-272] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:39:57,378 69093166 [http-nio-8080-exec-272] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:39:57,378 69093166 [http-nio-8080-exec-272] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 19:39:57,378 69093166 [http-nio-8080-exec-272] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 19:39:57,378 69093166 [http-nio-8080-exec-272] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 19:39:57,378 69093166 [http-nio-8080-exec-272] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 19:39:57,380 69093168 [http-nio-8080-exec-272] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 20:40:51,515 0    [http-nio-8080-exec-6] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 20:40:51,521 6    [http-nio-8080-exec-6] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 20:40:51,522 7    [http-nio-8080-exec-6] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 20:40:51,814 299  [http-nio-8080-exec-6] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 20:40:51,817 302  [http-nio-8080-exec-6] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 20:40:51,818 303  [http-nio-8080-exec-6] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:40:51,819 304  [http-nio-8080-exec-6] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:40:51,820 305  [http-nio-8080-exec-6] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:40:51,820 305  [http-nio-8080-exec-6] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:40:51,820 305  [http-nio-8080-exec-6] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:40:51,820 305  [http-nio-8080-exec-6] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:40:51,820 305  [http-nio-8080-exec-6] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:40:51,820 305  [http-nio-8080-exec-6] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:40:51,821 306  [http-nio-8080-exec-6] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 20:40:51,822 307  [http-nio-8080-exec-6] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 20:40:51,822 307  [http-nio-8080-exec-6] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 20:40:52,134 619  [http-nio-8080-exec-6] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 20:41:04,129 12614 [http-nio-8080-exec-7] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 20:41:04,131 12616 [http-nio-8080-exec-7] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 20:41:04,131 12616 [http-nio-8080-exec-7] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: newest
+2015-11-10 20:41:04,136 12621 [http-nio-8080-exec-7] INFO  src.lists.Lists  - Lists: lists.sortListsByNewest: Sorted By: newest
+2015-11-10 20:41:04,137 12622 [http-nio-8080-exec-7] INFO  src.lists.Lists  - Lists: lists.sortListsByNewest: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 20:41:04,137 12622 [http-nio-8080-exec-7] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:41:04,138 12623 [http-nio-8080-exec-7] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:41:04,138 12623 [http-nio-8080-exec-7] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:41:04,138 12623 [http-nio-8080-exec-7] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:41:04,139 12624 [http-nio-8080-exec-7] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:41:04,139 12624 [http-nio-8080-exec-7] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:41:04,139 12624 [http-nio-8080-exec-7] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:41:04,139 12624 [http-nio-8080-exec-7] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:41:04,139 12624 [http-nio-8080-exec-7] INFO  src.lists.Lists  - Lists: lists.sortListsByNewest: resultSet.next() completed successfully
+2015-11-10 20:41:04,139 12624 [http-nio-8080-exec-7] INFO  src.lists.Lists  - Lists: lists.sortListsByNewest: connection.close() completed successfully
+2015-11-10 20:41:04,140 12625 [http-nio-8080-exec-7] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 20:41:04,146 12631 [http-nio-8080-exec-7] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 20:41:16,365 24850 [http-nio-8080-exec-8] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 20:41:16,366 24851 [http-nio-8080-exec-8] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 20:41:16,366 24851 [http-nio-8080-exec-8] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: newest
+2015-11-10 20:41:16,374 24859 [http-nio-8080-exec-8] INFO  src.lists.Lists  - Lists: lists.sortListsByNewest: Sorted By: newest
+2015-11-10 20:41:16,416 24901 [http-nio-8080-exec-8] INFO  src.lists.Lists  - Lists: lists.sortListsByNewest: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 20:41:16,417 24902 [http-nio-8080-exec-8] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:41:16,417 24902 [http-nio-8080-exec-8] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:41:16,417 24902 [http-nio-8080-exec-8] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:41:16,417 24902 [http-nio-8080-exec-8] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:41:16,417 24902 [http-nio-8080-exec-8] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:41:16,418 24903 [http-nio-8080-exec-8] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:41:16,418 24903 [http-nio-8080-exec-8] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:41:16,418 24903 [http-nio-8080-exec-8] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:41:16,418 24903 [http-nio-8080-exec-8] INFO  src.lists.Lists  - Lists: lists.sortListsByNewest: resultSet.next() completed successfully
+2015-11-10 20:41:16,418 24903 [http-nio-8080-exec-8] INFO  src.lists.Lists  - Lists: lists.sortListsByNewest: connection.close() completed successfully
+2015-11-10 20:41:16,419 24904 [http-nio-8080-exec-8] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 20:41:16,425 24910 [http-nio-8080-exec-8] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 20:41:18,373 26858 [http-nio-8080-exec-9] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 20:41:18,374 26859 [http-nio-8080-exec-9] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 20:41:18,374 26859 [http-nio-8080-exec-9] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 20:41:18,379 26864 [http-nio-8080-exec-9] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 20:41:18,380 26865 [http-nio-8080-exec-9] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 20:41:18,381 26866 [http-nio-8080-exec-9] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:41:18,381 26866 [http-nio-8080-exec-9] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:41:18,381 26866 [http-nio-8080-exec-9] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:41:18,381 26866 [http-nio-8080-exec-9] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:41:18,381 26866 [http-nio-8080-exec-9] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:41:18,381 26866 [http-nio-8080-exec-9] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:41:18,382 26867 [http-nio-8080-exec-9] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:41:18,382 26867 [http-nio-8080-exec-9] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:41:18,382 26867 [http-nio-8080-exec-9] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 20:41:18,382 26867 [http-nio-8080-exec-9] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 20:41:18,382 26867 [http-nio-8080-exec-9] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 20:41:18,386 26871 [http-nio-8080-exec-9] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 20:44:02,629 191114 [http-nio-8080-exec-1] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 20:44:02,630 191115 [http-nio-8080-exec-1] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 20:44:02,630 191115 [http-nio-8080-exec-1] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 20:44:02,641 191126 [http-nio-8080-exec-1] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 20:44:02,641 191126 [http-nio-8080-exec-1] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 20:44:02,641 191126 [http-nio-8080-exec-1] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:44:02,642 191127 [http-nio-8080-exec-1] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:44:02,642 191127 [http-nio-8080-exec-1] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:44:02,642 191127 [http-nio-8080-exec-1] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:44:02,642 191127 [http-nio-8080-exec-1] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:44:02,642 191127 [http-nio-8080-exec-1] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:44:02,642 191127 [http-nio-8080-exec-1] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:44:02,642 191127 [http-nio-8080-exec-1] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 20:44:02,642 191127 [http-nio-8080-exec-1] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 20:44:02,642 191127 [http-nio-8080-exec-1] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 20:44:02,643 191128 [http-nio-8080-exec-1] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 20:44:02,648 191133 [http-nio-8080-exec-1] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 21:09:27,642 0    [http-nio-8080-exec-1] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 21:09:27,726 84   [http-nio-8080-exec-1] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 21:09:27,727 85   [http-nio-8080-exec-1] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 21:09:27,997 355  [http-nio-8080-exec-1] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 21:09:28,000 358  [http-nio-8080-exec-1] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 21:09:28,001 359  [http-nio-8080-exec-1] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:09:28,002 360  [http-nio-8080-exec-1] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:09:28,002 360  [http-nio-8080-exec-1] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:09:28,002 360  [http-nio-8080-exec-1] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:09:28,002 360  [http-nio-8080-exec-1] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:09:28,002 360  [http-nio-8080-exec-1] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:09:28,002 360  [http-nio-8080-exec-1] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:09:28,003 361  [http-nio-8080-exec-1] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:09:28,003 361  [http-nio-8080-exec-1] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 21:09:28,004 362  [http-nio-8080-exec-1] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 21:09:28,004 362  [http-nio-8080-exec-1] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 21:09:28,232 590  [http-nio-8080-exec-1] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 21:09:33,641 5999 [http-nio-8080-exec-2] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 21:09:33,643 6001 [http-nio-8080-exec-2] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 21:09:33,643 6001 [http-nio-8080-exec-2] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 21:09:33,651 6009 [http-nio-8080-exec-2] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 21:09:33,651 6009 [http-nio-8080-exec-2] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 21:09:33,651 6009 [http-nio-8080-exec-2] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:09:33,652 6010 [http-nio-8080-exec-2] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:09:33,652 6010 [http-nio-8080-exec-2] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:09:33,652 6010 [http-nio-8080-exec-2] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:09:33,652 6010 [http-nio-8080-exec-2] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:09:33,652 6010 [http-nio-8080-exec-2] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:09:33,652 6010 [http-nio-8080-exec-2] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:09:33,652 6010 [http-nio-8080-exec-2] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:09:33,653 6011 [http-nio-8080-exec-2] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 21:09:33,654 6012 [http-nio-8080-exec-2] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 21:09:33,654 6012 [http-nio-8080-exec-2] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 21:09:33,659 6017 [http-nio-8080-exec-2] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 21:10:16,073 48431 [http-nio-8080-exec-12] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 21:10:16,073 48431 [http-nio-8080-exec-12] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 21:10:16,074 48432 [http-nio-8080-exec-12] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 21:10:16,081 48439 [http-nio-8080-exec-12] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 21:10:16,082 48440 [http-nio-8080-exec-12] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 21:10:16,082 48440 [http-nio-8080-exec-12] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:10:16,082 48440 [http-nio-8080-exec-12] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:10:16,082 48440 [http-nio-8080-exec-12] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:10:16,082 48440 [http-nio-8080-exec-12] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:10:16,082 48440 [http-nio-8080-exec-12] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:10:16,082 48440 [http-nio-8080-exec-12] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:10:16,083 48441 [http-nio-8080-exec-12] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:10:16,083 48441 [http-nio-8080-exec-12] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:10:16,083 48441 [http-nio-8080-exec-12] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 21:10:16,083 48441 [http-nio-8080-exec-12] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 21:10:16,083 48441 [http-nio-8080-exec-12] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 21:10:16,087 48445 [http-nio-8080-exec-12] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 21:17:43,136 0    [http-nio-8080-exec-27] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 21:17:43,139 3    [http-nio-8080-exec-27] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 21:17:43,139 3    [http-nio-8080-exec-27] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 21:17:43,486 350  [http-nio-8080-exec-27] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 21:17:43,489 353  [http-nio-8080-exec-27] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 21:17:43,490 354  [http-nio-8080-exec-27] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:17:43,491 355  [http-nio-8080-exec-27] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:17:43,491 355  [http-nio-8080-exec-27] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:17:43,491 355  [http-nio-8080-exec-27] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:17:43,491 355  [http-nio-8080-exec-27] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:17:43,491 355  [http-nio-8080-exec-27] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:17:43,492 356  [http-nio-8080-exec-27] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:17:43,492 356  [http-nio-8080-exec-27] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:17:43,492 356  [http-nio-8080-exec-27] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 21:17:43,493 357  [http-nio-8080-exec-27] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 21:17:43,493 357  [http-nio-8080-exec-27] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 21:17:43,637 501  [http-nio-8080-exec-27] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 21:18:33,300 50164 [http-nio-8080-exec-29] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 21:18:33,301 50165 [http-nio-8080-exec-29] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 21:18:33,301 50165 [http-nio-8080-exec-29] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 21:18:33,310 50174 [http-nio-8080-exec-29] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 21:18:33,310 50174 [http-nio-8080-exec-29] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 21:18:33,311 50175 [http-nio-8080-exec-29] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:18:33,311 50175 [http-nio-8080-exec-29] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:18:33,311 50175 [http-nio-8080-exec-29] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:18:33,311 50175 [http-nio-8080-exec-29] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:18:33,311 50175 [http-nio-8080-exec-29] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:18:33,311 50175 [http-nio-8080-exec-29] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:18:33,312 50176 [http-nio-8080-exec-29] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:18:33,312 50176 [http-nio-8080-exec-29] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:18:33,312 50176 [http-nio-8080-exec-29] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 21:18:33,312 50176 [http-nio-8080-exec-29] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 21:18:33,312 50176 [http-nio-8080-exec-29] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 21:18:33,317 50181 [http-nio-8080-exec-29] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 21:24:20,811 0    [http-nio-8080-exec-33] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 21:24:20,815 4    [http-nio-8080-exec-33] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 21:24:20,815 4    [http-nio-8080-exec-33] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 21:24:21,098 287  [http-nio-8080-exec-33] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 21:24:21,101 290  [http-nio-8080-exec-33] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 21:24:21,102 291  [http-nio-8080-exec-33] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:24:21,103 292  [http-nio-8080-exec-33] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:24:21,103 292  [http-nio-8080-exec-33] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:24:21,103 292  [http-nio-8080-exec-33] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:24:21,103 292  [http-nio-8080-exec-33] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:24:21,103 292  [http-nio-8080-exec-33] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:24:21,103 292  [http-nio-8080-exec-33] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:24:21,104 293  [http-nio-8080-exec-33] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:24:21,104 293  [http-nio-8080-exec-33] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 21:24:21,105 294  [http-nio-8080-exec-33] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 21:24:21,105 294  [http-nio-8080-exec-33] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 21:24:21,245 434  [http-nio-8080-exec-33] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 21:33:39,861 559050 [http-nio-8080-exec-34] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 21:33:39,862 559051 [http-nio-8080-exec-34] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 21:33:39,862 559051 [http-nio-8080-exec-34] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 21:33:39,869 559058 [http-nio-8080-exec-34] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 21:33:39,869 559058 [http-nio-8080-exec-34] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 21:33:39,870 559059 [http-nio-8080-exec-34] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:33:39,870 559059 [http-nio-8080-exec-34] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:33:39,870 559059 [http-nio-8080-exec-34] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:33:39,870 559059 [http-nio-8080-exec-34] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:33:39,870 559059 [http-nio-8080-exec-34] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:33:39,870 559059 [http-nio-8080-exec-34] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:33:39,871 559060 [http-nio-8080-exec-34] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:33:39,871 559060 [http-nio-8080-exec-34] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:33:39,871 559060 [http-nio-8080-exec-34] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 21:33:39,871 559060 [http-nio-8080-exec-34] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 21:33:39,871 559060 [http-nio-8080-exec-34] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 21:33:39,876 559065 [http-nio-8080-exec-34] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 21:33:53,727 572916 [http-nio-8080-exec-35] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 21:33:53,728 572917 [http-nio-8080-exec-35] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 21:33:53,728 572917 [http-nio-8080-exec-35] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 21:33:53,735 572924 [http-nio-8080-exec-35] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 21:33:53,736 572925 [http-nio-8080-exec-35] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 21:33:53,737 572926 [http-nio-8080-exec-35] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:33:53,737 572926 [http-nio-8080-exec-35] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:33:53,737 572926 [http-nio-8080-exec-35] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:33:53,737 572926 [http-nio-8080-exec-35] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:33:53,738 572927 [http-nio-8080-exec-35] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:33:53,738 572927 [http-nio-8080-exec-35] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:33:53,738 572927 [http-nio-8080-exec-35] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:33:53,738 572927 [http-nio-8080-exec-35] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 21:33:53,738 572927 [http-nio-8080-exec-35] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 21:33:53,738 572927 [http-nio-8080-exec-35] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 21:33:53,738 572927 [http-nio-8080-exec-35] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 21:33:53,742 572931 [http-nio-8080-exec-35] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-10 23:11:36,524 6435713 [http-nio-8080-exec-40] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-10 23:11:36,629 6435818 [http-nio-8080-exec-40] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-10 23:11:36,630 6435819 [http-nio-8080-exec-40] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-10 23:11:36,635 6435824 [http-nio-8080-exec-40] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-10 23:11:36,636 6435825 [http-nio-8080-exec-40] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-10 23:11:36,636 6435825 [http-nio-8080-exec-40] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 23:11:36,636 6435825 [http-nio-8080-exec-40] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 23:11:36,636 6435825 [http-nio-8080-exec-40] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 23:11:36,637 6435826 [http-nio-8080-exec-40] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 23:11:36,637 6435826 [http-nio-8080-exec-40] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 23:11:36,637 6435826 [http-nio-8080-exec-40] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 23:11:36,637 6435826 [http-nio-8080-exec-40] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 23:11:36,637 6435826 [http-nio-8080-exec-40] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-10 23:11:36,637 6435826 [http-nio-8080-exec-40] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-10 23:11:36,637 6435826 [http-nio-8080-exec-40] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-10 23:11:36,637 6435826 [http-nio-8080-exec-40] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-10 23:11:36,640 6435829 [http-nio-8080-exec-40] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-11 20:48:44,438 0    [http-nio-8080-exec-10] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-11 20:48:44,529 91   [http-nio-8080-exec-10] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-11 20:48:44,530 92   [http-nio-8080-exec-10] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-11 20:48:44,862 424  [http-nio-8080-exec-10] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-11 20:48:44,866 428  [http-nio-8080-exec-10] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-11 20:48:44,867 429  [http-nio-8080-exec-10] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-11 20:48:44,868 430  [http-nio-8080-exec-10] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-11 20:48:44,868 430  [http-nio-8080-exec-10] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-11 20:48:44,868 430  [http-nio-8080-exec-10] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-11 20:48:44,868 430  [http-nio-8080-exec-10] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-11 20:48:44,868 430  [http-nio-8080-exec-10] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-11 20:48:44,868 430  [http-nio-8080-exec-10] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-11 20:48:44,869 431  [http-nio-8080-exec-10] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-11 20:48:44,869 431  [http-nio-8080-exec-10] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-11 20:48:44,870 432  [http-nio-8080-exec-10] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-11 20:48:44,870 432  [http-nio-8080-exec-10] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-11 20:48:45,209 771  [http-nio-8080-exec-10] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-11 20:49:03,118 18680 [http-nio-8080-exec-9] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-11 20:49:03,120 18682 [http-nio-8080-exec-9] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-11 20:49:03,120 18682 [http-nio-8080-exec-9] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-11 20:49:03,127 18689 [http-nio-8080-exec-9] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-11 20:49:03,128 18690 [http-nio-8080-exec-9] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-11 20:49:03,128 18690 [http-nio-8080-exec-9] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-11 20:49:03,129 18691 [http-nio-8080-exec-9] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-11 20:49:03,129 18691 [http-nio-8080-exec-9] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-11 20:49:03,129 18691 [http-nio-8080-exec-9] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-11 20:49:03,130 18692 [http-nio-8080-exec-9] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-11 20:49:03,130 18692 [http-nio-8080-exec-9] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-11 20:49:03,130 18692 [http-nio-8080-exec-9] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-11 20:49:03,130 18692 [http-nio-8080-exec-9] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-11 20:49:03,130 18692 [http-nio-8080-exec-9] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-11 20:49:03,131 18693 [http-nio-8080-exec-9] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-11 20:49:03,131 18693 [http-nio-8080-exec-9] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-11 20:49:03,141 18703 [http-nio-8080-exec-9] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-11 20:49:15,252 30814 [http-nio-8080-exec-3] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-11 20:49:15,252 30814 [http-nio-8080-exec-3] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-11 20:49:15,253 30815 [http-nio-8080-exec-3] INFO  src.servlets.SubmitEntry  - SubmitEntry: session.getSession() completed successfully
+2015-11-11 20:49:15,373 30935 [http-nio-8080-exec-3] INFO  src.lists.Lists  - Lists: lists.addEntry: statement.executeUpdate(addQueryString) completed successfully
+2015-11-11 20:49:15,374 30936 [http-nio-8080-exec-3] INFO  src.lists.Lists  - Lists: lists.addEntry: statement.executeQuery(addConfirmation) {select * from entries where word='1'} completed successfully
+2015-11-11 20:49:15,375 30937 [http-nio-8080-exec-3] INFO  src.lists.Lists  - Lists: lists.addEntry: connection.close() completed successfully
+2015-11-11 20:49:15,375 30937 [http-nio-8080-exec-3] INFO  src.servlets.SubmitEntry  - SubmitEntry: ''1'' was set as 'submissionMessage' attribute
+2015-11-11 20:49:15,376 30938 [http-nio-8080-exec-3] INFO  src.servlets.SubmitEntry  - SubmitEntry: response.sendRedirect() to url '/submit.jsp' completed successfully
+2015-11-11 21:06:28,915 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-11 21:06:29,104 189  [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-11 21:06:29,138 223  [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-11 21:06:29,143 228  [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-11 21:06:29,254 339  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-11 21:06:29,255 340  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-11 21:10:44,942 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-11 21:10:44,958 16   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-11 21:10:44,963 21   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-11 21:10:44,967 25   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-11 21:10:45,023 81   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-11 21:10:45,023 81   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-11 21:10:45,209 267  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2015-11-11 21:15:14,222 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-11 21:15:14,234 12   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-11 21:15:14,236 14   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-11 21:15:14,238 16   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-11 21:15:14,284 62   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-11 21:15:14,285 63   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-11 21:15:14,471 249  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2015-11-11 21:20:31,903 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-11 21:20:31,918 15   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-11 21:20:31,922 19   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-11 21:20:31,926 23   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-11 21:20:31,966 63   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-11 21:20:31,967 64   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-11 21:20:32,185 282  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2015-11-11 21:20:32,429 526  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2015-11-11 21:20:32,548 645  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-11-11 21:20:32,558 655  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2015-11-11 21:20:32,558 655  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2015-11-11 21:20:32,558 655  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/definery]
+2015-11-11 21:20:32,558 655  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=meesh, password=****}
+2015-11-11 21:20:33,307 1404 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-11 21:20:33,470 1567 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-11-11 21:20:33,524 1621 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-11 21:22:03,801 1    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-11 21:22:03,812 12   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-11 21:22:03,815 15   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-11 21:22:03,819 19   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-11 21:22:03,867 67   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-11 21:22:03,867 67   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-11 21:22:04,052 252  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2015-11-11 21:22:04,179 379  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2015-11-11 21:22:04,246 446  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-11-11 21:22:04,256 456  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2015-11-11 21:22:04,256 456  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2015-11-11 21:22:04,256 456  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/definery]
+2015-11-11 21:22:04,257 457  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=meesh, password=****}
+2015-11-11 21:22:04,930 1130 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-11 21:22:05,092 1292 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-11-11 21:22:05,103 1303 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-11 21:23:27,996 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-11 21:23:28,010 14   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-11 21:23:28,016 20   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-11 21:23:28,021 25   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-11 21:23:28,076 80   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-11 21:23:28,077 81   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-11 21:23:28,272 276  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2015-11-11 21:23:28,442 446  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2015-11-11 21:23:28,525 529  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-11-11 21:23:28,532 536  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2015-11-11 21:23:28,532 536  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2015-11-11 21:23:28,533 537  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/definery]
+2015-11-11 21:23:28,534 538  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=meesh, password=****}
+2015-11-11 21:23:29,207 1211 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-11 21:23:58,168 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-11 21:23:58,182 14   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-11 21:23:58,186 18   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-11 21:23:58,188 20   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-11 21:23:58,227 59   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-11 21:23:58,227 59   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-11 21:23:58,369 201  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2015-11-11 21:23:58,501 333  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2015-11-11 21:23:58,584 416  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-11-11 21:23:58,606 438  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2015-11-11 21:23:58,606 438  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2015-11-11 21:23:58,607 439  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/definery]
+2015-11-11 21:23:58,607 439  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=meesh, password=****}
+2015-11-11 21:23:59,320 1152 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-11 21:23:59,449 1281 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-11-11 21:23:59,466 1298 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-11 21:25:00,716 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-11 21:25:00,726 10   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-11 21:25:00,730 14   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-11 21:25:00,734 18   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-11 21:25:00,776 60   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-11 21:25:00,776 60   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-11 21:25:00,944 228  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2015-11-11 21:25:01,128 412  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2015-11-11 21:25:01,192 476  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-11-11 21:25:01,200 484  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2015-11-11 21:25:01,200 484  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2015-11-11 21:25:01,200 484  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/definery]
+2015-11-11 21:25:01,201 485  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=meesh, password=****}
+2015-11-11 21:25:01,828 1112 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-11 21:25:01,956 1240 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-11-11 21:25:01,962 1246 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-11 21:30:39,735 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-11 21:30:39,767 32   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-11 21:30:39,770 35   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-11 21:30:39,774 39   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-11 21:30:39,812 77   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-11 21:30:39,812 77   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-11 21:30:39,965 230  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2015-11-11 21:30:40,095 360  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2015-11-11 21:30:40,174 439  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-11-11 21:30:40,190 455  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2015-11-11 21:30:40,190 455  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2015-11-11 21:30:40,191 456  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/definery]
+2015-11-11 21:30:40,191 456  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=meesh, password=****}
+2015-11-11 21:30:40,937 1202 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-11 21:30:41,062 1327 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-11-11 21:30:41,075 1340 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-11 21:31:03,331 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-11 21:31:03,346 15   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-11 21:31:03,348 17   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-11 21:31:03,350 19   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-11 21:31:03,401 70   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-11 21:31:03,402 71   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-11 21:31:03,607 276  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2015-11-11 21:31:03,739 408  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2015-11-11 21:31:03,801 470  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-11-11 21:31:03,809 478  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2015-11-11 21:31:03,809 478  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2015-11-11 21:31:03,810 479  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/definery]
+2015-11-11 21:31:03,810 479  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=meesh, password=****}
+2015-11-11 21:31:04,470 1139 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-12 00:55:23,402 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-12 00:55:23,414 12   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-12 00:55:23,425 23   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-12 00:55:23,428 26   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-12 00:55:23,464 62   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-12 00:55:23,464 62   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-12 00:55:23,662 260  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2015-11-12 00:55:23,855 453  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2015-11-12 00:55:23,940 538  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-11-12 00:55:23,947 545  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2015-11-12 00:55:23,947 545  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2015-11-12 00:55:23,947 545  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/definery]
+2015-11-12 00:55:23,948 546  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=meesh, password=****}
+2015-11-12 00:55:24,615 1213 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-12 00:55:24,754 1352 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-11-12 00:55:24,763 1361 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-12 01:04:03,341 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-12 01:04:03,353 12   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-12 01:04:03,363 22   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-12 01:04:03,369 28   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-12 01:04:03,407 66   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-12 01:04:03,407 66   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-12 01:04:03,542 201  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2015-11-12 01:04:03,686 345  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2015-11-12 01:04:03,752 411  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-11-12 01:04:03,759 418  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2015-11-12 01:04:03,760 419  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2015-11-12 01:04:03,762 421  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/definery]
+2015-11-12 01:04:03,762 421  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=meesh, password=****}
+2015-11-12 01:04:04,504 1163 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-12 01:04:04,637 1296 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-11-12 01:04:04,646 1305 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-12 01:08:11,062 1    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-12 01:08:11,082 21   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-12 01:08:11,098 37   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-12 01:08:11,103 42   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-12 01:08:11,157 96   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-12 01:08:11,158 97   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-12 01:08:11,342 281  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2015-11-12 01:08:11,449 388  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2015-11-12 01:08:11,537 476  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-11-12 01:08:11,547 486  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2015-11-12 01:08:11,548 487  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2015-11-12 01:08:11,553 492  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/definery]
+2015-11-12 01:08:11,554 493  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=meesh, password=****}
+2015-11-12 01:08:12,304 1243 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-12 01:08:12,429 1368 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-11-12 01:08:12,437 1376 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-12 01:23:13,328 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-12 01:23:13,339 11   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-12 01:23:13,346 18   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-12 01:23:13,349 21   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-12 01:23:13,373 45   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-12 01:23:13,373 45   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-12 01:23:13,561 233  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2015-11-12 01:23:13,733 405  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2015-11-12 01:23:13,817 489  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-11-12 01:23:13,825 497  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2015-11-12 01:23:13,826 498  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2015-11-12 01:23:13,826 498  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/definery]
+2015-11-12 01:23:13,826 498  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=meesh, password=****}
+2015-11-12 01:23:14,507 1179 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-12 01:23:14,634 1306 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-11-12 01:23:14,642 1314 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-12 01:24:09,378 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-12 01:24:09,389 11   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-12 01:24:09,399 21   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-12 01:24:09,402 24   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-12 01:24:09,442 64   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-12 01:24:09,443 65   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-12 01:24:09,623 245  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2015-11-12 01:24:09,773 395  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2015-11-12 01:24:09,835 457  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-11-12 01:24:09,847 469  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2015-11-12 01:24:09,847 469  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2015-11-12 01:24:09,847 469  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/definery]
+2015-11-12 01:24:09,848 470  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=meesh, password=****}
+2015-11-12 01:24:10,537 1159 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-12 01:24:10,657 1279 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-11-12 01:24:10,665 1287 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-12 01:24:10,761 1383 [main] INFO  src.login.User  - User: Created 'User' instance
+2015-11-12 01:24:10,879 1501 [main] INFO  src.login.UserData  - UserData: Created 'UserData' instance
+2015-11-12 01:24:10,889 1511 [main] INFO  src.login.UserRole  - UserRole: Created 'UserRole' instance
+2015-11-12 21:52:25,654 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-12 21:52:25,728 74   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-12 21:52:25,745 91   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-12 21:52:25,751 97   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-12 21:52:25,882 228  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-12 21:52:25,882 228  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-12 21:52:26,188 534  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2015-11-12 21:52:26,490 836  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2015-11-12 21:52:26,646 992  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-11-12 21:52:26,677 1023 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2015-11-12 21:52:26,678 1024 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2015-11-12 21:52:26,678 1024 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/definery]
+2015-11-12 21:52:26,678 1024 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=meesh, password=****}
+2015-11-12 21:52:27,414 1760 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-12 21:52:27,528 1874 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-11-12 21:52:27,577 1923 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-12 21:52:27,680 2026 [main] INFO  src.login.User  - User: Created 'User' instance
+2015-11-12 21:52:27,868 2214 [main] INFO  src.login.UserData  - UserData: Created 'UserData' instance
+2015-11-12 21:52:27,875 2221 [main] INFO  src.login.UserRole  - UserRole: Created 'UserRole' instance
+2015-11-12 21:55:34,332 1    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-12 21:55:34,358 27   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-12 21:55:34,371 40   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-12 21:55:34,386 55   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-12 21:55:34,453 122  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-12 21:55:34,456 125  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-12 21:55:34,718 387  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2015-11-12 21:55:34,884 553  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2015-11-12 21:55:34,997 666  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-11-12 21:55:35,008 677  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2015-11-12 21:55:35,009 678  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2015-11-12 21:55:35,009 678  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/definery]
+2015-11-12 21:55:35,010 679  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=meesh, password=****}
+2015-11-12 21:55:35,595 1264 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-12 21:55:35,726 1395 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-11-12 21:55:35,735 1404 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-12 21:55:35,874 1543 [main] INFO  src.login.User  - User: Created 'User' instance
+2015-11-12 21:55:36,107 1776 [main] INFO  src.login.UserData  - UserData: Created 'UserData' instance
+2015-11-12 21:55:36,117 1786 [main] INFO  src.login.UserRole  - UserRole: Created 'UserRole' instance
+2015-11-12 22:54:09,790 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-12 22:54:09,799 9    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-12 22:54:09,802 12   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-12 22:54:09,804 14   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-12 22:54:09,830 40   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-12 22:54:09,830 40   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-12 22:54:10,038 248  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2015-11-12 22:54:10,297 507  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2015-11-12 22:54:10,348 558  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-11-12 22:54:10,355 565  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2015-11-12 22:54:10,355 565  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2015-11-12 22:54:10,356 566  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/definery]
+2015-11-12 22:54:10,356 566  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=meesh, password=****}
+2015-11-12 22:54:11,015 1225 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-12 22:54:11,150 1360 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-11-12 22:54:11,156 1366 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-12 22:54:11,271 1481 [main] INFO  src.login.User  - User: Created 'User' instance
+2015-11-12 22:54:11,435 1645 [main] INFO  src.login.UserData  - UserData: Created 'UserData' instance
+2015-11-12 22:54:11,446 1656 [main] INFO  src.login.UserRole  - UserRole: Created 'UserRole' instance
+2015-11-12 23:02:12,584 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-12 23:02:12,592 8    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-12 23:02:12,594 10   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-12 23:02:12,597 13   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-12 23:02:12,623 39   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-12 23:02:12,623 39   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-12 23:02:12,785 201  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2015-11-12 23:02:12,964 380  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2015-11-12 23:02:13,021 437  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-11-12 23:02:13,028 444  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2015-11-12 23:02:13,028 444  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2015-11-12 23:02:13,029 445  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/definery]
+2015-11-12 23:02:13,029 445  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=meesh, password=****}
+2015-11-12 23:02:13,666 1082 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-12 23:02:13,908 1324 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-11-12 23:02:13,921 1337 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-12 23:02:14,006 1422 [main] INFO  src.login.User  - User: Created 'User' instance
+2015-11-12 23:02:14,192 1608 [main] INFO  src.login.UserData  - UserData: Created 'UserData' instance
+2015-11-12 23:02:14,198 1614 [main] INFO  src.login.UserRole  - UserRole: Created 'UserRole' instance
+2015-11-12 23:06:08,296 0    [main] INFO  src.login.UserRole  - UserRole: Created 'UserRole' instance
+2015-11-12 23:06:08,625 329  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-12 23:06:08,633 337  [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-12 23:06:08,636 340  [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-12 23:06:08,639 343  [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-12 23:06:08,668 372  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-12 23:06:08,668 372  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-12 23:06:08,784 488  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2015-11-12 23:06:08,924 628  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2015-11-12 23:06:08,977 681  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-11-12 23:06:08,986 690  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2015-11-12 23:06:08,987 691  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2015-11-12 23:06:08,987 691  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/definery]
+2015-11-12 23:06:08,988 692  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=meesh, password=****}
+2015-11-12 23:06:09,726 1430 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-12 23:06:09,881 1585 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-11-12 23:06:09,888 1592 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-12 23:06:10,006 1710 [main] INFO  src.login.User  - User: Created 'User' instance
+2015-11-12 23:06:10,175 1879 [main] INFO  src.login.UserData  - UserData: Created 'UserData' instance
+2015-11-13 17:23:43,120 0    [main] INFO  src.login.User  - User: Created 'User' instance
+2015-11-13 17:23:43,248 128  [main] INFO  src.login.UserRole  - UserRole: Created 'UserRole' instance
+2015-11-13 17:23:44,936 1816 [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-13 17:23:44,996 1876 [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-13 17:23:45,024 1904 [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-13 17:23:45,028 1908 [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-13 17:23:45,224 2104 [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-13 17:23:45,225 2105 [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-13 17:23:45,935 2815 [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2015-11-13 17:23:46,422 3302 [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2015-11-13 17:23:46,875 3755 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-11-13 17:23:46,998 3878 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2015-11-13 17:23:46,999 3879 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2015-11-13 17:23:46,999 3879 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/definery]
+2015-11-13 17:23:46,999 3879 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=meesh, password=****}
+2015-11-13 17:23:49,125 6005 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-13 17:23:49,558 6438 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-11-13 17:23:49,610 6490 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-13 17:23:50,364 7244 [main] INFO  src.login.UserData  - UserData: Created 'UserData' instance
+2015-11-13 17:28:26,537 0    [main] INFO  src.login.User  - User: Created 'User' instance
+2015-11-13 17:28:26,543 6    [main] INFO  src.login.UserRole  - UserRole: Created 'UserRole' instance
+2015-11-13 17:28:27,213 676  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-13 17:28:27,221 684  [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-13 17:28:27,226 689  [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-13 17:28:27,235 698  [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-13 17:28:27,279 742  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-13 17:28:27,279 742  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-13 17:28:27,554 1017 [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2015-11-13 17:28:27,811 1274 [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2015-11-13 17:28:27,905 1368 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-11-13 17:28:27,923 1386 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2015-11-13 17:28:27,924 1387 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2015-11-13 17:28:27,924 1387 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/definery]
+2015-11-13 17:28:27,925 1388 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=meesh, password=****}
+2015-11-13 17:28:29,149 2612 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-13 17:28:29,284 2747 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-11-13 17:28:29,295 2758 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-13 17:28:29,741 3204 [main] INFO  src.login.UserData  - UserData: Created 'UserData' instance
+2015-11-13 17:32:29,720 0    [main] INFO  src.login.User  - User: Created 'User' instance
+2015-11-13 17:32:29,723 3    [main] INFO  src.login.UserRole  - UserRole: Created 'UserRole' instance
+2015-11-13 17:32:30,356 636  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-13 17:32:30,366 646  [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-13 17:32:30,375 655  [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-13 17:32:30,384 664  [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-13 17:32:30,470 750  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-13 17:32:30,471 751  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-13 17:32:30,697 977  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2015-11-13 17:32:30,897 1177 [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2015-11-13 17:32:31,007 1287 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-11-13 17:32:31,017 1297 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2015-11-13 17:32:31,018 1298 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2015-11-13 17:32:31,018 1298 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/definery]
+2015-11-13 17:32:31,019 1299 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=meesh, password=****}
+2015-11-13 17:32:31,912 2192 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-13 17:32:32,148 2428 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-11-13 17:32:32,157 2437 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-13 17:32:32,676 2956 [main] INFO  src.login.UserData  - UserData: Created 'UserData' instance
+2015-11-13 17:32:33,095 3375 [main] INFO  src.login.User_DAO  - User_DAO: Created session successfully
+2015-11-13 17:32:33,353 3633 [main] INFO  src.login.User_DAO  - User_DAO: Saved User instance to database
+2015-11-13 17:32:33,380 3660 [main] INFO  src.login.User_DAO  - User_DAO: Closed session successfully
+2015-11-13 17:34:27,906 0    [main] INFO  src.login.User  - User: Created 'User' instance
+2015-11-13 17:34:27,913 7    [main] INFO  src.login.UserRole  - UserRole: Created 'UserRole' instance
+2015-11-13 17:34:28,545 639  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-13 17:34:28,553 647  [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-13 17:34:28,556 650  [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-13 17:34:28,561 655  [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-13 17:34:28,606 700  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-13 17:34:28,607 701  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-13 17:34:28,732 826  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2015-11-13 17:34:29,060 1154 [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2015-11-13 17:34:29,134 1228 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-11-13 17:34:29,146 1240 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2015-11-13 17:34:29,146 1240 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2015-11-13 17:34:29,147 1241 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/definery]
+2015-11-13 17:34:29,148 1242 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=meesh, password=****}
+2015-11-13 17:34:30,096 2190 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-13 17:34:30,354 2448 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-11-13 17:34:30,365 2459 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-13 17:34:30,825 2919 [main] INFO  src.login.UserData  - UserData: Created 'UserData' instance
+2015-11-13 17:34:31,113 3207 [main] INFO  src.login.User_DAO  - User_DAO: Created session successfully
+2015-11-13 17:34:31,276 3370 [main] INFO  src.login.User_DAO  - User_DAO: Saved User instance to database
+2015-11-13 17:34:31,293 3387 [main] INFO  src.login.User_DAO  - User_DAO: Closed session successfully
+2015-11-13 17:39:29,301 0    [http-nio-8080-exec-5] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-13 17:39:29,304 3    [http-nio-8080-exec-5] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-13 17:39:29,305 4    [http-nio-8080-exec-5] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-13 17:39:29,596 295  [http-nio-8080-exec-5] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-13 17:39:29,660 359  [http-nio-8080-exec-5] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-13 17:39:29,661 360  [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:39:29,661 360  [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:39:29,662 361  [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:39:29,662 361  [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:39:29,662 361  [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:39:29,662 361  [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:39:29,662 361  [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:39:29,663 362  [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:39:29,663 362  [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:39:29,663 362  [http-nio-8080-exec-5] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-13 17:39:29,664 363  [http-nio-8080-exec-5] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-13 17:39:29,665 364  [http-nio-8080-exec-5] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-13 17:39:29,666 365  [http-nio-8080-exec-5] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-13 17:40:03,245 33944 [http-nio-8080-exec-11] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-13 17:40:03,246 33945 [http-nio-8080-exec-11] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-13 17:40:03,246 33945 [http-nio-8080-exec-11] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-13 17:40:03,253 33952 [http-nio-8080-exec-11] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-13 17:40:03,254 33953 [http-nio-8080-exec-11] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-13 17:40:03,254 33953 [http-nio-8080-exec-11] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:40:03,255 33954 [http-nio-8080-exec-11] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:40:03,255 33954 [http-nio-8080-exec-11] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:40:03,255 33954 [http-nio-8080-exec-11] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:40:03,255 33954 [http-nio-8080-exec-11] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:40:03,255 33954 [http-nio-8080-exec-11] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:40:03,256 33955 [http-nio-8080-exec-11] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:40:03,256 33955 [http-nio-8080-exec-11] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:40:03,256 33955 [http-nio-8080-exec-11] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:40:03,256 33955 [http-nio-8080-exec-11] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-13 17:40:03,257 33956 [http-nio-8080-exec-11] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-13 17:40:03,257 33956 [http-nio-8080-exec-11] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-13 17:40:03,257 33956 [http-nio-8080-exec-11] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-13 17:40:16,157 46856 [http-nio-8080-exec-12] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-13 17:40:16,157 46856 [http-nio-8080-exec-12] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-13 17:40:16,157 46856 [http-nio-8080-exec-12] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-13 17:40:16,165 46864 [http-nio-8080-exec-12] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-13 17:40:16,166 46865 [http-nio-8080-exec-12] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-13 17:40:16,166 46865 [http-nio-8080-exec-12] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:40:16,166 46865 [http-nio-8080-exec-12] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:40:16,167 46866 [http-nio-8080-exec-12] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:40:16,167 46866 [http-nio-8080-exec-12] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:40:16,167 46866 [http-nio-8080-exec-12] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:40:16,167 46866 [http-nio-8080-exec-12] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:40:16,167 46866 [http-nio-8080-exec-12] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:40:16,167 46866 [http-nio-8080-exec-12] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:40:16,167 46866 [http-nio-8080-exec-12] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:40:16,167 46866 [http-nio-8080-exec-12] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-13 17:40:16,168 46867 [http-nio-8080-exec-12] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-13 17:40:16,168 46867 [http-nio-8080-exec-12] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-13 17:40:16,168 46867 [http-nio-8080-exec-12] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-13 17:42:05,447 0    [http-nio-8080-exec-11] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-13 17:42:05,450 3    [http-nio-8080-exec-11] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-13 17:42:05,451 4    [http-nio-8080-exec-11] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-13 17:42:05,713 266  [http-nio-8080-exec-11] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-13 17:42:05,716 269  [http-nio-8080-exec-11] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-13 17:42:05,717 270  [http-nio-8080-exec-11] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:42:05,718 271  [http-nio-8080-exec-11] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:42:05,718 271  [http-nio-8080-exec-11] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:42:05,718 271  [http-nio-8080-exec-11] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:42:05,718 271  [http-nio-8080-exec-11] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:42:05,718 271  [http-nio-8080-exec-11] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:42:05,718 271  [http-nio-8080-exec-11] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:42:05,719 272  [http-nio-8080-exec-11] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:42:05,719 272  [http-nio-8080-exec-11] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 17:42:05,719 272  [http-nio-8080-exec-11] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-13 17:42:05,720 273  [http-nio-8080-exec-11] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-13 17:42:05,720 273  [http-nio-8080-exec-11] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-13 17:42:05,721 274  [http-nio-8080-exec-11] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-13 18:03:30,513 0    [main] INFO  src.login.User  - User: Created 'User' instance
+2015-11-13 18:03:30,516 3    [main] INFO  src.login.UserRole  - UserRole: Created 'UserRole' instance
+2015-11-13 18:03:30,963 450  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-13 18:03:30,981 468  [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-13 18:03:30,986 473  [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-13 18:03:30,997 484  [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-13 18:03:31,084 571  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-13 18:03:31,107 594  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-13 18:03:31,250 737  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2015-11-13 18:03:31,382 869  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2015-11-13 18:03:31,459 946  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-11-13 18:03:31,494 981  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2015-11-13 18:03:31,495 982  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2015-11-13 18:03:31,496 983  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/definery]
+2015-11-13 18:03:31,497 984  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=meesh, password=****}
+2015-11-13 18:03:32,281 1768 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-13 18:03:32,423 1910 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-11-13 18:03:32,432 1919 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-13 18:03:32,685 2172 [main] INFO  src.login.UserData  - UserData: Created 'UserData' instance
+2015-11-13 18:03:32,835 2322 [main] INFO  src.login.User_DAO  - User_DAO: Created session successfully
+2015-11-13 18:03:32,975 2462 [main] INFO  src.login.User_DAO  - User_DAO: Saved User instance to database
+2015-11-13 18:03:33,027 2514 [main] INFO  src.login.User_DAO  - User_DAO: Closed session successfully
+2015-11-13 18:04:27,792 0    [main] INFO  src.login.User  - User: Created 'User' instance
+2015-11-13 18:04:27,796 4    [main] INFO  src.login.UserRole  - UserRole: Created 'UserRole' instance
+2015-11-13 18:04:28,249 457  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2015-11-13 18:04:28,263 471  [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2015-11-13 18:04:28,269 477  [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-11-13 18:04:28,274 482  [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-11-13 18:04:28,382 590  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2015-11-13 18:04:28,383 591  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2015-11-13 18:04:28,509 717  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2015-11-13 18:04:28,618 826  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2015-11-13 18:04:28,677 885  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-11-13 18:04:28,684 892  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2015-11-13 18:04:28,685 893  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2015-11-13 18:04:28,685 893  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/definery]
+2015-11-13 18:04:28,685 893  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=meesh, password=****}
+2015-11-13 18:04:29,378 1586 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-13 18:04:29,512 1720 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-11-13 18:04:29,520 1728 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-13 18:04:29,795 2003 [main] INFO  src.login.UserData  - UserData: Created 'UserData' instance
+2015-11-13 18:04:29,953 2161 [main] INFO  src.login.User_DAO  - User_DAO: Created session successfully
+2015-11-13 18:04:30,040 2248 [main] INFO  src.login.User_DAO  - User_DAO: Saved User instance to database
+2015-11-13 18:04:30,046 2254 [main] INFO  src.login.User_DAO  - User_DAO: Closed session successfully
+2015-11-13 18:28:48,922 0    [http-nio-8080-exec-9] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-13 18:28:48,928 6    [http-nio-8080-exec-9] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-13 18:28:48,930 8    [http-nio-8080-exec-9] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-13 18:28:49,260 338  [http-nio-8080-exec-9] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-13 18:28:49,291 369  [http-nio-8080-exec-9] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-13 18:28:49,292 370  [http-nio-8080-exec-9] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 18:28:49,293 371  [http-nio-8080-exec-9] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 18:28:49,294 372  [http-nio-8080-exec-9] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 18:28:49,294 372  [http-nio-8080-exec-9] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 18:28:49,294 372  [http-nio-8080-exec-9] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 18:28:49,294 372  [http-nio-8080-exec-9] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 18:28:49,295 373  [http-nio-8080-exec-9] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 18:28:49,295 373  [http-nio-8080-exec-9] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 18:28:49,295 373  [http-nio-8080-exec-9] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 18:28:49,295 373  [http-nio-8080-exec-9] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-13 18:28:49,297 375  [http-nio-8080-exec-9] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-13 18:28:49,298 376  [http-nio-8080-exec-9] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-13 18:28:49,298 376  [http-nio-8080-exec-9] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-13 20:12:56,125 0    [http-nio-8080-exec-4] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-13 20:12:56,159 34   [http-nio-8080-exec-4] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-13 20:12:56,160 35   [http-nio-8080-exec-4] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-13 20:12:56,450 325  [http-nio-8080-exec-4] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-13 20:12:56,454 329  [http-nio-8080-exec-4] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-13 20:12:56,456 331  [http-nio-8080-exec-4] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 20:12:56,457 332  [http-nio-8080-exec-4] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 20:12:56,457 332  [http-nio-8080-exec-4] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 20:12:56,457 332  [http-nio-8080-exec-4] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 20:12:56,457 332  [http-nio-8080-exec-4] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 20:12:56,458 333  [http-nio-8080-exec-4] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 20:12:56,458 333  [http-nio-8080-exec-4] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 20:12:56,458 333  [http-nio-8080-exec-4] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 20:12:56,458 333  [http-nio-8080-exec-4] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-13 20:12:56,458 333  [http-nio-8080-exec-4] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-13 20:12:56,459 334  [http-nio-8080-exec-4] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-13 20:12:56,459 334  [http-nio-8080-exec-4] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-13 20:12:56,460 335  [http-nio-8080-exec-4] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-13 20:19:41,587 0    [main] INFO  src.login.User  - User: Created 'User' instance
+2015-11-13 20:19:41,606 19   [main] INFO  src.login.UserRole  - UserRole: Created 'UserRole' instance
+2015-11-13 20:24:29,362 0    [main] INFO  src.login.User  - User: Created 'User' instance
+2015-11-13 20:24:29,365 3    [main] INFO  src.login.UserRole  - UserRole: Created 'UserRole' instance
+2015-11-13 21:13:40,030 0    [main] INFO  src.login.User  - User: Created 'User' instance
+2015-11-13 21:13:40,033 3    [main] INFO  src.login.UserRole  - UserRole: Created 'UserRole' instance
+2015-11-15 20:48:42,869 0    [main] INFO  src.login.User  - User: Created 'User' instance
+2015-11-15 20:48:42,883 14   [main] INFO  src.login.UserRole  - UserRole: Created 'UserRole' instance
+2015-11-16 18:59:18,091 0    [main] INFO  src.login.User  - User: Created 'User' instance
+2015-11-16 18:59:18,165 74   [main] INFO  src.login.UserRole  - UserRole: Created 'UserRole' instance
+2015-11-17 20:53:12,525 0    [http-nio-8080-exec-1] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-17 20:53:12,572 47   [http-nio-8080-exec-1] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-17 20:53:12,573 48   [http-nio-8080-exec-1] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-17 20:53:12,836 311  [http-nio-8080-exec-1] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-17 20:53:12,922 397  [http-nio-8080-exec-1] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-17 20:53:12,923 398  [http-nio-8080-exec-1] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:12,924 399  [http-nio-8080-exec-1] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:12,924 399  [http-nio-8080-exec-1] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:12,924 399  [http-nio-8080-exec-1] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:12,924 399  [http-nio-8080-exec-1] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:12,925 400  [http-nio-8080-exec-1] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:12,925 400  [http-nio-8080-exec-1] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:12,925 400  [http-nio-8080-exec-1] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:12,925 400  [http-nio-8080-exec-1] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:12,925 400  [http-nio-8080-exec-1] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-17 20:53:12,927 402  [http-nio-8080-exec-1] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-17 20:53:12,927 402  [http-nio-8080-exec-1] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-17 20:53:13,287 762  [http-nio-8080-exec-1] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-17 20:53:22,877 10352 [http-nio-8080-exec-5] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-17 20:53:22,880 10355 [http-nio-8080-exec-5] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-17 20:53:22,880 10355 [http-nio-8080-exec-5] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-17 20:53:22,888 10363 [http-nio-8080-exec-5] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-17 20:53:22,889 10364 [http-nio-8080-exec-5] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-17 20:53:22,889 10364 [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:22,889 10364 [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:22,889 10364 [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:22,889 10364 [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:22,890 10365 [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:22,890 10365 [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:22,890 10365 [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:22,890 10365 [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:22,890 10365 [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:22,890 10365 [http-nio-8080-exec-5] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-17 20:53:22,891 10366 [http-nio-8080-exec-5] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-17 20:53:22,891 10366 [http-nio-8080-exec-5] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-17 20:53:22,899 10374 [http-nio-8080-exec-5] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-17 20:53:26,390 13865 [http-nio-8080-exec-7] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-17 20:53:26,390 13865 [http-nio-8080-exec-7] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-17 20:53:26,391 13866 [http-nio-8080-exec-7] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: newest
+2015-11-17 20:53:26,399 13874 [http-nio-8080-exec-7] INFO  src.lists.Lists  - Lists: lists.sortListsByNewest: Sorted By: newest
+2015-11-17 20:53:26,401 13876 [http-nio-8080-exec-7] INFO  src.lists.Lists  - Lists: lists.sortListsByNewest: statement.executeQuery(IDQueryString) completed successfully
+2015-11-17 20:53:26,401 13876 [http-nio-8080-exec-7] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:26,401 13876 [http-nio-8080-exec-7] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:26,401 13876 [http-nio-8080-exec-7] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:26,402 13877 [http-nio-8080-exec-7] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:26,402 13877 [http-nio-8080-exec-7] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:26,402 13877 [http-nio-8080-exec-7] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:26,402 13877 [http-nio-8080-exec-7] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:26,402 13877 [http-nio-8080-exec-7] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:26,402 13877 [http-nio-8080-exec-7] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:26,403 13878 [http-nio-8080-exec-7] INFO  src.lists.Lists  - Lists: lists.sortListsByNewest: resultSet.next() completed successfully
+2015-11-17 20:53:26,403 13878 [http-nio-8080-exec-7] INFO  src.lists.Lists  - Lists: lists.sortListsByNewest: connection.close() completed successfully
+2015-11-17 20:53:26,403 13878 [http-nio-8080-exec-7] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-17 20:53:26,406 13881 [http-nio-8080-exec-7] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-17 20:53:41,224 28699 [http-nio-8080-exec-8] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-17 20:53:41,225 28700 [http-nio-8080-exec-8] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-17 20:53:41,225 28700 [http-nio-8080-exec-8] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-17 20:53:41,232 28707 [http-nio-8080-exec-8] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-17 20:53:41,233 28708 [http-nio-8080-exec-8] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-17 20:53:41,233 28708 [http-nio-8080-exec-8] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:41,234 28709 [http-nio-8080-exec-8] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:41,234 28709 [http-nio-8080-exec-8] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:41,234 28709 [http-nio-8080-exec-8] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:41,234 28709 [http-nio-8080-exec-8] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:41,235 28710 [http-nio-8080-exec-8] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:41,235 28710 [http-nio-8080-exec-8] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:41,235 28710 [http-nio-8080-exec-8] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:41,235 28710 [http-nio-8080-exec-8] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:41,235 28710 [http-nio-8080-exec-8] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-17 20:53:41,235 28710 [http-nio-8080-exec-8] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-17 20:53:41,236 28711 [http-nio-8080-exec-8] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-17 20:53:41,240 28715 [http-nio-8080-exec-8] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-17 20:53:45,504 32979 [http-nio-8080-exec-10] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-17 20:53:45,505 32980 [http-nio-8080-exec-10] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-17 20:53:45,505 32980 [http-nio-8080-exec-10] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-17 20:53:45,512 32987 [http-nio-8080-exec-10] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-17 20:53:45,513 32988 [http-nio-8080-exec-10] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-17 20:53:45,513 32988 [http-nio-8080-exec-10] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:45,513 32988 [http-nio-8080-exec-10] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:45,514 32989 [http-nio-8080-exec-10] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:45,514 32989 [http-nio-8080-exec-10] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:45,514 32989 [http-nio-8080-exec-10] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:45,514 32989 [http-nio-8080-exec-10] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:45,514 32989 [http-nio-8080-exec-10] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:45,514 32989 [http-nio-8080-exec-10] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:45,515 32990 [http-nio-8080-exec-10] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-17 20:53:45,515 32990 [http-nio-8080-exec-10] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-17 20:53:45,515 32990 [http-nio-8080-exec-10] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-17 20:53:45,515 32990 [http-nio-8080-exec-10] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-17 20:53:45,521 32996 [http-nio-8080-exec-10] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully
+2015-11-18 00:14:42,301 0    [http-nio-8080-exec-5] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-18 00:14:42,309 8    [http-nio-8080-exec-5] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-18 00:14:42,310 9    [http-nio-8080-exec-5] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-18 00:14:42,662 361  [http-nio-8080-exec-5] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-18 00:14:42,666 365  [http-nio-8080-exec-5] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-18 00:14:42,667 366  [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-18 00:14:42,668 367  [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-18 00:14:42,668 367  [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-18 00:14:42,668 367  [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-18 00:14:42,668 367  [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-18 00:14:42,668 367  [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-18 00:14:42,668 367  [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-18 00:14:42,669 368  [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-18 00:14:42,669 368  [http-nio-8080-exec-5] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-18 00:14:42,669 368  [http-nio-8080-exec-5] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-18 00:14:42,671 370  [http-nio-8080-exec-5] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-18 00:14:42,671 370  [http-nio-8080-exec-5] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-18 00:14:43,006 705  [http-nio-8080-exec-5] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully

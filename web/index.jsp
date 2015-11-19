@@ -8,13 +8,12 @@
 --%>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <html>
     <head>
         <title>Definery</title>
-        <link href="stylesheets/index.css" rel="stylesheet" type="text/css"/>
-        <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
+        <link href="stylesheets/css/index.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div id="header">

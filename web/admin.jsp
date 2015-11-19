@@ -10,7 +10,7 @@
 <html>
     <head>
         <title>Admin</title>
-        <link href="stylesheets/admin.css" rel="stylesheet" type="text/css"/>
+        <link href="stylesheets/css/admin.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div id="header">

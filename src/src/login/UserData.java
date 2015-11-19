@@ -1,7 +1,9 @@
 package src.login;
 
+import org.apache.log4j.Logger;
 import src.lists.Entry;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,19 +14,20 @@ import java.util.List;
  * 11/11/15
  */
 public class UserData {
+    private final Logger logger = Logger.getLogger(this.getClass());
     private int userID;
     private int accountAge;
-    private String username;
+    private LocalDate accountStartDate;
     private List<String> votedEntries;
     private ArrayList<Entry> submittedEntries;
 
     public UserData() {
+        logger.info("UserData: Created 'UserData' instance");
     }
 
-    public UserData(int userID, int accountAge, String username, List votedEntries, ArrayList submittedEntries) {
+    public UserData(int userID) {
         this.userID = userID;
-        this.accountAge = accountAge;
-        this.username = username;
+        setAccountAge();
         this.votedEntries = votedEntries;
         this.submittedEntries = submittedEntries;
     }
@@ -39,8 +42,16 @@ public class UserData {
     public int getAccountAge() {
         return accountAge;
     }
-    public void setAccountAge(int accountAge) {
-        this.accountAge = accountAge;
+    public void setAccountAge() {
+        /*
+        if (accountStartDate == null) {
+            accountStartDate =  new LocalDate.now();
+        }
+        LocalDate presentDate = new LocalDate();
+        Years accountAgeInYears = Years.yearsBetween(accountStartDate, presentDate);
+           */
+
+        this.accountAge = 11122015;
     }
 
     public List<String> getVotedEntries() {
@@ -53,18 +64,11 @@ public class UserData {
     public ArrayList<Entry> getSubmittedEntries() {
         return submittedEntries;
     }
-    public void setSubmittedEntries(ArrayList<Entry> submittedEntries) {
+    public void setSubmittedEntries(/*ArrayList<Entry> submittedEntries*/) {
         this.submittedEntries = submittedEntries;
     }
 
-    public String getUsername() {
-        return username;
-    }
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String createTestUserDataOutput(){
+    public String createUserDataReport(){
         Entry entry;
         String userSubmissionList = "";
         for (Object entry0 : getSubmittedEntries()) {
@@ -72,7 +76,6 @@ public class UserData {
             userSubmissionList += entry;
         }
         return  "UserID: " + getUserID() +
-                "\nUsername: " + getUsername() +
                 "\nAccount Age: " + getAccountAge() +
                 "\nVoted Entries: " + getVotedEntries() +
                 "\nSubmitted Entries: " + userSubmissionList + "\n";

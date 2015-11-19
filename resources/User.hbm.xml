@@ -14,26 +14,27 @@
         <property name="username" column="user_name" type="string"/>
         <property name="password" column="user_pass" type="string"/>
     </class>
-    <class name="src.login.UserData" table="user_data">
-        <meta attribute="class-description">
-            This class contains the user role detail.
-        </meta>
-        <id name="userID" type="int" column="user_id">
-            <generator class="src.login.User"/>
-        </id>
-        <property name="username" column="user_name" type="string"/>
-        <property name="accountAge" column="account_age" type="int"/>
-        <property name="votedEntries" column="voted_entries" type="string"/>
-        <property name="submittedEntries" column="submitted_entries" type="string"/>
-    </class>
+
     <class name="src.login.UserRole" table="user_roles">
         <meta attribute="class-description">
             This class contains the user role detail.
         </meta>
         <id name="userID" type="int" column="user_id">
-            <generator class="src.login.User"/>
+            <generator class="native"/>
         </id>
-        <property name="username" column="user_name" type="string"/>
         <property name="userRole" column="role_name" type="string"/>
     </class>
+
+    <class name="src.login.UserData" table="user_data">
+        <meta attribute="class-description">
+            This class contains the user role detail.
+        </meta>
+        <id name="userID" type="int" column="user_id">
+            <generator class="native"/>
+        </id>
+        <property name="accountAge" column="account_age" type="int"/>
+        <property name="votedEntries" column="voted_entries" type="string"/>
+        <property name="submittedEntries" column="submitted_entries" type="java.io.Serializable"/>
+    </class>
+    
 </hibernate-mapping>

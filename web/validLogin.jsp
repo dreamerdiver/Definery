@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Definery - Welcome</title>
-    <link href="stylesheets/validLogin.css" rel="stylesheet" type="text/css"/>
+    <link href="stylesheets/css/validLogin.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
     <div id="header"></div>

@@ -1,0 +1,18 @@
+2015-11-18 00:48:04,248 0    [http-nio-8080-exec-4] INFO  src.lists.SortByer  - SortByer: Created 'SortByer' instance
+2015-11-18 00:48:04,256 8    [http-nio-8080-exec-4] INFO  src.lists.Lists  - Lists: Created 'Lists' instance
+2015-11-18 00:48:04,257 9    [http-nio-8080-exec-4] INFO  src.servlets.DisplayLists  - DisplayLists: sortParam was set to: alphabetical
+2015-11-18 00:48:04,629 381  [http-nio-8080-exec-4] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: Sorted By: alphabetical
+2015-11-18 00:48:04,636 388  [http-nio-8080-exec-4] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: statement.executeQuery(IDQueryString) completed successfully
+2015-11-18 00:48:04,642 394  [http-nio-8080-exec-4] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-18 00:48:04,643 395  [http-nio-8080-exec-4] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-18 00:48:04,643 395  [http-nio-8080-exec-4] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-18 00:48:04,646 398  [http-nio-8080-exec-4] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-18 00:48:04,647 399  [http-nio-8080-exec-4] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-18 00:48:04,647 399  [http-nio-8080-exec-4] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-18 00:48:04,648 400  [http-nio-8080-exec-4] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-18 00:48:04,648 400  [http-nio-8080-exec-4] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-18 00:48:04,648 400  [http-nio-8080-exec-4] INFO  src.lists.Entry  - Entry: Created 'Entry' instance
+2015-11-18 00:48:04,649 401  [http-nio-8080-exec-4] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully
+2015-11-18 00:48:04,653 405  [http-nio-8080-exec-4] INFO  src.lists.Lists  - Lists: lists.sortListsByAlphabetical: connection.close() completed successfully
+2015-11-18 00:48:04,654 406  [http-nio-8080-exec-4] INFO  src.servlets.DisplayLists  - DisplayLists: sortByer.getSortedResults() was set as 'entries' attribute
+2015-11-18 00:48:05,338 1090 [http-nio-8080-exec-4] INFO  src.servlets.DisplayLists  - DisplayLists: dispatcher.forward() to url '/lists.jsp' completed successfully

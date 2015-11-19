@@ -8,12 +8,10 @@ package src.login;
  */
 
 public class UserDriver {
+
     public static void main(String[] args) {
         User_DAO dao = new User_DAO();
-
-        UserRole userRole = new UserRole(0, "test0", "test");
-        UserData userData = new UserData(0, 465, "test", null, null);
-        User user = new User(0, "test0", "test", userRole, userData);
+        User user = new User(0, "test0", "test");
         dao.addUserRole(user);
     }
 }

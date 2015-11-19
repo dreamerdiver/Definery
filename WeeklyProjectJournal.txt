@@ -201,3 +201,46 @@ seeing what the pages looked like with output :P
 
 
 Week 10:
+
+After making such a breakthrough with the display functionality of the app and
+the connectivity to the 'entries' table of the database, the next goal was to
+establish a similar connection for login functionality - that is, moving away
+from logging in with users defined explicitly in tomcat-users.xml and towards
+the use of the 'users' and 'user_roles' tables to login in to the app and get
+appropriate function access. On this note I made the shift immediately to
+implementing a Hibernate system, and so major code changes for this week
+included the User_DAO and associated database access classes.
+
+It seems like its working, sort of. There are seperate tables for users, their
+role within the app, and unique data such as account creation date and
+submitted entries. These tables are all linked on a 'user_id' column, or should
+be. When a user is added directly to the database through the UserDriver class,
+the test user appears successfully in the table with the information. However,
+the intention is that creating a user object creates an associated UserRole and
+UserData object, all linked by that primary 'user_id' key, so that the addition
+of a new user create a new row in each of these three tables. At this point,
+information is added only to the 'users' table. Furthermore, when attempting to
+login, an unsuccessful (user is not in the table) login is met with the
+failedLogin.jsp, as expected, but a successful (user is in the table) login is
+met with a 403 'Access Denied' error at validLogin.jsp, but refreshing the page
+shows that the login was successful, as the remoteUser is listed at the top of
+the page, and has access to the persona.jsp. Submit.jsp is another 403 error.
+From this I've gathered that the connection is being made to the users table,
+but either the connection to user_roles is not being made or it is not
+associated with the user, likely the latter because the role table is not
+updated when users are added. In order to avoid these errors, I will need to
+show the program the access associated with each user as it correlates to the
+web.xml.
+
+Great progress was also made in the logging sphere, with log4j calls added to
+major methods in all major classes. It really is an excellent way of keeping
+track of threads and ensuring classes are executing as intended.
+
+1. Hibernate Table Association (Login)
+2. Logging/ Testing
+3. Vote Mechanism
+
+
+Week 11:
+
+
