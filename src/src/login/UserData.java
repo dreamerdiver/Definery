@@ -1,11 +1,8 @@
 package src.login;
 
 import org.apache.log4j.Logger;
-import src.lists.Entry;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Project: Definery
@@ -18,8 +15,8 @@ public class UserData {
     private int userID;
     private int accountAge;
     private LocalDate accountStartDate;
-    private List<String> votedEntries;
-    private ArrayList<Entry> submittedEntries;
+    //private List<String> votedEntries;
+    //private ArrayList<Entry> submittedEntries;
 
     public UserData() {
         logger.info("UserData: Created 'UserData' instance");
@@ -28,8 +25,8 @@ public class UserData {
     public UserData(int userID) {
         this.userID = userID;
         setAccountAge();
-        this.votedEntries = votedEntries;
-        this.submittedEntries = submittedEntries;
+        //this.votedEntries = votedEntries;
+        //this.submittedEntries = submittedEntries;
     }
 
     public int getUserID() {
@@ -53,31 +50,34 @@ public class UserData {
 
         this.accountAge = 11122015;
     }
-
+/*
     public List<String> getVotedEntries() {
         return votedEntries;
     }
     public void setVotedEntries(List<String> votedEntries) {
         this.votedEntries = votedEntries;
     }
-
+*/
+/*
     public ArrayList<Entry> getSubmittedEntries() {
         return submittedEntries;
     }
-    public void setSubmittedEntries(/*ArrayList<Entry> submittedEntries*/) {
+    public void setSubmittedEntries(ArrayList<Entry> submittedEntries) {
         this.submittedEntries = submittedEntries;
     }
-
+*/
     public String createUserDataReport(){
-        Entry entry;
+        //Entry entry;
         String userSubmissionList = "";
+        /*
         for (Object entry0 : getSubmittedEntries()) {
             entry = (Entry) entry0;
             userSubmissionList += entry;
         }
+        */
         return  "UserID: " + getUserID() +
                 "\nAccount Age: " + getAccountAge() +
-                "\nVoted Entries: " + getVotedEntries() +
+               // "\nVoted Entries: " + getVotedEntries() +
                 "\nSubmitted Entries: " + userSubmissionList + "\n";
     }
 }

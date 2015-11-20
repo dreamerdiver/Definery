@@ -52,7 +52,7 @@ public class User {
     public String getUserRole() {
         return userRole;
     }
-    public void setUserRole() {
+    private void setUserRole() {
         UserRole insertUserRole = new UserRole(userID);
         this.userRole = insertUserRole.createUserRoleReport();
     }
@@ -65,7 +65,7 @@ public class User {
         userData = insertUserData.createUserDataReport();
     }
 
-    public String getUserReport(){
+    public String createUserReport(){
         return  "UserID: " + getUserID() +
                 "\nUsername: " + getUsername() +
                 "\nPassword: " + getPassword() +

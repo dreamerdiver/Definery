@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="src.login.UserData" table="user_data">
+        <meta attribute="class-description">
+            This class contains the user data detail.
+        </meta>
+        <id name="userID" type="int" column="user_id">
+            <generator class="foreign">
+                <param name="property">user</param>
+            </generator>
+        </id>
+        <property name="accountAge" column="account_age" type="int"/>
+        <!--
+        <property name="votedEntries" column="voted_entries" type="string"/>
+        <property name="submittedEntries" column="submitted_entries" type="java.io.Serializable"/>
+        -->
+    </class>
+</hibernate-mapping>
