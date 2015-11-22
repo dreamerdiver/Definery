@@ -13,6 +13,7 @@
                 <param name="property">user</param>
             </generator>
         </id>
-        <property name="userRole" column="role_name" type="string"/>
+        <property name="userRole" column="role_name" type="java.lang.String"/>
+        <one-to-one name="user_role" class="src.login.UserRole"/>
     </class>
 </hibernate-mapping>

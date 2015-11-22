@@ -2,6 +2,9 @@ package src.login;
 
 import org.apache.log4j.Logger;
 
+import java.io.IOException;
+import java.util.Properties;
+
 /**
  * Project: Definery
  * Class:
@@ -12,14 +15,29 @@ public class UserRole {
     private final Logger logger = Logger.getLogger(this.getClass());
     private int userID;
     private String userRole;
+    private Properties properties;
 
     public UserRole() {
     }
 
     public UserRole(int userID) {
         logger.info("UserRole: Created 'UserRole' instance");
+        loadProperties();
         setUserID(userID);
-        setUserRole("defineryUser");
+        setUserRole(properties.getProperty("default.role"));
+    }
+
+    public void loadProperties() {
+        properties = new Properties();
+        try {
+            properties.load(this.getClass().getResourceAsStream("/definery.properties"));
+        } catch (IOException ioe) {
+            System.err.println("Can't load the properties file");
+            ioe.printStackTrace();
+        } catch (Exception e) {
+            System.err.println("Problem: " + e);
+            e.printStackTrace();
+        }
     }
 
     public int getUserID() {
@@ -39,5 +57,15 @@ public class UserRole {
     public String createUserRoleReport() {
         return  "UserID: " + getUserID() +
                 "\nUser Role: " + getUserRole() + "\n";
+    }
+
+    private User user_role;
+
+    public User getUser_role() {
+        return user_role;
+    }
+
+    public void setUser_role(User user_role) {
+        this.user_role = user_role;
     }
 }

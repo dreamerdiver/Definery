@@ -14,58 +14,108 @@
     <head>
          <title>Lists</title>
          <link href="stylesheets/css/lists.css" rel="stylesheet" type="text/css"/>
+        <link href="WEB-INF/scripts/submitVote.js">
     </head>
-        <div id="header">
-            <a href="index.jsp">Home</a>
-            <a href="submit.jsp">Submit</a>
-        <%if (request.getRemoteUser() == null) {%>
-            <a href="validLogin.jsp">Log In</a>
-        <%} else {%>
-            <a href="logout.jsp">Log Out</a>
-            <a href="persona.jsp">Hi, <%=request.getRemoteUser()%></a>
-        <%}%>
+    <body>
+        <div id="menu-wrapper">
+            <div id="menu">
+                <ul>
+                    <li><a href="index.jsp">Home</a></li>
+                    <li><a href="submit.jsp">Submit</a></li>
+                    <%if (request.getRemoteUser() == null) {%>
+                    <li><a href="validLogin.jsp">Log In</a></li>
+                    <%} else {%>
+                    <li><a href="logout.jsp">Log Out</a></li>
+                    <li><a href="persona.jsp">Hi, <%=request.getRemoteUser()%></a></li>
+                    <%}%>
+                </ul>
+            </div>
         </div>
-        <div id="sortByDropdown">
-            <form id="form" action="<c:url value="/displayLists"/>">
-                <label for="sortByOptions">Sort By: </label>
-                <select id="sortByOptions" name="sortByOptions">
-                    <option name="sortParam" value="alphabetical">Alphabetical</option>
-                    <option name="sortParam" value="newest">Newest</option>
-                    <option name="sortParam" value="oldest">Oldest</option>
-                    <option name="sortParam" value="voteCount">Most Votes</option>
-                </select>
-                <input type="submit" id="sortBy" value="Go">
-            </form>
+        <div id="header-wrapper">
+            <div id="header">
+                <div id="sortByDropdown">
+                    <form id="form" action="<c:url value="/displayLists"/>">
+                        <label for="sortByOptions">Sort By: </label>
+                        <select id="sortByOptions" name="sortByOptions">
+                            <option name="sortParam" value="alphabetical">Alphabetical</option>
+                            <option name="sortParam" value="newest">Newest</option>
+                            <option name="sortParam" value="oldest">Oldest</option>
+                            <option name="sortParam" value="voteCount">Most Votes</option>
+                        </select>
+                        <input type="submit" id="sortBy" value="Go">
+                    </form>
+                </div>
+            </div>
         </div>
-        <div id="mainContent">
-            <c:choose>
-                <c:when test="${entries.size() != null}">
-                    <div id="tableContent">
-                        <c:forEach var="entry" items="${entries}">
-                            <a href="entry.jsp#${entry.word}">
-                                <table id="entryTable${entry.word}" border="1px solid black">
-                                    <tr>
-                                        <td id="voteCount" onclick="" rowspan="3">${entry.voteCount}</td>
-                                    </tr>
-                                    <tr>
-                                        <td id="word" rowspan="2">${entry.word}</td>
-                                        <td id="pos" rowspan="1">${entry.partOfSpeech}</td>
-                                        <td id="submittedDate">${entry.submittedDate}</td>
-                                    </tr>
-                                    <tr>
-                                        <td id="pocketDefinition" colspan="2">${entry.pocketDefinition}</td>
-                                    </tr>
-                                </table>
-                            </a>
-                        </c:forEach>
+        <div id="content">
+        <c:choose>
+            <c:when test="${entries.size() != null}">
+                <div id="tableContent">
+                <c:forEach var="entry" items="${entries}">
+                    <c:url value="/displayEntry" var="servletURL">
+                        <c:param name="entryLabel" value="${entry.word}"/>
+                    </c:url>
+                    <div class="voteHitbox" onclick="init()">
+                        <div id="voteCount">
+                            ${entry.voteCount}
+                        </div>
                     </div>
-                </c:when>
-                <c:otherwise>
-                    <p id="noEntryError">No Entries Found</p>
-                </c:otherwise>
-            </c:choose>
+                    <div class="post">
+                        <h2 class="title"><strong><a href="${servletURL}">${entry.word}</a></strong></h2>
+                        <!--<span>${entry.partOfSpeech}</span><span>${entry.pronunciation}</span>-->
+                        <div class="entry">
+                            <p></p>
+                            <p>${entry.completeDefinition}</p>
+                            <p class="meta"><span class="date">Entered: ${entry.submittedDate}</span>
+                                <!--<span class="posted">Posted by ${entry.submitter}</span>-->
+                            </p>
+                        </div>
+                    </div>
+                </c:forEach>
+                </div>
+            </c:when>
+            <c:otherwise>
+                <p id="noEntryError">No Entries Found</p>
+            </c:otherwise>
+        </c:choose>
         </div>
+<!--
+        <div id="mainContent">
+        <c:choose>
+            <c:when test="${entries.size() != null}">
+                <div id="tableContent">
+                <c:forEach var="entry" items="${entries}">
+                    <c:url value="/displayEntry" var="servletURL">
+                        <c:param name="entryLabel" value="${entry.word}"/>
+                    </c:url>
+                    <a href="${servletURL}">
+                        <table id="entryTable">
+                            <tr>
+                                <td id="voteCount" rowspan="3">${entry.voteCount}</td>
+                            </tr>
+                            <tr>
+                                <td id="word">${entry.word}</td>
+                                <td id="pos">${entry.partOfSpeech}</td>
+                                <td id="submittedDate">${entry.submittedDate}</td>
+                            </tr>
+                            <tr>
+                                <td id="pocketDefinition" colspan="3">${entry.pocketDefinition}</td>
+                            </tr>
+                        </table>
+                    </a>
+                </c:forEach>
+                </div>
+            </c:when>
+            <c:otherwise>
+                <p id="noEntryError">No Entries Found</p>
+            </c:otherwise>
+        </c:choose>
+        </div>
+        -->
     </body>
+<script>
+    init();
+</script>
 </html>
 
 

@@ -9,6 +9,7 @@
     <servlet>
         <servlet-name>ApplicationStartup</servlet-name>
         <servlet-class>src.servlets.ApplicationStartup</servlet-class>
+        <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet>
         <servlet-name>DisplayLists</servlet-name>

@@ -16,39 +16,29 @@ public class SessionFactoryProvider {
     private final Logger logger = Logger.getLogger(this.getClass());
     private static SessionFactory sessionFactory;
 
-    public void init() {
-        createSessionFactory();
-        checkSessionExists();
-        getSessionFactory();
-    }
-
     public static void createSessionFactory() {
-        try {
             Configuration configuration = new Configuration();
             configuration.configure("/hibernate.cfg.xml");
             ServiceRegistry serviceRegistry = new ServiceRegistryBuilder()
                     .applySettings(configuration.getProperties())
                     .buildServiceRegistry();
-            System.out.println("createSessionFactory config: " + configuration.buildSessionFactory(serviceRegistry));
+        System.out.println("createSessionFactory config: " + configuration.buildSessionFactory(serviceRegistry));
             sessionFactory = configuration.buildSessionFactory(serviceRegistry);
-        } catch (Throwable x) {
-            throw new ExceptionInInitializerError(x);
-        }
     }
 
     public boolean checkSessionExists() {
         if (sessionFactory == null) {
-            logger.info("SessionFactoryProvider: Session Created Successfully");
+            logger.info("SessionFactoryProvider: Session Created: " + true);
             return true;
         } else {
-            logger.info("SessionFactoryProvider: Session Failed to Instantiate");
+            logger.info("SessionFactoryProvider: Session Created: " + false);
             return false;
         }
     }
 
     public static SessionFactory getSessionFactory() {
         createSessionFactory();
-
+        System.err.println("Get session was successful");
         return sessionFactory;
     }
 }

@@ -13,50 +13,99 @@
 
 <html>
     <head>
-        <title>Entry ''</title>
-        <link href="stylesheets/css/lists.css" rel="stylesheet" type="text/css"/>
+        <title>Entry </title>
+        <link href="stylesheets/css/entry.css" rel="stylesheet" type="text/css"/>
     </head>
-        <div id="header">
-            <a href="index.jsp">Home</a>
-            <a href="<c:url value="/displayLists"/>">Lists</a>
-            <a href="submit.jsp">Submit a New Entry</a>
-        <%if (request.getRemoteUser() == null) {%>
-            <a href="validLogin.jsp">Log In</a>
-        <%} else {%>
-            <a href="logout.jsp">Log Out</a>
-            <a href="persona.jsp">Hi, <%=request.getRemoteUser()%></a>
-        <%}%>
+    <body>
+        <div id="menu-wrapper">
+            <div id="menu">
+                <ul>
+                    <li><a href="index.jsp">Home</a></li>
+                    <li><a href="<c:url value="/displayLists"/>">Lists</a></li>
+                    <li><a href="submit.jsp">Submit</a></li>
+                    <%if (request.getRemoteUser() == null) {%>
+                    <li><a href="validLogin.jsp">Log In</a></li>
+                    <%} else {%>
+                    <li><a href="logout.jsp">Log Out</a></li>
+                    <li><a href="persona.jsp">Hi, <%=request.getRemoteUser()%></a></li>
+                    <%}%>
+                </ul>
+            </div>
         </div>
-        <div id="mainContent">
+        <div id="content">
             <c:choose>
-                <c:when test="${entry.word}">
-                    <c:forEach var="entry" items="${entries}">
-                        <table border="1px solid black">
-                            <tr>
-                                <td>${entry.word}</td>
-                                <td>${entry.partOfSpeech}</td>
-                                <td>${entry.pronunciation}</td>
-                                <td>${entry.pocketDefinition}</td>
-                            </tr>
-                            <tr>
-                                <td>${entry.completeDefinition}</td>
-                                <td>${entry.exampleUsage}</td>
-                                <td>${entry.variations}</td>
-                            </tr>
-                            <tr>
-                                <td>${entry.etymologyRoots}</td>
-                                <td>${entry.submitter}</td>
-                                <td>${entry.submittedDate}</td>
-                                <td>${entry.voteCount}</td>
-                            </tr>
-                        </table>
-                    </c:forEach>
+                <c:when test="${entries.size() != null}">
+                    <div id="tableContent">
+                        <c:forEach var="entry" items="${entries}">
+                            <div class="voteHitbox" onclick="init()">
+                                <div id="voteCount">
+                                        ${entry.voteCount}
+                                </div>
+                            </div>
+                            <div class="post">
+                                <h2 class="title"><strong><a href="#">${entry.word}</a></strong></h2>
+                                <p class="subInfo">
+                                    <span>${entry.partOfSpeech}</span>
+                                    <span>${entry.pronunciation}</span>
+                                </p>
+                                <div class="entry">
+                                    <p>${entry.completeDefinition}</p>
+                                    <p>${entry.exampleUsage}</p>
+                                    <p class="info">
+                                        <span id="variations">${entry.variations}</span>
+                                        <span id="etymologyRoots">${entry.etymologyRoots}</span>
+                                        <span id="pocketDefinition" >${entry.pocketDefinition}</span>
+                                    </p>
+                                    <p class="meta">
+                                        <span class="date">Entered: ${entry.submittedDate}</span>
+                                        <span class="posted">Posted by ${entry.submitter}</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </c:forEach>
+                    </div>
                 </c:when>
                 <c:otherwise>
-                    <p>No Data Found</p>
+                    <p id="noEntryError">No Entries Found</p>
                 </c:otherwise>
             </c:choose>
         </div>
+<!--<div id="mainContent">
+            <c:choose>
+                <c:when test="${entries.size() != null}">
+                    <div id="tableContent">
+                    <c:forEach var="entry" items="${entries}">
+                        <table id="entryTable">
+                            <tr>
+                                <td id="voteCount" rowspan="1">${entry.voteCount}</td>
+                                <td id="word">${entry.word}</td>
+                            </tr>
+                            <tr>
+                                <td id="pos">${entry.partOfSpeech}</td>
+                                <td id="pronunciation">${entry.pronunciation}</td>
+                            </tr>
+                            <tr>
+                                <td id="completeDefinition" colspan="3">${entry.completeDefinition}</td>
+                            </tr>
+                            <tr>
+                                <td id="exampleUsage">${entry.exampleUsage}</td>
+                                <td id="variations">${entry.variations}</td>
+                                <td id="etymologyRoots">${entry.etymologyRoots}</td>
+                                <td id="pocketDefinition" >${entry.pocketDefinition}</td>
+                            </tr>
+                            <tr>
+                                <td id="submitter">${entry.submitter}</td>
+                                <td id="submittedDate">${entry.submittedDate}</td>
+                            </tr>
+                        </table>
+                    </c:forEach>
+                    </div>
+                </c:when>
+                <c:otherwise>
+                    <p id="NoDataError">No Data Found</p>
+                </c:otherwise>
+            </c:choose>
+        </div>-->
     </body>
 </html>
 

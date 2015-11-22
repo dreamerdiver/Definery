@@ -26,7 +26,7 @@ public class ApplicationStartup extends HttpServlet {
 
         Properties properties = new Properties();
             try {
-                properties.load(this.getClass().getResourceAsStream("definery.properties"));
+                properties.load(this.getClass().getResourceAsStream("/definery.properties"));
             } catch(IOException ioe) {
                 System.err.println("Can't load the properties file");
                 ioe.printStackTrace();
@@ -35,7 +35,11 @@ public class ApplicationStartup extends HttpServlet {
                 e.printStackTrace();
             }
             context.setAttribute("properties", properties);
-            logger.info("ApplicationStartup: '" + properties + "' was set as 'properties' attribute");
+            if (properties.size() > 0) {
+                logger.info("ApplicationStartup: Properties Set: YES");
+            } else {
+                logger.info("ApplicationStartup: Properties Not Set");
+            }
         Lists lists = new Lists();
             context.setAttribute("lists", lists);
         Entry entry = new Entry();

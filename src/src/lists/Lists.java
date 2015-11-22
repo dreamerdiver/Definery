@@ -9,27 +9,40 @@ package src.lists;
 
 import org.apache.log4j.Logger;
 
+import java.io.IOException;
 import java.sql.*;
 import java.util.Date;
+import java.util.Properties;
 
 public class Lists {
     private final Logger logger = Logger.getLogger(this.getClass());
+    private Properties properties;
 
     public Lists() {
-        logger.info("Lists: Created 'Lists' instance");
+        logger.info("Lists: Created empty 'Lists' instance");
+        loadProperties();
+    }
+
+    public void loadProperties() {
+        properties = new Properties();
+        try {
+            properties.load(this.getClass().getResourceAsStream("/definery.properties"));
+        } catch (IOException ioe) {
+            System.err.println("Can't load the properties file");
+            ioe.printStackTrace();
+        } catch (Exception e) {
+            System.err.println("Problem: " + e);
+            e.printStackTrace();
+        }
     }
 
     protected Connection makeConnection() {
         Connection connection;
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3307/definery", "meesh", "DreamandDive406");
-            /*
             Class.forName(properties.getProperty("mysql.driver"));
-            connection = DriverManager.getConnection(properties.getProperty("url"),
-                    properties.getProperty("mysql.username"),
-                    properties.getProperty("mysql.password"));
-            */
+            connection = DriverManager.getConnection(properties.getProperty("definery.url"),
+                                                     properties.getProperty("mysql.username"),
+                                                     properties.getProperty("mysql.password"));
         } catch (ClassNotFoundException classNotFound) {
             System.err.println("Cannot find database driver ");
             classNotFound.printStackTrace();
@@ -347,6 +360,68 @@ public class Lists {
                 if (connection != null) {
                     connection.close();
                     logger.info("Lists: lists.sortListsByAlphabetical: connection.close() completed successfully");
+                }
+            } catch (SQLException sqlException) {
+                System.err.println("Error in connecting to database " + sqlException);
+                sqlException.printStackTrace();
+            } catch (Exception exception) {
+                System.err.println("General Error");
+                exception.printStackTrace();
+            }
+        }
+    }
+
+    public void displayEntryTable(Entry entry, SortByer sortByer) {
+        Statement statement = null;
+        ResultSet resultSet = null;
+        Connection connection = makeConnection();
+            logger.info("Lists: lists.displayEntryTable: for: " + entry.getWord());
+        try {
+            statement = connection.createStatement();
+            String requestString = entry.getWord();
+            String IDQueryString = "select * from entries where word = "+requestString+"";
+            resultSet = statement.executeQuery(IDQueryString);
+                logger.info("Lists: lists.displayEntryTable: statement.executeQuery(" + IDQueryString + ")");
+            if (!resultSet.next()) {
+                sortByer.setThisEntry(false);
+            } else {
+                sortByer.setThisEntry(true);
+                resultSet.previous();
+                while (resultSet.next()) {
+                    //Entry entry = new Entry();
+                    entry.setWord(resultSet.getString("word"));
+                    entry.setPartOfSpeech(resultSet.getString("part_of_speech"));
+                    entry.setPronunciation(resultSet.getString("pronunciation"));
+                    entry.setPocketDefinition(resultSet.getString("pocket_definition"));
+                    entry.setCompleteDefinition(resultSet.getString("complete_definition"));
+                    entry.setExampleUsage(resultSet.getString("example_usage"));
+                    entry.setVariations(resultSet.getString("variations"));
+                    entry.setEtymologyRoots(resultSet.getString("etymology_roots"));
+                    entry.setSubmitter(resultSet.getString("submitter"));
+                    entry.setSubmittedDate(resultSet.getDate("submitted_date"));
+                    entry.setVoteCount(resultSet.getInt("vote_count"));
+
+                    sortByer.addFoundEntry(entry);
+                }
+                logger.info("Lists: lists.displayEntryTable: resultSet.next() completed successfully");
+            }
+        } catch (SQLException sqlException) {
+            System.err.println("Error in connecting to database" + sqlException);
+            sqlException.printStackTrace();
+        } catch (Exception exception) {
+            System.err.println("General Error");
+            exception.printStackTrace();
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+                if (statement != null) {
+                    statement.close();
+                }
+                if (connection != null) {
+                    connection.close();
+                    logger.info("Lists: lists.displayEntryTable: connection.close() completed successfully");
                 }
             } catch (SQLException sqlException) {
                 System.err.println("Error in connecting to database " + sqlException);
