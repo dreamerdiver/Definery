@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: OratorStd, sans-serif;
-    background-color: powderblue;
+    background: #DAE2CF url(../images/wood.jpg) repeat left top;
     font-size: 16px;
     color: #3B3B3B;
 }
@@ -65,8 +65,8 @@ a:hover {
     height: 30px;
     margin: 0 auto;
     padding: 0;
-    background: darkgoldenrod;
-    border: groove 4px goldenrod;
+    background: #8d90ad;
+    border: groove 4px #3a3851;
     box-shadow: -4px 3px 4px white;
 }
 
@@ -80,8 +80,8 @@ a:hover {
 
 #menu li {
     display: inline-block;
-    border-right: 1px solid goldenrod;
-    border-left: 1px solid goldenrod;
+    border-right: 1px solid #3a3851;
+    border-left: 1px solid #3a3851;
 }
 
 #menu a {
@@ -135,13 +135,12 @@ a:hover {
 #content {
     display: block;
     width: 600px;
-    background-color: #c4e1ff;
-    border: groove 4px goldenrod;
+    background-color: oldlace;
     padding: 10px;
     text-align: center;
     font-size: 22px;
     color: #28242a;
-    margin: auto;
+    margin: 60px auto;
     box-shadow: -4px 3px 4px white;
 }
 
@@ -176,6 +175,7 @@ a:hover {
 
 .post .subInfo {
     float: left;
+    text-align: justify;
 }
 
 .post .meta {
@@ -190,7 +190,8 @@ a:hover {
 }
 
 .post .meta .posted {
-    float: right;
+    font-size: 13px;
+    float: left;
 }
 
 .post .meta a {

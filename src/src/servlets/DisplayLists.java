@@ -53,7 +53,7 @@ public class DisplayLists extends HttpServlet {
 
         ArrayList entries = sortByer.getSortedResults();
             session.setAttribute("entries", entries);
-        logger.info("DisplayLists: " + sortByer.getSortedResults() + " was set as 'entries' attribute");
+        logger.info("DisplayLists: 'sortByer.getSortedResults()' was set as 'entries' attribute");
 
         String url = "/lists.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);

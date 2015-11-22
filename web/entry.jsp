@@ -70,42 +70,6 @@
                 </c:otherwise>
             </c:choose>
         </div>
-<!--<div id="mainContent">
-            <c:choose>
-                <c:when test="${entries.size() != null}">
-                    <div id="tableContent">
-                    <c:forEach var="entry" items="${entries}">
-                        <table id="entryTable">
-                            <tr>
-                                <td id="voteCount" rowspan="1">${entry.voteCount}</td>
-                                <td id="word">${entry.word}</td>
-                            </tr>
-                            <tr>
-                                <td id="pos">${entry.partOfSpeech}</td>
-                                <td id="pronunciation">${entry.pronunciation}</td>
-                            </tr>
-                            <tr>
-                                <td id="completeDefinition" colspan="3">${entry.completeDefinition}</td>
-                            </tr>
-                            <tr>
-                                <td id="exampleUsage">${entry.exampleUsage}</td>
-                                <td id="variations">${entry.variations}</td>
-                                <td id="etymologyRoots">${entry.etymologyRoots}</td>
-                                <td id="pocketDefinition" >${entry.pocketDefinition}</td>
-                            </tr>
-                            <tr>
-                                <td id="submitter">${entry.submitter}</td>
-                                <td id="submittedDate">${entry.submittedDate}</td>
-                            </tr>
-                        </table>
-                    </c:forEach>
-                    </div>
-                </c:when>
-                <c:otherwise>
-                    <p id="NoDataError">No Data Found</p>
-                </c:otherwise>
-            </c:choose>
-        </div>-->
     </body>
 </html>
 

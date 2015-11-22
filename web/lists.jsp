@@ -12,8 +12,8 @@
 
 <html>
     <head>
-         <title>Lists</title>
-         <link href="stylesheets/css/lists.css" rel="stylesheet" type="text/css"/>
+        <title>Lists</title>
+        <link href="stylesheets/css/lists.css" rel="stylesheet" type="text/css"/>
         <link href="WEB-INF/scripts/submitVote.js">
     </head>
     <body>
@@ -62,12 +62,12 @@
                     </div>
                     <div class="post">
                         <h2 class="title"><strong><a href="${servletURL}">${entry.word}</a></strong></h2>
-                        <!--<span>${entry.partOfSpeech}</span><span>${entry.pronunciation}</span>-->
                         <div class="entry">
-                            <p></p>
-                            <p>${entry.completeDefinition}</p>
-                            <p class="meta"><span class="date">Entered: ${entry.submittedDate}</span>
-                                <!--<span class="posted">Posted by ${entry.submitter}</span>-->
+                            <p class="def">
+                                <span>${entry.completeDefinition}</span>
+                            </p>
+                            <p class="meta">
+                                <span class="date">Entered: ${entry.submittedDate}</span>
                             </p>
                         </div>
                     </div>
@@ -79,43 +79,10 @@
             </c:otherwise>
         </c:choose>
         </div>
-<!--
-        <div id="mainContent">
-        <c:choose>
-            <c:when test="${entries.size() != null}">
-                <div id="tableContent">
-                <c:forEach var="entry" items="${entries}">
-                    <c:url value="/displayEntry" var="servletURL">
-                        <c:param name="entryLabel" value="${entry.word}"/>
-                    </c:url>
-                    <a href="${servletURL}">
-                        <table id="entryTable">
-                            <tr>
-                                <td id="voteCount" rowspan="3">${entry.voteCount}</td>
-                            </tr>
-                            <tr>
-                                <td id="word">${entry.word}</td>
-                                <td id="pos">${entry.partOfSpeech}</td>
-                                <td id="submittedDate">${entry.submittedDate}</td>
-                            </tr>
-                            <tr>
-                                <td id="pocketDefinition" colspan="3">${entry.pocketDefinition}</td>
-                            </tr>
-                        </table>
-                    </a>
-                </c:forEach>
-                </div>
-            </c:when>
-            <c:otherwise>
-                <p id="noEntryError">No Entries Found</p>
-            </c:otherwise>
-        </c:choose>
-        </div>
-        -->
     </body>
-<script>
-    init();
-</script>
+    <script>
+        init();
+    </script>
 </html>
 
 
