@@ -1,8 +1,8 @@
 package src.servlets;
 
 /**
- * Project:
- * Class:
+ * Project: Definery
+ * Class: ApplicationStartup
  * Created by Meesh
  * 10/11/15
  */

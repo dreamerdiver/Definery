@@ -4,7 +4,7 @@ import org.apache.log4j.Logger;
 
 /**
  * Project: Definery
- * Class:
+ * Class: User
  * Created by Meesh
  * 11/10/15
  */

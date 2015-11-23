@@ -2,7 +2,7 @@ package src.login;
 
 /**
  * Project: Definery
- * Class:
+ * Class: User_DAO
  * Created by Meesh
  * 11/10/15
  */

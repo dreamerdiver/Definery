@@ -7,7 +7,7 @@ import java.util.Properties;
 
 /**
  * Project: Definery
- * Class:
+ * Class: UserRole
  * Created by Meesh
  * 11/11/15
  */

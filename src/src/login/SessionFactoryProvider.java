@@ -8,7 +8,7 @@ import org.hibernate.service.ServiceRegistryBuilder;
 
 /**
  * Project: Definery
- * Class:
+ * Class: SessionFactoryProvider
  * Created by Meesh
  * 11/11/15
  */

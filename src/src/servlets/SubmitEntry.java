@@ -2,7 +2,7 @@ package src.servlets;
 
 /**
  * Project: Definery
- * Class: Submit Entry Servlet
+ * Class: SubmitEntry
  * Created by Meesh
  * 10/11/15
  */

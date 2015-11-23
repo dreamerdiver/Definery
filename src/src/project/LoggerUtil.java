@@ -5,7 +5,7 @@ import org.apache.log4j.Logger;
 
 /**
  * Project: Definery
- * Class:
+ * Class: LoggerUtil
  * Created by Meesh
  * 11/18/15
  */

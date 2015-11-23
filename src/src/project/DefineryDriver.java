@@ -2,7 +2,7 @@ package src.project;
 
 /**
  * Project: Definery
- * Class: src.project.DefineryDriver
+ * Class: DefineryDriver
  * Created by Meesh
  * 9/28/1
  */

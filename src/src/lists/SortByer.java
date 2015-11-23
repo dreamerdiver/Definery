@@ -7,7 +7,7 @@ import java.util.Date;
 
 /**
  * Project: Definery
- * Class: SortByer Bean
+ * Class: SortByer
  * Created by Meesh
  * 10/11/15
  */

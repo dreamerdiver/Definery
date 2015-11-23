@@ -6,7 +6,7 @@ import java.time.LocalDate;
 
 /**
  * Project: Definery
- * Class:
+ * Class: UserData
  * Created by Meesh
  * 11/11/15
  */

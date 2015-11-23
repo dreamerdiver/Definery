@@ -2,7 +2,7 @@ package src.servlets;
 
 /**
  * Project: Definery
- * Class: Display Lists Servlet
+ * Class: DisplayLists
  * Created by Meesh
  * 10/11/15
  */

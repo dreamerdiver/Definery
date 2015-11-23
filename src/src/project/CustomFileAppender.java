@@ -2,7 +2,7 @@ package src.project;
 
 /**
  * Project: Definery
- * Class:
+ * Class: CustomFileAppender
  * Created by Meesh
  * 11/18/15
  */

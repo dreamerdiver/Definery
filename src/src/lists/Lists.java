@@ -2,7 +2,7 @@ package src.lists;
 
 /**
  * Project: Definery
- * Class: Lists Object
+ * Class: Lists
  * Created by Meesh
  * 10/4/15
  */
