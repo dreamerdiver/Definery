@@ -10,10 +10,10 @@
         </meta>
         <id name="userID" type="int" column="user_id">
             <generator class="foreign">
-                <param name="property">user</param>
+                <param name="property">userID</param>
             </generator>
         </id>
-        <property name="userRole" column="role_name" type="java.lang.String"/>
-        <one-to-one name="user_role" class="src.login.UserRole"/>
+        <property name="userRole" column="user_role" type="java.lang.String"/>
+        <one-to-one name="userID" class="src.login.User"/>
     </class>
 </hibernate-mapping>

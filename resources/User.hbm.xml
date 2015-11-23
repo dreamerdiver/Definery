@@ -11,10 +11,9 @@
         <id name="userID" type="int" column="user_id">
             <generator class="native"/>
         </id>
-        <one-to-one name="userRole" class="src.login.UserRole" cascade="save-update"
-                    property-ref="user_role"/>
-        <one-to-one name="userData" class="src.login.UserData" cascade="save-update"/>
-        <property name="username" column="user_name" type="string"/>
+        <one-to-one name="userID" class="src.login.UserData" cascade="save-update"/>
+        <one-to-one name="userID" class="src.login.UserRole" cascade="save-update"/>
+        <property name="username" column="user_name" type="java.lang.String"/>
         <property name="password" column="user_pass" type="java.lang.String"/>
     </class>
 </hibernate-mapping>

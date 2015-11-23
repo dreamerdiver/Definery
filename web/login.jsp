@@ -13,12 +13,16 @@
         <link href="stylesheets/css/login.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div id="header">
-            <a href="index.jsp">Home</a>
-            <a href="<c:url value="/displayLists"/>">Lists</a>
+        <div id="menu-wrapper">
+            <div id="menu">
+                <ul>
+                    <li><a href="index.jsp">Home</a></li>
+                    <li><a href="<c:url value="/displayLists"/>">Lists</a></li>
+                </ul>
+            </div>
         </div>
-        <div id="mainContent">
-            <h3>Login or create an account</h3>
+        <div id="content">
+            <p id="login">Login or create an account</p>
             <form action="j_security_check" method="post" >
                 <label for="j_username">Username: </label>
                     <input type="text" name="j_username" id="j_username"><br />
@@ -27,5 +31,5 @@
                 <input type="submit" value="Submit Login"><br />
             </form>
         </div>
-  </body>
+    </body>
 </html>

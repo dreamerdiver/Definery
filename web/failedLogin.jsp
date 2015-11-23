@@ -13,8 +13,8 @@
     </head>
     <body>
         <div id="header"></div>
-        <div id="mainContent">
-            <h2>"All Whammies. Sorry bout that."</h2>
+        <div id="content">
+            <h2>"All Whammies. Sorry 'bout that."</h2>
             <p>'Login Failed - Password was incorrect, or the username already exists'</p>
             <a href="login.jsp">Try Again</a>
         </div>

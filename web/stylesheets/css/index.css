@@ -8,49 +8,12 @@
 }
 
 body {
-    padding: 100px 100px;
     margin: 0;
-    font-family: Tahoma, Geneva, sans-serif;
-    background-color: powderblue;
-        /*background-image: url("images/Desert.jpg");*/
-}
-
-#header {
-    display: block;
-    align-content: center;
-    height: 180px;
-    width: 50%;
-    background-color: #c4e1ff;
-    border: groove 4px goldenrod;
-    text-align: center;
-    font-family: Zapfino, serif;
-    font-size: 34px;
-    padding: -40px;
-    color: black;
-    margin: auto;
-    box-shadow: -4px 3px 4px white;
-    z-index: 1;
-    /*background-image: url(images/header_bg.png);*/
-}
-
-#mainContent {
-    display: block;
-    width: 75%;
-    height: 22px;
-    background-color: #c4e1ff;
-    border: groove 4px goldenrod;
-    padding: 10px;
-    text-align: center;
-    margin: auto;
-    box-shadow: -4px 3px 4px white;
-    z-index:2;
-}
-
-h1 {
-    display: flex;
-    padding: 10px;
-    color: black;
-    margin: auto;
+    padding: 0;
+    font-family: OratorStd, sans-serif;
+    background: #DAE2CF url(../images/wood.jpg) repeat left top;
+    font-size: 26px;
+    color: #3B3B3B;
 }
 
 a {
@@ -62,4 +25,64 @@ a {
     padding: 10px;
     margin: auto;
     z-index: 3;
+}
+
+#menu {
+    width: 98%;
+    height: 25px;
+    margin: 0 auto;
+    background: #4f5d5d;
+    border: groove 2px #3a3851;
+    box-shadow: -4px 3px 4px white;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0 0 0 0;
+    list-style: none;
+    line-height: normal;
+    text-align: center;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menu a {
+    display: block;
+    letter-spacing: 1px;
+    margin: 0 4px;
+    line-height: 30px;
+    padding: 0 4px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: OratorStd, serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #3B3B3B;
+    border: none;
+}
+
+#menu a:hover, #menu .current_page_item a {
+    text-decoration: none;
+}
+
+#menu .current_page_item a {
+}
+
+#content {
+    display: block;
+    width: 600px;
+    background-color: oldlace;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: OratorStd, serif;
+    font-size: 33px;
+    font-weight: normal;
+    color: #28242a;
+    margin: 90px auto;
+    border: groove 15px #4f5d5d;
+    box-shadow: -4px 3px 4px white;
 }

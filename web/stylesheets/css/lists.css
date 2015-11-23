@@ -64,11 +64,11 @@ a:hover {
 #menu {
     width: 98%;
     height: 30px;
-    margin: 0 auto;
+    margin: 11px auto;
     padding: 0;
-    background: #8d90ad;
+    background: #4f5d5d;
     border: groove 4px #3a3851;
-    box-shadow: -4px 3px 4px white;
+    box-shadow: -2px 1px 2px white;
 }
 
 #menu ul {
@@ -88,16 +88,16 @@ a:hover {
 #menu a {
     display: block;
     letter-spacing: 1px;
-    margin: 0 10px;
+    margin: 0 50px;
     line-height: 30px;
-    padding: 0 20px;
+    padding: 0 23px;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 14px;
+    font-family: OratorStd, serif;
+    font-size: 18px;
     font-weight: normal;
-    color: #3B3B3B;
+    color: #d3ddff;
     border: none;
 }
 
@@ -117,7 +117,7 @@ a:hover {
     display: block;
     text-align: right;
     width: 98%;
-    margin: 7px auto;
+    margin: 14px auto;
     padding: 10px auto;
     color: #d0d9e0;
 }
@@ -130,7 +130,7 @@ a:hover {
     text-align: center;
     font-size: 22px;
     color: #28242a;
-    margin: auto;
+    margin: 2px auto;
     box-shadow: -4px 3px 4px white;
 }
 
@@ -196,4 +196,14 @@ a:hover {
     font-size: 14px;
     font-weight: normal;
     color: #1C1C1C;
+}
+
+#form {
+    float: right;
+    padding: 8px;
+    margin: 4px;
+    background: #4f5d5d;
+    width: 224px;
+    border: groove 4px #3a3851;
+    box-shadow: -2px 1px 2px white;
 }

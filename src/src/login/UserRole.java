@@ -11,6 +11,7 @@ import java.util.Properties;
  * Created by Meesh
  * 11/11/15
  */
+
 public class UserRole {
     private final Logger logger = Logger.getLogger(this.getClass());
     private int userID;
@@ -59,13 +60,4 @@ public class UserRole {
                 "\nUser Role: " + getUserRole() + "\n";
     }
 
-    private User user_role;
-
-    public User getUser_role() {
-        return user_role;
-    }
-
-    public void setUser_role(User user_role) {
-        this.user_role = user_role;
-    }
 }

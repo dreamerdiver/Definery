@@ -16,18 +16,22 @@
         <link href="stylesheets/css/index.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div id="header">
-            <h1>~Definery~</h1>
-        </div>
-        <div id="mainContent">
-            <a href="submit.jsp">Submit a New Entry</a>
-            <a href="<c:url value="/displayLists"/>">Lists</a>
-        <%if (request.getRemoteUser() == null) {%>
-            <a href="validLogin.jsp">Log In</a>
-        <%} else {%>
-            <a href="persona.jsp">Hi, <%=request.getRemoteUser()%></a>
-            <a href="logout.jsp">Log Out</a>
-        <%}%>
+        <div id="content-wrapper">
+            <div id="content">
+                <h2><strong>Definery.</strong></h2>
+                <span id="menu">
+                    <ul>
+                        <li><a href="<c:url value="/displayLists"/>">Lists</a></li>
+                        <li><a href="submit.jsp">Submit a New Entry</a></li>
+                        <%if (request.getRemoteUser() == null) {%>
+                        <li><a href="validLogin.jsp">Log In</a></li>
+                        <%} else {%>
+                        <li><a href="persona.jsp">Hi, <%=request.getRemoteUser()%></a></li>
+                        <li><a href="logout.jsp">Log Out</a></li>
+                        <%}%>
+                    </ul>
+                </span>
+            </div>
         </div>
     </body>
 </html>

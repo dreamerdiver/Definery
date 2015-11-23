@@ -10,13 +10,14 @@
         </meta>
         <id name="userID" type="int" column="user_id">
             <generator class="foreign">
-                <param name="property">user</param>
+                <param name="property">userID</param>
             </generator>
         </id>
-        <property name="accountAge" column="account_age" type="int"/>
         <!--
         <property name="votedEntries" column="voted_entries" type="string"/>
         <property name="submittedEntries" column="submitted_entries" type="java.io.Serializable"/>
         -->
+        <property name="accountAge" column="account_age" type="int"/>
+        <one-to-one name="userID" class="src.login.User"/>
     </class>
 </hibernate-mapping>

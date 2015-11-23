@@ -19,10 +19,10 @@ public class UserData {
     //private ArrayList<Entry> submittedEntries;
 
     public UserData() {
-        logger.info("UserData: Created 'UserData' instance");
     }
 
     public UserData(int userID) {
+        logger.info("UserData: Created 'UserData' instance");
         this.userID = userID;
         setAccountAge();
         //this.votedEntries = votedEntries;

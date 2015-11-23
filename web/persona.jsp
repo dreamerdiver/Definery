@@ -13,15 +13,17 @@
         <link href="stylesheets/css/persona.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div id="header">
-            <a href="index.jsp">Home</a>
-            <a href="submit.jsp">Submit a New Entry</a>
-            <a href="<c:url value="/displayLists"/>">Lists</a>
-            <a href="#">Submissions</a>
-            <a href="#">Votes</a>
-            <a href="logout.jsp">Log Out</a>
+        <div id="menu">
+            <ul>
+                <li><a href="index.jsp">Home</a></li>
+                <li><a href="submit.jsp">Submit a New Entry</a></li>
+                <li><a href="<c:url value="/displayLists"/>">Lists</a></li>
+                <li><a href="#">Submissions</a></li>
+                <li><a href="#">Votes</a></li>
+                <li><a href="logout.jsp">Log Out</a></li>
+            </ul>
         </div>
-        <div id="mainContent">
+        <div id="content">
             <h3>Welcome, <%=request.getRemoteUser()%></h3>
         </div>
     </body>

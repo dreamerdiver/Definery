@@ -43,15 +43,19 @@
                                 </div>
                             </div>
                             <div class="post">
-                                <h2 class="title"><strong><a href="#">${entry.word}</a></strong></h2>
-                                <p class="subInfo">
-                                    <span>${entry.partOfSpeech}</span>
-                                    <span>${entry.pronunciation}</span>
-                                </p>
+                                <div>
+                                    <h2 class="title"><strong><a href="#">${entry.word}</a></strong></h2>
+                                </div>
                                 <div class="entry">
-                                    <p>${entry.completeDefinition}</p>
-                                    <p>${entry.exampleUsage}</p>
+                                    <p class="subInfo">
+                                        <span>${entry.partOfSpeech}</span>
+                                        <span>${entry.pronunciation}</span>
+                                    </p>
                                     <p class="info">
+                                        <span id="completeDefinition">${entry.completeDefinition}</span>
+                                    <br><br>
+                                        <span id="exampleUsage">${entry.exampleUsage}</span>
+                                    <br><br>
                                         <span id="variations">${entry.variations}</span>
                                         <span id="etymologyRoots">${entry.etymologyRoots}</span>
                                         <span id="pocketDefinition" >${entry.pocketDefinition}</span>
