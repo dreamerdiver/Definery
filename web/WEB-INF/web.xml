@@ -12,12 +12,16 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet>
+        <servlet-name>DisplayEntry</servlet-name>
+        <servlet-class>src.servlets.DisplayEntry</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>DisplayLists</servlet-name>
         <servlet-class>src.servlets.DisplayLists</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>DisplayEntry</servlet-name>
-        <servlet-class>src.servlets.DisplayEntry</servlet-class>
+        <servlet-name>DisplayPersona</servlet-name>
+        <servlet-class>src.servlets.DisplayPersona</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>SubmitEntry</servlet-name>
@@ -32,12 +36,16 @@
         <url-pattern>/appStart</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+        <servlet-name>DisplayEntry</servlet-name>
+        <url-pattern>/displayEntry</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
         <servlet-name>DisplayLists</servlet-name>
         <url-pattern>/displayLists</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>DisplayEntry</servlet-name>
-        <url-pattern>/displayEntry</url-pattern>
+        <servlet-name>DisplayPersona</servlet-name>
+        <url-pattern>/displayPersona</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>SubmitEntry</servlet-name>

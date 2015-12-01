@@ -19,3 +19,43 @@ insert into entries values ('Lumiphile', 'part_of_speech', 'pronunciation', 'poc
 insert into entries values ('Turnt', 'part_of_speech', 'pronunciation', 'pocket_definition', 'complete_definition', 'example_usage', 'variations', 'etymology_roots', 'meesh', NOW(), 0);
 
 insert into entries values ('Explicite', 'part_of_speech', 'pronunciation', 'pocket_definition', 'complete_definition', 'example_usage', 'variations', 'etymology_roots', 'meesh', NOW(), 0);
+
+
+
+CREATE TABLE entries
+(
+  word VARCHAR(30) PRIMARY KEY NOT NULL,
+  part_of_speech VARCHAR(30),
+  pronunciation VARCHAR(40),
+  pocket_definition VARCHAR(50),
+  complete_definition VARCHAR(200),
+  example_usage VARCHAR(200),
+  variations VARCHAR(70),
+  etymology_roots VARCHAR(70),
+  submitter VARCHAR(50),
+  submitted_date DATE,
+  vote_count INT
+);
+CREATE TABLE user_data
+(
+  account_age INT,
+  submitted_entries LONGTEXT,
+  user_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  voted_entries LONGTEXT NOT NULL,
+  FOREIGN KEY (user_id) REFERENCES users (user_id)
+);
+CREATE UNIQUE INDEX unique_user_id ON user_data (user_id);
+CREATE TABLE user_roles
+(
+  user_role VARCHAR(15),
+  user_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  FOREIGN KEY (user_id) REFERENCES users (user_id)
+);
+CREATE UNIQUE INDEX unique_user_id ON user_roles (user_id);
+CREATE TABLE users
+(
+  user_name VARCHAR(15) NOT NULL,
+  user_pass VARCHAR(15) NOT NULL,
+  user_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT
+);
+CREATE UNIQUE INDEX unique_user_id ON users (user_id);

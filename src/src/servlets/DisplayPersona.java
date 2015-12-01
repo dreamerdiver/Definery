@@ -2,9 +2,9 @@ package src.servlets;
 
 /**
  * Project: Definery
- * Class: DisplayEntry
+ * Class:
  * Created by Meesh
- * 10/12/15
+ * 11/28/15
  */
 
 import org.apache.log4j.Logger;
@@ -21,7 +21,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class DisplayEntry extends HttpServlet {
+public class DisplayPersona extends HttpServlet {
     private final Logger logger = Logger.getLogger(this.getClass());
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -30,24 +30,25 @@ public class DisplayEntry extends HttpServlet {
         Entry entry = new Entry();
         SortByer sortByer = new SortByer();
         HttpSession session = request.getSession();
-        String entryLabel = request.getParameter("entryLabel").replace("\'", "");
+        String currentUser = request.getRemoteUser();
 
         session.setAttribute("sortByer", sortByer);
-        entry.setWord(entryLabel);
-            if (entryLabel.length() < 0) {
-                logger.info("DisplayEntry: The 'entryLabel' attribute is set to " + entry.getWord() + ", which is null or blank");
+        entry.setSubmitter(currentUser);
+        logger.info("DisplayPersona: currentUser set to " + entry.getSubmitter());
+            if (currentUser.length() < 0) {
+                logger.info("DisplayPersona: The 'currentUser' attribute is set to " + entry.getSubmitter() + ", which is null or blank");
             } else {
-                lists.displayEntryTable(entry, sortByer);
+                lists.displayPersonaData(entry, sortByer);
             }
-        logger.info("DisplayEntry: lists.displayEntryTable(sortByer, entryTable) sent: " + sortByer + ", " + entryLabel);
+        logger.info("DisplayPersona: lists.displayPersonsData(sortByer, entryTable) sent: " + sortByer + ", " + currentUser);
 
         ArrayList entries = sortByer.getSortedResults();
         session.setAttribute("entries", entries);
-        logger.info("DisplayEntry: " + sortByer.getSortedResults() + " was set as 'entries' attribute");
+        logger.info("DisplayPersona: " + sortByer.getSortedResults() + " was set as 'entries' attribute");
 
-        String url = "/entry.jsp";
+        String url = "/persona.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
-        logger.info("DisplayEntry: dispatcher.forward() to '" + url + "' completed successfully");
+        logger.info("DisplayPersona: dispatcher.forward() to '" + url + "' completed successfully");
     }
 }

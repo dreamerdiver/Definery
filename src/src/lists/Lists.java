@@ -432,4 +432,66 @@ public class Lists {
             }
         }
     }
+
+    public void displayPersonaData(Entry entry, SortByer sortByer) {
+        Statement statement = null;
+        ResultSet resultSet = null;
+        Connection connection = makeConnection();
+        logger.info("Lists: lists.displayPersonaData: for: " + entry.getSubmitter());
+        try {
+            statement = connection.createStatement();
+            String requestString = entry.getSubmitter();
+            String IDQueryString = "select * from entries where submitter = " + requestString + "";
+            resultSet = statement.executeQuery(IDQueryString);
+            logger.info("Lists: lists.displayPersonaData: statement.executeQuery(" + IDQueryString + ")");
+            if (!resultSet.next()) {
+                sortByer.setThisEntry(false);
+            } else {
+                sortByer.setThisEntry(true);
+                resultSet.previous();
+                while (resultSet.next()) {
+                    //Entry entry = new Entry();
+                    entry.setWord(resultSet.getString("word"));
+                    entry.setPartOfSpeech(resultSet.getString("part_of_speech"));
+                    entry.setPronunciation(resultSet.getString("pronunciation"));
+                    entry.setPocketDefinition(resultSet.getString("pocket_definition"));
+                    entry.setCompleteDefinition(resultSet.getString("complete_definition"));
+                    entry.setExampleUsage(resultSet.getString("example_usage"));
+                    entry.setVariations(resultSet.getString("variations"));
+                    entry.setEtymologyRoots(resultSet.getString("etymology_roots"));
+                    entry.setSubmitter(resultSet.getString("submitter"));
+                    entry.setSubmittedDate(resultSet.getDate("submitted_date"));
+                    entry.setVoteCount(resultSet.getInt("vote_count"));
+
+                    sortByer.addFoundEntry(entry);
+                }
+                logger.info("Lists: lists.displayPersonaData: resultSet.next() completed successfully");
+            }
+        } catch (SQLException sqlException) {
+            System.err.println("Error in connecting to database" + sqlException);
+            sqlException.printStackTrace();
+        } catch (Exception exception) {
+            System.err.println("General Error");
+            exception.printStackTrace();
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+                if (statement != null) {
+                    statement.close();
+                }
+                if (connection != null) {
+                    connection.close();
+                    logger.info("Lists: lists.displayPersonaData: connection.close() completed successfully");
+                }
+            } catch (SQLException sqlException) {
+                System.err.println("Error in connecting to database " + sqlException);
+                sqlException.printStackTrace();
+            } catch (Exception exception) {
+                System.err.println("General Error");
+                exception.printStackTrace();
+            }
+        }
+    }
 }

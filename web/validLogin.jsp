@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   src.login.User.User: Meesh
@@ -15,8 +16,8 @@
     <div id="header"></div>
     <div id="mainContent">
         <h2>Thank You, and Welcome to Definery</h2>
-        <a href="lists.jsp">Lists</a>
-        <a href="persona.jsp">Persona</a>
+        <a href="<c:url value="/displayLists"/>">Lists</a>
+        <a href="<c:url value="/displayPersona"/>">Hi, <%request.getRemoteUser();%></a>
         <a href="logout.jsp">Log Out</a>
     </div>
 </body>

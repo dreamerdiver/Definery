@@ -56,8 +56,11 @@ public class DisplayLists extends HttpServlet {
         logger.info("DisplayLists: 'sortByer.getSortedResults()' was set as 'entries' attribute");
 
         String url = "/lists.jsp";
+        String url2Test = "/persona.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
-            dispatcher.forward(request, response);
+        RequestDispatcher dispatcher2 = getServletContext().getRequestDispatcher(url2Test);
+        dispatcher.forward(request, response);
+        dispatcher2.forward(request, response);
         logger.info("DisplayLists: dispatcher.forward() to url '" + url + "' completed successfully");
     }
 }

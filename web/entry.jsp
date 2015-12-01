@@ -27,7 +27,7 @@
                     <li><a href="validLogin.jsp">Log In</a></li>
                     <%} else {%>
                     <li><a href="logout.jsp">Log Out</a></li>
-                    <li><a href="persona.jsp">Hi, <%=request.getRemoteUser()%></a></li>
+                    <li><a href="<c:url value="/displayPersona"/>">Hi, <%=request.getRemoteUser()%></a></li>
                     <%}%>
                 </ul>
             </div>
@@ -51,11 +51,12 @@
                                         <span>${entry.partOfSpeech}</span>
                                         <span>${entry.pronunciation}</span>
                                     </p>
+                                <br><br>
                                     <p class="info">
                                         <span id="completeDefinition">${entry.completeDefinition}</span>
-                                    <br><br>
+                                <br><br>
                                         <span id="exampleUsage">${entry.exampleUsage}</span>
-                                    <br><br>
+                                <br><br>
                                         <span id="variations">${entry.variations}</span>
                                         <span id="etymologyRoots">${entry.etymologyRoots}</span>
                                         <span id="pocketDefinition" >${entry.pocketDefinition}</span>

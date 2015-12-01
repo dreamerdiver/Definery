@@ -23,5 +23,4 @@ public class CustomFileAppender extends FileAppender {
         }
         super.setFile(fileName);
     }
-
 }

@@ -26,7 +26,7 @@
                     <li><a href="validLogin.jsp">Log In</a></li>
                     <%} else {%>
                     <li><a href="logout.jsp">Log Out</a></li>
-                    <li><a href="persona.jsp">Hi, <%=request.getRemoteUser()%></a></li>
+                    <li><a href="<c:url value="/displayPersona"/>">Hi, <%=request.getRemoteUser()%></a></li>
                     <%}%>
                 </ul>
             </div>
@@ -50,7 +50,6 @@
         <div id="content">
         <c:choose>
             <c:when test="${entries.size() != null}">
-                <div id="tableContent">
                 <c:forEach var="entry" items="${entries}">
                     <c:url value="/displayEntry" var="servletURL">
                         <c:param name="entryLabel" value="${entry.word}"/>
@@ -61,18 +60,13 @@
                         </div>
                     </div>
                     <div class="post">
-                        <h2 class="title"><strong><a href="${servletURL}">${entry.word}</a></strong></h2>
+                        <h2 class="title"><a href="${servletURL}">${entry.word}</a></h2>
                         <div class="entry">
-                            <p class="def">
-                                <span>${entry.completeDefinition}</span>
-                            </p>
-                            <p class="meta">
-                                <span class="date">Entered: ${entry.submittedDate}</span>
-                            </p>
+                            <p class="def">${entry.completeDefinition}</p>
+                            <p class="date">Entered: ${entry.submittedDate}</p>
                         </div>
                     </div>
                 </c:forEach>
-                </div>
             </c:when>
             <c:otherwise>
                 <p id="noEntryError">No Entries Found</p>

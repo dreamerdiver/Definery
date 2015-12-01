@@ -19,7 +19,7 @@
         <div id="header">
             <a href="index.jsp">Home</a>
             <a href="<c:url value="/displayLists"/>">Lists</a>
-            <a href="persona.jsp">Hi, <%=request.getRemoteUser()%></a>
+            <a href="<c:url value="/displayPersona"/>">Hi, <%=request.getRemoteUser()%></a>
             <a href="logout.jsp">Log Out</a>
         </div>
         <div id="mainContent">

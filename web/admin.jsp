@@ -17,8 +17,7 @@
             <a href="index.jsp">Home</a>
             <a href="submit.jsp">Submit a New Entry</a>
             <a href="<c:url value="/displayLists"/>">Lists</a>
-            <a href="#">Submissions</a>
-            <a href="#">Votes</a>
+            <!--<a href="#">Votes</a>-->
             <a href="logout.jsp">Log Out</a>
             <h1>stats and secret things</h1>
         </div>

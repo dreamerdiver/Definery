@@ -17,7 +17,8 @@
         <property name="votedEntries" column="voted_entries" type="string"/>
         <property name="submittedEntries" column="submitted_entries" type="java.io.Serializable"/>
         -->
-        <property name="accountAge" column="account_age" type="int"/>
         <one-to-one name="userID" class="src.login.User"/>
+
+        <property name="accountAge" column="account_age" type="int"/>
     </class>
 </hibernate-mapping>

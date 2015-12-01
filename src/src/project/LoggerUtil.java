@@ -9,6 +9,7 @@ import org.apache.log4j.Logger;
  * Created by Meesh
  * 11/18/15
  */
+
 public class LoggerUtil {
 
     public static void error(String message, String classname) {

@@ -26,7 +26,7 @@
                         <%if (request.getRemoteUser() == null) {%>
                         <li><a href="validLogin.jsp">Log In</a></li>
                         <%} else {%>
-                        <li><a href="persona.jsp">Hi, <%=request.getRemoteUser()%></a></li>
+                        <li><a href="<c:url value="/displayPersona"/>">Hi, <%=request.getRemoteUser()%></a></li>
                         <li><a href="logout.jsp">Log Out</a></li>
                         <%}%>
                     </ul>
