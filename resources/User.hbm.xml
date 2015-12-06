@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!--<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE hibernate-mapping PUBLIC
         "-//Hibernate/Hibernate Mapping DTD//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
@@ -16,4 +16,4 @@
         <property name="username" column="user_name" type="java.lang.String"/>
         <property name="password" column="user_pass" type="java.lang.String"/>
     </class>
-</hibernate-mapping>
+</hibernate-mapping>-->

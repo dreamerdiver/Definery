@@ -18,6 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class SubmitEntry extends HttpServlet {
@@ -25,6 +26,8 @@ public class SubmitEntry extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Lists lists = new Lists();
         Entry entry = new Entry();
+        Date date =new Date();
+        SimpleDateFormat format = new SimpleDateFormat("MM.dd.YYYY:HH.mm.ss");
         HttpSession session = request.getSession();
         ServletContext context = session.getServletContext();
         logger.info("SubmitEntry: session.getSession() completed successfully");
@@ -48,7 +51,7 @@ public class SubmitEntry extends HttpServlet {
         entry.setVariations(variations);
         entry.setEtymologyRoots(etymology);
         entry.setSubmitter(submitter);
-        entry.setSubmittedDate(new Date());
+        entry.setSubmittedDate(format.format(date));
         entry.setVoteCount(1);
 
         lists.addEntry(entry);

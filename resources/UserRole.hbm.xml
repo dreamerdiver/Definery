@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!--<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE hibernate-mapping PUBLIC
         "-//Hibernate/Hibernate Mapping DTD//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
@@ -16,4 +16,4 @@
         <property name="userRole" column="user_role" type="java.lang.String"/>
         <one-to-one name="userID" class="src.login.User"/>
     </class>
-</hibernate-mapping>
+</hibernate-mapping>-->

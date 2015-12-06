@@ -9,8 +9,6 @@ package src.lists;
 
 import org.apache.log4j.Logger;
 
-import java.util.Date;
-
 public class Entry {
     private String word;
     private String partOfSpeech;
@@ -21,7 +19,7 @@ public class Entry {
     private String variations;
     private String etymologyRoots;
     private String submitter;
-    private Date submittedDate;
+    private String submittedDate;
     private int voteCount;
     private final Logger logger = Logger.getLogger(this.getClass());
 
@@ -92,11 +90,11 @@ public class Entry {
         this.submitter = "'" + submitter + "'";
     }
 
-    public Date getSubmittedDate() {
+    public String getSubmittedDate() {
         return submittedDate;
     }
-    public void setSubmittedDate(Date submittedDate) {
-        this.submittedDate = submittedDate;
+    public void setSubmittedDate(String submittedDate) {
+        this.submittedDate = "'" + submittedDate + "'";
     }
 
     public int getVoteCount() {

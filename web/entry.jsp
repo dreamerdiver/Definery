@@ -37,11 +37,9 @@
                 <c:when test="${entries.size() != null}">
                     <div id="tableContent">
                         <c:forEach var="entry" items="${entries}">
-                            <div class="voteHitbox" onclick="init()">
-                                <div id="voteCount">
-                                        ${entry.voteCount}
-                                </div>
-                            </div>
+                            <button type="button" id="voteHitbox" class="voteHitbox">
+                                <p id="voteCount">${entry.voteCount}</p>
+                            </button>
                             <div class="post">
                                 <div>
                                     <h2 class="title"><strong><a href="#">${entry.word}</a></strong></h2>

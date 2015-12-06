@@ -5,7 +5,6 @@
  * 10/10/15
  */
 
-
 function init(){
     var button = document.getElementById("submitEntry");
     button.onclick = reportEntryAttempt;

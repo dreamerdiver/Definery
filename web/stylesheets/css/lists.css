@@ -154,10 +154,6 @@ a:hover {
     border: dimgray solid 1px;
 }
 
-.post-alt
-{
-}
-
 .post .title {
     height: 38px;
     margin-bottom: 10px;
@@ -166,7 +162,6 @@ a:hover {
 
 .post .title a {
     float: left;
-    border: none;
     color: #110f0f;
     font-size: 28px;
 }
@@ -175,10 +170,9 @@ a:hover {
     padding: 5px 8px 5px 5px;
 }
 
-.post .entry .date{
+.post .entry .date {
     font-size: 13px;
-    float: right;
-    padding: 0 0 20px;
+    text-align: right;
 }
 
 .links {

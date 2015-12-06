@@ -11,7 +11,6 @@ import org.apache.log4j.Logger;
 
 import java.io.IOException;
 import java.sql.*;
-import java.util.Date;
 import java.util.Properties;
 
 public class Lists {
@@ -65,7 +64,7 @@ public class Lists {
         Connection connection = makeConnection();
         try {
             String addQueryString = "insert into entries (word, part_of_speech, pronunciation, pocket_definition, complete_definition, example_usage, variations, etymology_roots, submitter, submitted_date, vote_count)" +
-                                    "values ("+entry.getWord()+", "+entry.getPartOfSpeech()+", "+entry.getPronunciation()+", "+entry.getPocketDefinition()+", "+entry.getCompleteDefinition()+", "+entry.getExampleUsage()+", "+entry.getVariations()+", "+entry.getEtymologyRoots()+", "+entry.getSubmitter()+", null, 1);";
+                                    "values ("+entry.getWord()+", "+entry.getPartOfSpeech()+", "+entry.getPronunciation()+", "+entry.getPocketDefinition()+", "+entry.getCompleteDefinition()+", "+entry.getExampleUsage()+", "+entry.getVariations()+", "+entry.getEtymologyRoots()+", "+entry.getSubmitter()+", "+entry.getSubmittedDate()+", "+entry.getVoteCount()+");";
 
             statement = connection.prepareStatement(addQueryString);
             statement.executeUpdate(addQueryString);
@@ -84,7 +83,7 @@ public class Lists {
                 String variations = resultSet.getString("variations");
                 String etymology = resultSet.getString("etymology_roots");
                 String submitter = resultSet.getString("submitter");
-                Date submittedDate = resultSet.getDate("submitted_date");
+                String submittedDate = resultSet.getString("submitted_date");
                 int voteCount = resultSet.getInt("vote_count");
 
                 System.out.println("Instance: " + word
@@ -127,67 +126,6 @@ public class Lists {
         }
     }
 
-    public void sortListsByNewest(SortByer sortByer) {
-        Statement statement = null;
-        ResultSet resultSet = null;
-        Connection connection = makeConnection();
-        logger.info("Lists: lists.sortListsByNewest: Sorted By: " + sortByer.getSortType());
-        try {
-            statement = connection.createStatement();
-            String IDQueryString ="select * from entries ORDER BY submitted_date DESC";
-            resultSet = statement.executeQuery(IDQueryString);
-            logger.info("Lists: lists.sortListsByNewest: statement.executeQuery(IDQueryString) completed successfully");
-            if (!resultSet.next()) {
-                sortByer.setThisEntry(false);
-            } else {
-                sortByer.setThisEntry(true);
-                resultSet.previous();
-                while (resultSet.next()) {
-                    Entry entry = new Entry();
-                    entry.setWord(resultSet.getString("word"));
-                    entry.setPartOfSpeech(resultSet.getString("part_of_speech"));
-                    entry.setPronunciation(resultSet.getString("pronunciation"));
-                    entry.setPocketDefinition(resultSet.getString("pocket_definition"));
-                    entry.setCompleteDefinition(resultSet.getString("complete_definition"));
-                    entry.setExampleUsage(resultSet.getString("example_usage"));
-                    entry.setVariations(resultSet.getString("variations"));
-                    entry.setEtymologyRoots(resultSet.getString("etymology_roots"));
-                    entry.setSubmitter(resultSet.getString("submitter"));
-                    entry.setSubmittedDate(resultSet.getDate("submitted_date"));
-                    entry.setVoteCount(resultSet.getInt("vote_count"));
-
-                    sortByer.addFoundEntry(entry);
-                }
-                logger.info("Lists: lists.sortListsByNewest: resultSet.next() completed successfully");
-            }
-        } catch (SQLException sqlException) {
-            System.err.println("Error in connecting to database" + sqlException);
-            sqlException.printStackTrace();
-        } catch (Exception exception) {
-            System.err.println("General Error");
-            exception.printStackTrace();
-        } finally {
-            try {
-                if (resultSet != null) {
-                    resultSet.close();
-                }
-                if (statement != null) {
-                    statement.close();
-                }
-                if (connection != null) {
-                    connection.close();
-                    logger.info("Lists: lists.sortListsByNewest: connection.close() completed successfully");
-                }
-            } catch (SQLException sqlException) {
-                System.err.println("Error in connecting to database " + sqlException);
-                sqlException.printStackTrace();
-            } catch (Exception exception) {
-                System.err.println("General Error");
-                exception.printStackTrace();
-            }
-        }
-    }
-
     public void sortListsByOldest(SortByer sortByer) {
         Statement statement = null;
         ResultSet resultSet = null;
@@ -214,7 +152,7 @@ public class Lists {
                     entry.setVariations(resultSet.getString("variations"));
                     entry.setEtymologyRoots(resultSet.getString("etymology_roots"));
                     entry.setSubmitter(resultSet.getString("submitter"));
-                    entry.setSubmittedDate(resultSet.getDate("submitted_date"));
+                    entry.setSubmittedDate(resultSet.getString("submitted_date"));
                     entry.setVoteCount(resultSet.getInt("vote_count"));
 
                     sortByer.addFoundEntry(entry);
@@ -238,6 +176,67 @@ public class Lists {
                 if (connection != null) {
                     connection.close();
                     logger.info("Lists: lists.sortListsByOldest: connection.close() completed successfully");
+                }
+            } catch (SQLException sqlException) {
+                System.err.println("Error in connecting to database " + sqlException);
+                sqlException.printStackTrace();
+            } catch (Exception exception) {
+                System.err.println("General Error");
+                exception.printStackTrace();
+            }
+        }
+    }
+
+    public void sortListsByNewest(SortByer sortByer) {
+        Statement statement = null;
+        ResultSet resultSet = null;
+        Connection connection = makeConnection();
+        logger.info("Lists: lists.sortListsByNewest: Sorted By: " + sortByer.getSortType());
+        try {
+            statement = connection.createStatement();
+            String IDQueryString ="select * from entries ORDER BY submitted_date DESC";
+            resultSet = statement.executeQuery(IDQueryString);
+            logger.info("Lists: lists.sortListsByNewest: statement.executeQuery(IDQueryString) completed successfully");
+            if (!resultSet.next()) {
+                sortByer.setThisEntry(false);
+            } else {
+                sortByer.setThisEntry(true);
+                resultSet.previous();
+                while (resultSet.next()) {
+                    Entry entry = new Entry();
+                    entry.setWord(resultSet.getString("word"));
+                    entry.setPartOfSpeech(resultSet.getString("part_of_speech"));
+                    entry.setPronunciation(resultSet.getString("pronunciation"));
+                    entry.setPocketDefinition(resultSet.getString("pocket_definition"));
+                    entry.setCompleteDefinition(resultSet.getString("complete_definition"));
+                    entry.setExampleUsage(resultSet.getString("example_usage"));
+                    entry.setVariations(resultSet.getString("variations"));
+                    entry.setEtymologyRoots(resultSet.getString("etymology_roots"));
+                    entry.setSubmitter(resultSet.getString("submitter"));
+                    entry.setSubmittedDate(resultSet.getString("submitted_date"));
+                    entry.setVoteCount(resultSet.getInt("vote_count"));
+
+                    sortByer.addFoundEntry(entry);
+                }
+                logger.info("Lists: lists.sortListsByNewest: resultSet.next() completed successfully");
+            }
+        } catch (SQLException sqlException) {
+            System.err.println("Error in connecting to database" + sqlException);
+            sqlException.printStackTrace();
+        } catch (Exception exception) {
+            System.err.println("General Error");
+            exception.printStackTrace();
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+                if (statement != null) {
+                    statement.close();
+                }
+                if (connection != null) {
+                    connection.close();
+                    logger.info("Lists: lists.sortListsByNewest: connection.close() completed successfully");
                 }
             } catch (SQLException sqlException) {
                 System.err.println("Error in connecting to database " + sqlException);
@@ -275,7 +274,7 @@ public class Lists {
                     entry.setVariations(resultSet.getString("variations"));
                     entry.setEtymologyRoots(resultSet.getString("etymology_roots"));
                     entry.setSubmitter(resultSet.getString("submitter"));
-                    entry.setSubmittedDate(resultSet.getDate("submitted_date"));
+                    entry.setSubmittedDate(resultSet.getString("submitted_date"));
                     entry.setVoteCount(resultSet.getInt("vote_count"));
 
                     sortByer.addFoundEntry(entry);
@@ -336,7 +335,7 @@ public class Lists {
                     entry.setVariations(resultSet.getString("variations"));
                     entry.setEtymologyRoots(resultSet.getString("etymology_roots"));
                     entry.setSubmitter(resultSet.getString("submitter"));
-                    entry.setSubmittedDate(resultSet.getDate("submitted_date"));
+                    entry.setSubmittedDate(resultSet.getString("submitted_date"));
                     entry.setVoteCount(resultSet.getInt("vote_count"));
 
                     sortByer.addFoundEntry(entry);
@@ -398,7 +397,7 @@ public class Lists {
                     entry.setVariations(resultSet.getString("variations"));
                     entry.setEtymologyRoots(resultSet.getString("etymology_roots"));
                     entry.setSubmitter(resultSet.getString("submitter"));
-                    entry.setSubmittedDate(resultSet.getDate("submitted_date"));
+                    entry.setSubmittedDate(resultSet.getString("submitted_date"));
                     entry.setVoteCount(resultSet.getInt("vote_count"));
 
                     sortByer.addFoundEntry(entry);
@@ -450,7 +449,7 @@ public class Lists {
                 sortByer.setThisEntry(true);
                 resultSet.previous();
                 while (resultSet.next()) {
-                    //Entry entry = new Entry();
+                    entry = new Entry();
                     entry.setWord(resultSet.getString("word"));
                     entry.setPartOfSpeech(resultSet.getString("part_of_speech"));
                     entry.setPronunciation(resultSet.getString("pronunciation"));
@@ -460,7 +459,7 @@ public class Lists {
                     entry.setVariations(resultSet.getString("variations"));
                     entry.setEtymologyRoots(resultSet.getString("etymology_roots"));
                     entry.setSubmitter(resultSet.getString("submitter"));
-                    entry.setSubmittedDate(resultSet.getDate("submitted_date"));
+                    entry.setSubmittedDate(resultSet.getString("submitted_date"));
                     entry.setVoteCount(resultSet.getInt("vote_count"));
 
                     sortByer.addFoundEntry(entry);

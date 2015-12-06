@@ -11,8 +11,8 @@ import org.apache.log4j.Logger;
 public class User {
     private final Logger logger = Logger.getLogger(this.getClass());
     private int userID;
-    private String username;
-    private String password;
+    private String user_name;
+    private String user_pass;
     private String userRole;
     private String userData;
 
@@ -22,8 +22,8 @@ public class User {
     public User(int userID, String username, String password) {
         logger.info("User: Created 'User' instance");
         this.userID = userID;
-        this.username = username;
-        this.password = password;
+        this.user_name = username;
+        this.user_pass = password;
         setUserRole();
         setUserData();
     }
@@ -36,17 +36,17 @@ public class User {
     }
 
     public String getUsername() {
-        return username;
+        return user_name;
     }
     public void setUsername(String username) {
-        this.username = username;
+        this.user_name = username;
     }
 
     public String getPassword() {
-        return password;
+        return user_pass;
     }
     public void setPassword(String password) {
-        this.password = password;
+        this.user_pass = password;
     }
 
     public String getUserRole() {
