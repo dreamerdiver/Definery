@@ -58,6 +58,7 @@ public class Lists {
         return connection;
     }
 
+
     public void addEntry(Entry entry) {
         Statement statement = null;
         ResultSet resultSet = null;
@@ -359,6 +360,71 @@ public class Lists {
                 if (connection != null) {
                     connection.close();
                     logger.info("Lists: lists.sortListsByAlphabetical: connection.close() completed successfully");
+                }
+            } catch (SQLException sqlException) {
+                System.err.println("Error in connecting to database " + sqlException);
+                sqlException.printStackTrace();
+            } catch (Exception exception) {
+                System.err.println("General Error");
+                exception.printStackTrace();
+            }
+        }
+    }
+
+    public void sendVoteRequest(Entry entry, SortByer sortByer) {
+        Statement statement = null;
+        ResultSet resultSet = null;
+        Connection connection = makeConnection();
+        try {
+            String addQueryString = "UPDATE entries SET vote_count = vote_count + 1 WHERE word = "+entry.getWord()+";";
+
+            statement = connection.prepareStatement(addQueryString);
+            statement.executeUpdate(addQueryString);
+            logger.info("Lists: lists.sendVoteRequest: statement.executeUpdate(addQueryString) completed successfully");
+
+            String addConfirmation = "select * from entries ORDER BY word;";
+            resultSet = statement.executeQuery(addConfirmation);
+            logger.info("Lists: lists.sendVoteRequest: statement.executeQuery(addConfirmation) {" + addConfirmation + "} completed successfully");
+            if (!resultSet.next()) {
+                sortByer.setThisEntry(false);
+            } else {
+                sortByer.setThisEntry(true);
+                resultSet.previous();
+                while (resultSet.next()) {
+                    entry = new Entry();
+                    entry.setWord(resultSet.getString("word"));
+                    entry.setPartOfSpeech(resultSet.getString("part_of_speech"));
+                    entry.setPronunciation(resultSet.getString("pronunciation"));
+                    entry.setPocketDefinition(resultSet.getString("pocket_definition"));
+                    entry.setCompleteDefinition(resultSet.getString("complete_definition"));
+                    entry.setExampleUsage(resultSet.getString("example_usage"));
+                    entry.setVariations(resultSet.getString("variations"));
+                    entry.setEtymologyRoots(resultSet.getString("etymology_roots"));
+                    entry.setSubmitter(resultSet.getString("submitter"));
+                    entry.setSubmittedDate(resultSet.getString("submitted_date"));
+                    entry.setVoteCount(resultSet.getInt("vote_count"));
+
+                    sortByer.addFoundEntry(entry);
+                }
+                logger.info("Lists: lists.sendVoteRequest: resultSet.next() completed successfully");
+            }
+        } catch (SQLException sqlException) {
+            System.err.println("Error in connecting to database" + sqlException);
+            sqlException.printStackTrace();
+        } catch (Exception exception) {
+            System.err.println("General Error");
+            exception.printStackTrace();
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+                if (statement != null) {
+                    statement.close();
+                }
+                if (connection != null) {
+                    connection.close();
+                    logger.info("Lists: lists.sendVoteRequest: connection.close() completed successfully");
                 }
             } catch (SQLException sqlException) {
                 System.err.println("Error in connecting to database " + sqlException);

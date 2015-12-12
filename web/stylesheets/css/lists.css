@@ -143,34 +143,45 @@ a:hover {
     box-shadow: -4px 3px 4px white;
 }
 
+#entry {
+    border-bottom: 1px solid #110f0f;
+    margin: auto 14px;
+    padding: auto 9px;
+}
+
 .voteHitbox {
     float: left;
-    margin: 0 7px;
-    border: 1px solid slategrey;
+    margin: 11px;
+    padding: auto 400px;
+    text-underline: none;
 }
 
 .post {
-    margin-bottom: 15px;
-    border: dimgray solid 1px;
+    margin-bottom: 1px;
+    padding-right: 7px;
+    width: 588px;
+
 }
 
 .post .title {
-    height: 38px;
-    margin-bottom: 10px;
-    padding: 12px 0 0 0;
+
 }
 
 .post .title a {
     float: left;
     color: #110f0f;
-    font-size: 28px;
+    font-size: 23px;
+    text-overline: none;
+    height: 38px;
+    margin-bottom: 10px;
+    padding: 12px 0 0 0;
 }
 
 .post .entry .def {
     padding: 5px 8px 5px 5px;
 }
 
-.post .entry .date {
+.post .title .date {
     font-size: 13px;
     text-align: right;
 }

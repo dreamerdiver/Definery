@@ -36,7 +36,7 @@
                             </c:url>
                             <tr class="post">
                                 <td class="title"><a href="${servletURL}">${entry.word}</a></td>
-                                <td class="date">Entered: ${entry.submittedDate}</td>
+                                <td class="date">${entry.submittedDate}</td>
                             </tr>
                         </c:forEach>
                     </table>

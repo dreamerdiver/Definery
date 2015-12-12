@@ -114,14 +114,6 @@ a:hover {
 
 #header {
     display: block;
-    text-align: right;
-    width: 98%;
-    margin: 7px auto;
-    padding: 10px auto;
-}
-
-#header {
-    display: block;
     height: 25px;
     width: 98%;
     background-color: darkgoldenrod;

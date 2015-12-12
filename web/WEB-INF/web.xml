@@ -28,6 +28,10 @@
         <servlet-class>src.servlets.LoginValidator</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>SendVoteRequest</servlet-name>
+        <servlet-class>src.servlets.SendVoteRequest</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>SubmitEntry</servlet-name>
         <servlet-class>src.servlets.SubmitEntry</servlet-class>
     </servlet>
@@ -54,6 +58,10 @@
     <servlet-mapping>
         <servlet-name>LoginValidator</servlet-name>
         <url-pattern>/loginValidator</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SendVoteRequest</servlet-name>
+        <url-pattern>/sendVoteRequest</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>SubmitEntry</servlet-name>
@@ -84,7 +92,7 @@
         </auth-constraint>
     </security-constraint>
 
-    <!--<security-constraint>
+    <security-constraint>
         <web-resource-collection>
             <web-resource-name>Submit</web-resource-name>
             <url-pattern>/submit.jsp</url-pattern>
@@ -93,7 +101,7 @@
             <role-name>defineryAdmin</role-name>
             <role-name>defineryUser</role-name>
         </auth-constraint>
-    </security-constraint>-->
+    </security-constraint>
 
     <security-constraint>
         <web-resource-collection>

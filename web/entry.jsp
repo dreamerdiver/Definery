@@ -37,9 +37,12 @@
                 <c:when test="${entries.size() != null}">
                     <div id="tableContent">
                         <c:forEach var="entry" items="${entries}">
-                            <button type="button" id="voteHitbox" class="voteHitbox">
-                                <p id="voteCount">${entry.voteCount}</p>
-                            </button>
+                            <c:url value="/sendVoteRequest" var="voteServlet">
+                                <c:param name="entryLabel" value="${entry.word}"/>
+                            </c:url>
+                            <form id="voteHitbox" class="voteHitbox">
+                                <a href="${voteServlet}" id="voteCount">${entry.voteCount}</a>
+                            </form>
                             <div class="post">
                                 <div>
                                     <h2 class="title"><strong><a href="#">${entry.word}</a></strong></h2>
