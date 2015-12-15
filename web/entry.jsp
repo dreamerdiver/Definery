@@ -40,9 +40,9 @@
                             <c:url value="/sendVoteRequest" var="voteServlet">
                                 <c:param name="entryLabel" value="${entry.word}"/>
                             </c:url>
-                            <form id="voteHitbox" class="voteHitbox">
-                                <a href="${voteServlet}" id="voteCount">${entry.voteCount}</a>
-                            </form>
+                            <button id="voteHitbox" class="voteHitbox">
+                                <p id="voteCount">${entry.voteCount}</p>
+                            </button>
                             <div class="post">
                                 <div>
                                     <h2 class="title"><strong><a href="#">${entry.word}</a></strong></h2>

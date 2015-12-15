@@ -1,13 +1,14 @@
 package src.login;
 
-import org.apache.log4j.Logger;
-
 /**
  * Project: Definery
  * Class: User
  * Created by Meesh
  * 11/10/15
  */
+
+import org.apache.log4j.Logger;
+
 public class User {
     private final Logger logger = Logger.getLogger(this.getClass());
     private int userID;

@@ -1,4 +1,4 @@
-package src.servlets;
+package src.login;
 
 import junit.framework.TestCase;
 import org.junit.Test;
@@ -7,12 +7,12 @@ import org.junit.Test;
  * Project: Definery
  * Class:
  * Created by Meesh
- * 10/24/15
+ * 12/14/15
  */
-public class SubmitEntryTest extends TestCase {
+public class User_DAOTest extends TestCase {
 
     @Test
-    public void testDoPost() throws Exception {
+    public void testAddUserRole() throws Exception {
 
     }
 }

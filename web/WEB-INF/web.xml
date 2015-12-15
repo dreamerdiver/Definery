@@ -24,10 +24,6 @@
         <servlet-class>src.servlets.DisplayPersona</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>LoginValidator</servlet-name>
-        <servlet-class>src.servlets.LoginValidator</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>SendVoteRequest</servlet-name>
         <servlet-class>src.servlets.SendVoteRequest</servlet-class>
     </servlet>
@@ -54,10 +50,6 @@
     <servlet-mapping>
         <servlet-name>DisplayPersona</servlet-name>
         <url-pattern>/displayPersona</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>LoginValidator</servlet-name>
-        <url-pattern>/loginValidator</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>SendVoteRequest</servlet-name>

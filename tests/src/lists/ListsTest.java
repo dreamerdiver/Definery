@@ -1,14 +1,10 @@
 package src.lists;
 
-import junit.framework.TestCase;
 import org.junit.Test;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 import java.util.Properties;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
 
 /**
  * Project: Definery
@@ -21,35 +17,25 @@ public class ListsTest {
 
     @Test
     public void testMakeConnection() throws Exception {
-        Connection connection = null;
+        Lists lists = new Lists();
 
-        try {
-            Class.forName(properties.getProperty("mysql.driver"));
-            connection = DriverManager.getConnection(properties.getProperty("url"),
-                    properties.getProperty("mysql.username"),
-                    properties.getProperty("mysql.password"));
-
-        } catch (ClassNotFoundException classNotFound) {
-            System.err.println("Cannot find database driver ");
-            classNotFound.printStackTrace();
-        } catch (SQLException sqlException) {
-            System.err.println("Error in connecting to database " + sqlException);
-            sqlException.printStackTrace();
-        } catch (Exception exception) {
-            System.err.println("General Error");
-            exception.printStackTrace();
-        }
-        assertNotNull("The connection is null", connection);
+        assertNotNull("lists.makeConnection() is null", lists.makeConnection());
     }
 
     @Test
     public void testAddEntry() throws Exception {
+        Lists lists = new Lists();
+        Entry entry = new Entry();
+            entry.setWord("test");
 
+        lists.addEntry(entry);
+        assertNotNull("lists.addEntry() is null", lists);
     }
 
     @Test
     public void testSortListsByNewest() throws Exception {
-
+        SortByer sortByer = new SortByer();
+        sortByer.setSortType("newest");
     }
 
     @Test

@@ -1,15 +1,16 @@
 package src.login;
 
-import org.apache.log4j.Logger;
-
-import java.time.LocalDate;
-
 /**
  * Project: Definery
  * Class: UserData
  * Created by Meesh
  * 11/11/15
  */
+
+import org.apache.log4j.Logger;
+
+import java.time.LocalDate;
+
 public class UserData {
     private final Logger logger = Logger.getLogger(this.getClass());
     private int userID;

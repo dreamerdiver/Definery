@@ -7,12 +7,12 @@ import org.junit.Test;
  * Project: Definery
  * Class:
  * Created by Meesh
- * 10/24/15
+ * 12/14/15
  */
-public class SubmitEntryTest extends TestCase {
+public class DisplayPersonaTest extends TestCase {
 
     @Test
-    public void testDoPost() throws Exception {
+    public void testDoGet() throws Exception {
 
     }
 }

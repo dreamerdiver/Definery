@@ -1,16 +1,16 @@
 package src.login;
 
-import org.apache.log4j.Logger;
-
-import java.io.IOException;
-import java.util.Properties;
-
 /**
  * Project: Definery
  * Class: UserRole
  * Created by Meesh
  * 11/11/15
  */
+
+import org.apache.log4j.Logger;
+
+import java.io.IOException;
+import java.util.Properties;
 
 public class UserRole {
     private final Logger logger = Logger.getLogger(this.getClass());
