@@ -12,7 +12,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: OratorStd, sans-serif;
-    background: #DAE2CF url(../images/wood.jpg) repeat left top;
+    background: #DAE2CF url(../images/wood.jpg) repeat right top;
     font-size: 16px;
     color: #3B3B3B;
 }
@@ -72,12 +72,19 @@ a {
 
 #content {
     display: block;
-    width: 600px;
+    width: 700px;
     background-color: oldlace;
     padding: 10px;
     text-align: center;
     font-size: 22px;
     color: #28242a;
-    margin: 2px auto;
+    margin: 60px auto;
     box-shadow: -4px 3px 4px white;
+}
+
+#title {
+    font-size: 39px;
+    color: #28242a;
+    margin: auto 100px;
+    padding: 15px;
 }

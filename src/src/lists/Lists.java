@@ -127,6 +127,7 @@ public class Lists {
         }
     }
 
+
     public void sortListsByOldest(SortByer sortByer) {
         Statement statement = null;
         ResultSet resultSet = null;
@@ -370,6 +371,7 @@ public class Lists {
             }
         }
     }
+
 
     public void sendVoteRequest(Entry entry, SortByer sortByer) {
         Statement statement = null;

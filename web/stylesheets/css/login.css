@@ -124,13 +124,19 @@ a:hover {
     text-align: center;
     font-size: 22px;
     color: #28242a;
-    margin: 2px auto;
+    margin: 60px auto;
     box-shadow: -4px 3px 4px white;
 }
 #login {
     text-align: center;
     text-transform: uppercase;
     font-family: OratorStd, serif;
-    font-size: 26px;
+    font-size: 34px;
     font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#submit {
+    margin-top: 15px;
 }

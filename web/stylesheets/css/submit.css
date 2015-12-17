@@ -126,10 +126,24 @@ a:hover {
     display: block;
     width: 600px;
     background-color: oldlace;
-    padding: 10px;
-    text-align: center;
+    padding: 20px;
+    text-align: left;
     font-size: 22px;
     color: #28242a;
     margin: 60px auto;
     box-shadow: -4px 3px 4px white;
+}
+
+#content .title {
+    display: block;
+    font-size: 34px;
+    text-align: center;
+    color: #28242a;
+    margin: auto 8px;
+}
+
+#submitEntry {
+    display: inline-block;
+    position: relative;
+    left: 46%;
 }

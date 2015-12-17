@@ -1,4 +1,4 @@
-package src.project;
+package src.logger;
 
 /**
  * Project: Definery
@@ -17,7 +17,7 @@ public class CustomFileAppender extends FileAppender {
     @Override
     public void setFile(String fileName) {
         if (fileName.contains("%timestamp")) {
-            Date date =new Date();
+            Date date = new Date();
             SimpleDateFormat format = new SimpleDateFormat("MM.dd.YYYY:HH.mm.ss.");
             fileName = fileName.replaceAll("%timestamp", format.format(date));
         }

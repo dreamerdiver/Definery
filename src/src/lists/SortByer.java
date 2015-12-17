@@ -1,10 +1,5 @@
 package src.lists;
 
-import org.apache.log4j.Logger;
-
-import java.util.ArrayList;
-import java.util.Date;
-
 /**
  * Project: Definery
  * Class: SortByer
@@ -12,10 +7,15 @@ import java.util.Date;
  * 10/11/15
  */
 
+import org.apache.log4j.Logger;
+
+import java.util.ArrayList;
+import java.util.Date;
+
 public class SortByer {
     private String sortType = "";
-    private ArrayList<Entry> sortedResults;
     private boolean foundEmployee;
+    private ArrayList<Entry> sortedResults;
     private final Logger logger = Logger.getLogger(this.getClass());
 
     public SortByer() {

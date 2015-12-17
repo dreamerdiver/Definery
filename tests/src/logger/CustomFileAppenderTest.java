@@ -1,4 +1,4 @@
-package src.project;
+package src.logger;
 
 import junit.framework.TestCase;
 import org.junit.Test;

@@ -27,7 +27,7 @@
             </div>
         </div>
         <div id="content">
-            <h3>Write your Entry in the form below</h3>
+            <h3 class="title">Write your Entry in the form below</h3>
             <form id="form" name="submitEntry" action="<c:url value="/submitEntry"/>" method="post" autocomplete="off">
                 <label for="word">Word: </label>
                     <input type="text" name="word" id="word" maxlength="30" required="required"><br />
@@ -42,7 +42,7 @@
                 <label for="exampleUsage">Usage: </label>
                     <input type="text" name="exampleUsage" id="exampleUsage" maxlength="200" required="required"><br />
                 <label for="variations">Variations: </label>
-                    <input type="text" name="variations" id="variations" maxlength="100" required="required"><br />
+                    <input type="text" name="variations" id="variations" maxlength="100"><br />
                 <label for="etymology_roots">Etymology/ Roots: </label>
                     <input type="text" name="etymology_roots" id="etymology_roots" maxlength="100" required="required"><br /><br />
                 <input type="submit" id="submitEntry" value="Submit"><br />
