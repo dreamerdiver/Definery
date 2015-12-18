@@ -14,20 +14,7 @@ To change this template use File | Settings | File Templates.
 <!--<script type="text/javascript" src="../scripts/submitVote.js"/>"></script>-->
 <!--<script type="text/javascript" src="../scripts/reportEntryAttempt.js"></script>-->
 <body>
-    <div id="menu-wrapper">
-        <div id="menu">
-            <ul>
-                <li><a href="index.jsp">Home</a></li>
-                <li><a href="submit.jsp">Submit</a></li>
-                <%if (request.getRemoteUser() == null) {%>
-                <li><a href="validLogin.jsp">Log In</a></li>
-                <%} else {%>
-                <li><a href="logout.jsp">Log Out</a></li>
-                <li><a href="<c:url value="/displayPersona"/>">Hi, <%=request.getRemoteUser()%></a></li>
-                <%}%>
-            </ul>
-        </div>
-    </div>
+    <c:import url="/templates/DYN_MENU.jsp" />
     <div id="header-wrapper">
         <div id="header">
             <div id="sortByDropdown">
@@ -55,7 +42,11 @@ To change this template use File | Settings | File Templates.
                     <c:param name="entryLabel" value="${entry.word}"/>
                 </c:url>
                 <form id="voteHitbox" class="voteHitbox">
+                <%if (request.getRemoteUser() != null) {%>
                     <a href="${voteServlet}" id="voteCount">${entry.voteCount}</a>
+                <%} else {%>
+                    <h3 id="voteCount">${entry.voteCount}</h3>
+                <%}%>
                 </form>
                 <div id="entry">
                     <table class="post">

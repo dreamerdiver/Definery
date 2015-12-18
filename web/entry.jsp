@@ -17,21 +17,7 @@
         <link href="stylesheets/css/entry.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div id="menu-wrapper">
-            <div id="menu">
-                <ul>
-                    <li><a href="index.jsp">Home</a></li>
-                    <li><a href="<c:url value="/displayLists"/>">Lists</a></li>
-                    <li><a href="submit.jsp">Submit</a></li>
-                    <%if (request.getRemoteUser() == null) {%>
-                    <li><a href="validLogin.jsp">Log In</a></li>
-                    <%} else {%>
-                    <li><a href="logout.jsp">Log Out</a></li>
-                    <li><a href="<c:url value="/displayPersona"/>">Hi, <%=request.getRemoteUser()%></a></li>
-                    <%}%>
-                </ul>
-            </div>
-        </div>
+        <c:import url="/templates/STAT_MENU.jsp" />
         <div id="content">
             <c:choose>
                 <c:when test="${entries.size() != null}">

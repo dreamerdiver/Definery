@@ -16,17 +16,8 @@
         <!--<script type="text/javascript" src="../scripts/reportEntryAttempt.js"></script>-->
     </head>
     <body>
-        <div id="menu-wrapper">
-            <div id="menu">
-                <ul>
-                    <li><a href="index.jsp">Home</a></li>
-                    <li><a href="<c:url value="/displayLists"/>">Lists</a></li>
-                    <li><a href="<c:url value="/displayPersona"/>">Hi, <%=request.getRemoteUser()%></a></li>
-                    <li><a href="logout.jsp">Log Out</a></li>
-                </ul>
-            </div>
-        </div>
-        <div id="content">
+    <c:import url="/templates/STAT_MENU.jsp" />
+    <div id="content">
             <h3 class="title">Write your Entry in the form below</h3>
             <form id="form" name="submitEntry" action="<c:url value="/submitEntry"/>" method="post" autocomplete="off">
                 <label for="word">Word: </label>

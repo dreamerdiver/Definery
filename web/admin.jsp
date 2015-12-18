@@ -13,14 +13,7 @@
         <link href="stylesheets/css/admin.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div id="header">
-            <a href="index.jsp">Home</a>
-            <a href="submit.jsp">Submit a New Entry</a>
-            <a href="<c:url value="/displayLists"/>">Lists</a>
-            <!--<a href="#">Votes</a>-->
-            <a href="logout.jsp">Log Out</a>
-            <h1>stats and secret things</h1>
-        </div>
+        <c:import url="/templates/USER_MENU.jsp" />
         <div id="mainContent">
             <h1>stats and secret things</h1>
             <h3>logged in as '<%=request.getRemoteUser()%>'</h3>

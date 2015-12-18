@@ -27,10 +27,10 @@ public class Lists {
         try {
             properties.load(this.getClass().getResourceAsStream("/definery.properties"));
         } catch (IOException ioe) {
-            System.err.println("Can't load the properties file");
+            logger.info("Can't load the properties file");
             ioe.printStackTrace();
         } catch (Exception e) {
-            System.err.println("Problem: " + e);
+            logger.info("Problem: " + e);
             e.printStackTrace();
         }
     }
@@ -43,21 +43,20 @@ public class Lists {
                                                      properties.getProperty("mysql.username"),
                                                      properties.getProperty("mysql.password"));
         } catch (ClassNotFoundException classNotFound) {
-            System.err.println("Cannot find database driver ");
+            logger.info("Cannot find database driver ");
             classNotFound.printStackTrace();
             return null;
         } catch (SQLException sqlException) {
-            System.err.println("Error in connecting to database " + sqlException);
+            logger.info("Error in connecting to database " + sqlException);
             sqlException.printStackTrace();
             return null;
         } catch (Exception exception) {
-            System.err.println("General Error");
+            logger.info("General Error");
             exception.printStackTrace();
             return null;
         }
         return connection;
     }
-
 
     public void addEntry(Entry entry) {
         Statement statement = null;
@@ -87,7 +86,7 @@ public class Lists {
                 String submittedDate = resultSet.getString("submitted_date");
                 int voteCount = resultSet.getInt("vote_count");
 
-                System.out.println("Instance: " + word
+                logger.info("Instance: " + word
                         + ", " + pos
                         + ", " + pronunciation
                         + ", " + pocketDefinition
@@ -100,10 +99,10 @@ public class Lists {
                         + ", " + voteCount);
             }
         } catch (SQLException sqlException) {
-            System.err.println("Error in connecting to database" + sqlException);
+            logger.info("Error in connecting to database" + sqlException);
             sqlException.printStackTrace();
         } catch (Exception exception) {
-            System.err.println("General Error");
+            logger.info("General Error");
             exception.printStackTrace();
         } finally {
             try {
@@ -118,15 +117,14 @@ public class Lists {
                     logger.info("Lists: lists.addEntry: connection.close() completed successfully");
                 }
             } catch (SQLException sqlException) {
-                System.err.println("Error in connecting to database " + sqlException);
+                logger.info("Error in connecting to database " + sqlException);
                 sqlException.printStackTrace();
             } catch (Exception exception) {
-                System.err.println("General Error");
+                logger.info("General Error");
                 exception.printStackTrace();
             }
         }
     }
-
 
     public void sortListsByOldest(SortByer sortByer) {
         Statement statement = null;
@@ -223,10 +221,10 @@ public class Lists {
                 logger.info("Lists: lists.sortListsByNewest: resultSet.next() completed successfully");
             }
         } catch (SQLException sqlException) {
-            System.err.println("Error in connecting to database" + sqlException);
+            logger.info("Error in connecting to database" + sqlException);
             sqlException.printStackTrace();
         } catch (Exception exception) {
-            System.err.println("General Error");
+            logger.info("General Error");
             exception.printStackTrace();
         } finally {
             try {
@@ -241,10 +239,10 @@ public class Lists {
                     logger.info("Lists: lists.sortListsByNewest: connection.close() completed successfully");
                 }
             } catch (SQLException sqlException) {
-                System.err.println("Error in connecting to database " + sqlException);
+                logger.info("Error in connecting to database " + sqlException);
                 sqlException.printStackTrace();
             } catch (Exception exception) {
-                System.err.println("General Error");
+                logger.info("General Error");
                 exception.printStackTrace();
             }
         }
@@ -284,10 +282,10 @@ public class Lists {
                 logger.info("Lists: lists.sortListsByVoteCount: resultSet.next() completed successfully");
             }
         } catch (SQLException sqlException) {
-            System.err.println("Error in connecting to database" + sqlException);
+            logger.info("Error in connecting to database" + sqlException);
             sqlException.printStackTrace();
         } catch (Exception exception) {
-            System.err.println("General Error");
+            logger.info("General Error");
             exception.printStackTrace();
         } finally {
             try {
@@ -302,10 +300,10 @@ public class Lists {
                     logger.info("Lists: lists.sortListsByVoteCount: connection.close() completed successfully");
                 }
             } catch (SQLException sqlException) {
-                System.err.println("Error in connecting to database " + sqlException);
+                logger.info("Error in connecting to database " + sqlException);
                 sqlException.printStackTrace();
             } catch (Exception exception) {
-                System.err.println("General Error");
+                logger.info("General Error");
                 exception.printStackTrace();
             }
         }
@@ -345,10 +343,10 @@ public class Lists {
                 logger.info("Lists: lists.sortListsByAlphabetical: resultSet.next() completed successfully");
             }
         } catch (SQLException sqlException) {
-            System.err.println("Error in connecting to database" + sqlException);
+            logger.info("Error in connecting to database" + sqlException);
             sqlException.printStackTrace();
         } catch (Exception exception) {
-            System.err.println("General Error");
+            logger.info("General Error");
             exception.printStackTrace();
         } finally {
             try {
@@ -363,15 +361,14 @@ public class Lists {
                     logger.info("Lists: lists.sortListsByAlphabetical: connection.close() completed successfully");
                 }
             } catch (SQLException sqlException) {
-                System.err.println("Error in connecting to database " + sqlException);
+                logger.info("Error in connecting to database " + sqlException);
                 sqlException.printStackTrace();
             } catch (Exception exception) {
-                System.err.println("General Error");
+                logger.info("General Error");
                 exception.printStackTrace();
             }
         }
     }
-
 
     public void sendVoteRequest(Entry entry, SortByer sortByer) {
         Statement statement = null;
@@ -411,10 +408,10 @@ public class Lists {
                 logger.info("Lists: lists.sendVoteRequest: resultSet.next() completed successfully");
             }
         } catch (SQLException sqlException) {
-            System.err.println("Error in connecting to database" + sqlException);
+            logger.info("Error in connecting to database" + sqlException);
             sqlException.printStackTrace();
         } catch (Exception exception) {
-            System.err.println("General Error");
+            logger.info("General Error");
             exception.printStackTrace();
         } finally {
             try {
@@ -429,10 +426,10 @@ public class Lists {
                     logger.info("Lists: lists.sendVoteRequest: connection.close() completed successfully");
                 }
             } catch (SQLException sqlException) {
-                System.err.println("Error in connecting to database " + sqlException);
+                logger.info("Error in connecting to database " + sqlException);
                 sqlException.printStackTrace();
             } catch (Exception exception) {
-                System.err.println("General Error");
+                logger.info("General Error");
                 exception.printStackTrace();
             }
         }
@@ -473,10 +470,10 @@ public class Lists {
                 logger.info("Lists: lists.displayEntryTable: resultSet.next() completed successfully");
             }
         } catch (SQLException sqlException) {
-            System.err.println("Error in connecting to database" + sqlException);
+            logger.info("Error in connecting to database" + sqlException);
             sqlException.printStackTrace();
         } catch (Exception exception) {
-            System.err.println("General Error");
+            logger.info("General Error");
             exception.printStackTrace();
         } finally {
             try {
@@ -491,10 +488,10 @@ public class Lists {
                     logger.info("Lists: lists.displayEntryTable: connection.close() completed successfully");
                 }
             } catch (SQLException sqlException) {
-                System.err.println("Error in connecting to database " + sqlException);
+                logger.info("Error in connecting to database " + sqlException);
                 sqlException.printStackTrace();
             } catch (Exception exception) {
-                System.err.println("General Error");
+                logger.info("General Error");
                 exception.printStackTrace();
             }
         }
@@ -535,10 +532,10 @@ public class Lists {
                 logger.info("Lists: lists.displayPersonaData: resultSet.next() completed successfully");
             }
         } catch (SQLException sqlException) {
-            System.err.println("Error in connecting to database" + sqlException);
+            logger.info("Error in connecting to database" + sqlException);
             sqlException.printStackTrace();
         } catch (Exception exception) {
-            System.err.println("General Error");
+            logger.info("General Error");
             exception.printStackTrace();
         } finally {
             try {
@@ -553,10 +550,10 @@ public class Lists {
                     logger.info("Lists: lists.displayPersonaData: connection.close() completed successfully");
                 }
             } catch (SQLException sqlException) {
-                System.err.println("Error in connecting to database " + sqlException);
+                logger.info("Error in connecting to database " + sqlException);
                 sqlException.printStackTrace();
             } catch (Exception exception) {
-                System.err.println("General Error");
+                logger.info("General Error");
                 exception.printStackTrace();
             }
         }

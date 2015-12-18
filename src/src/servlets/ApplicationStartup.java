@@ -28,10 +28,10 @@ public class ApplicationStartup extends HttpServlet {
             try {
                 properties.load(this.getClass().getResourceAsStream("/definery.properties"));
             } catch(IOException ioe) {
-                System.err.println("Can't load the properties file");
+                logger.info("Can't load the properties file");
                 ioe.printStackTrace();
             }catch(Exception e) {
-                System.err.println("Problem: " + e);
+                logger.info("Problem: " + e);
                 e.printStackTrace();
             }
             context.setAttribute("properties", properties);

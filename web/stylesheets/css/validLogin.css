@@ -9,38 +9,42 @@
 
 
 body {
-    padding: 10px 10px;
     margin: 0;
-    font-family: Tahoma, Geneva, sans-serif;
-    background-color: powderblue;
-        /*background-image: url("images/Desert.jpg");*/
+    padding: 0;
+    font-family: OratorStd, sans-serif;
+    background: #DAE2CF url(../images/wood.jpg) repeat right top;
+    font-size: 16px;
+    color: #3B3B3B;
 }
 
-#header {
-    display: block;
-    height: 32px;
-    width: 98%;
-    background-color: darkgoldenrod;
-    border: groove 4px goldenrod;
-    text-align: center;
-    margin: auto;
-    box-shadow: -4px 3px 4px white;
-    /*background-image: url(images/header_bg.png);*/
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #3B3B3B;
 }
 
-#mainContent {
-    display: block;
-    width: 600px;
-    height: 100%;
-    background-color: #c4e1ff;
-    border: groove 4px goldenrod;
-    padding: 10px;
-    text-align: center;
-    font-family: Zapfino, serif;
-    font-size: 18px;
-    color: antiquewhite;
-    margin: auto;
-    box-shadow: -4px 3px 4px white;
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    letter-spacing: 1px;
+    font-size: 2.4em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+p, ul, ol {
+    margin-top: 0;
+    line-height: 180%;
+}
+
+ul, ol {
 }
 
 a {
@@ -54,3 +58,33 @@ a {
     z-index: 0;
 }
 
+#header-wrapper {
+}
+
+#header {
+    display: block;
+    text-align: right;
+    width: 98%;
+    margin: 14px auto;
+    padding: 10px auto;
+    color: #d0d9e0;
+}
+
+#content {
+    display: block;
+    width: 700px;
+    background-color: oldlace;
+    padding: 10px;
+    text-align: center;
+    font-size: 22px;
+    color: #28242a;
+    margin: 60px auto;
+    box-shadow: -4px 3px 4px white;
+}
+
+#title {
+    font-size: 39px;
+    color: #28242a;
+    margin: auto 100px;
+    padding: 25px;
+}

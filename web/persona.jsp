@@ -13,14 +13,7 @@
         <link href="stylesheets/css/persona.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div id="menu">
-            <ul>
-                <li><a href="index.jsp">Home</a></li>
-                <li><a href="submit.jsp">Submit a New Entry</a></li>
-                <li><a href="<c:url value="/displayLists"/>">Lists</a></li>
-                <li><a href="logout.jsp">Log Out</a></li>
-            </ul>
-        </div>
+        <c:import url="/templates/USER_MENU.jsp" />
         <div id="content">
             <div class="user">
                 <h3>Welcome, <%=request.getRemoteUser()%></h3>

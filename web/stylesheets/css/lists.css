@@ -37,7 +37,10 @@ h2 {
 }
 
 h3 {
-    font-size: 1.6em;
+    font-family: OratorStd, serif;
+    text-align: center;
+    font-size: 21px;
+    color: #28242a;
 }
 
 p, ul, ol {
@@ -152,8 +155,7 @@ a:hover {
 .voteHitbox {
     float: left;
     margin: 11px;
-    padding: auto 400px;
-    text-underline: none;
+    padding: 9px;
 }
 
 .post {

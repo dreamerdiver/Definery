@@ -31,7 +31,6 @@ public class SendVoteRequest extends HttpServlet {
         SortByer sortByer = new SortByer();
         HttpSession session = request.getSession();
         ServletContext context = session.getServletContext();
-        String voteCount = request.getParameter("voteCount");
         String entryLabel = request.getParameter("entryLabel").replace("\'", "");
             logger.info("SendVoteRequest: session.getSession() completed successfully");
 
